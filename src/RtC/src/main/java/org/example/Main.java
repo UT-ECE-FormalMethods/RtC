@@ -22,15 +22,15 @@ public class Main {
 
             ConstraintAutomaton joinedAutomaton = automataOps.joinAutomata(automaton_1, automaton_2);
 
-            System.out.println("States:");
-            for (State state : joinedAutomaton.getStates()) {
-                System.out.println("ID: " + state.getId() + ", Initial: " + state.isInitial());
-                System.out.print("State composition: ");
-                for(String item: state.getComposition()) {
-                    System.out.print(item + " ");
-                }
-                System.out.println("\n");
-            }
+//            System.out.println("States:");
+//            for (State state : joinedAutomaton.getStates()) {
+//                System.out.println("ID: " + state.getId() + ", Initial: " + state.isInitial());
+//                System.out.print("State composition: ");
+//                for(String item: state.getComposition()) {
+//                    System.out.print(item + " ");
+//                }
+//                System.out.println("\n");
+//            }
 
 //            System.out.println("\nTransitions:");
 //            for (Transition transition : joinedAutomaton.getTransitions()) {
