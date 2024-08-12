@@ -47,7 +47,7 @@ public class AutomataJoin {
                     if ((Objects.equals(state1.getComposition().get(0), state2.getComposition().get(0)))) {
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                         if(transition != null) {
-                            System.out.println(state1.getId() + " -> " + state2.getId() + " checking for: " + state1.getComposition().get(1) + " -> " + state2.getComposition().get(1));
+                            System.out.println(state1.getId() + " -> " + state2.getId());
                             boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition, automaton_1.getAlphabet());
                             if(!intersectionExists) {
                                 Transition newTransition = new Transition();
@@ -57,17 +57,37 @@ public class AutomataJoin {
                                 newTransition.setConstraints(new ArrayList<>());
                                 joinedTransitions.add(newTransition);
                             }
-                            System.out.println("result: " + intersectionExists);
                         }
                     }
                     else if ((Objects.equals(state1.getComposition().get(1), state2.getComposition().get(1)))) {
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         if(transition != null) {
-                            System.out.println(state1.getId() + " -> " + state2.getId() + " checking for: " + state1.getComposition().get(0) + " -> " + state2.getComposition().get(0));
+                            System.out.println(state1.getId() + " -> " + state2.getId());
+                            boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition, automaton_2.getAlphabet());
+                            if(!intersectionExists) {
+                                Transition newTransition = new Transition();
+                                newTransition.setSource(state1.getId());
+                                newTransition.setTarget(state2.getId());
+                                newTransition.setLabel(transition.getLabel());
+                                newTransition.setConstraints(new ArrayList<>());
+                                joinedTransitions.add(newTransition);
+                            }
                         }
                     }
                     else {
-//                        System.out.println("Protocol 1 for: " + state1.getId() + " with " + state2.getId());
+                        System.out.println(state1.getId() + " -> " + state2.getId());
+                        Transition transition1 = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
+                        Transition transition2 = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
+                        ArrayList<String> intersection1 = automatonUtils.getTransitionLabelsIntersection(transition1, automaton_2.getAlphabet());
+                        ArrayList<String> intersection2 = automatonUtils.getTransitionLabelsIntersection(transition2, automaton_1.getAlphabet());
+                        if(intersection1.equals(intersection2)) {
+                            Transition newTransition = new Transition();
+                            newTransition.setSource(state1.getId());
+                            newTransition.setTarget(state2.getId());
+                            newTransition.setLabel(automatonUtils.getTransitionLabelsUnion(transition1.getLabel(), transition2.getLabel()));
+                            newTransition.setConstraints(new ArrayList<>());
+                            joinedTransitions.add(newTransition);
+                        }
                     }
                 }
             }
