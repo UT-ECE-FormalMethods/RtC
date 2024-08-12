@@ -15,19 +15,19 @@ public class AutomatonUtils {
         return null;
     }
 
-    public boolean transitionsIntersectionExists(Transition automaton1Transition, List<String> transitionAlphabet) {
-        return new HashSet<>(transitionAlphabet).containsAll(automaton1Transition.getLabel()); //using hashset for performance boosting
+    public boolean transitionsIntersectionExists(List<String> automaton1TransitionLabels, List<String> automaton2Alphabet) {
+        return new HashSet<>(automaton2Alphabet).containsAll(automaton1TransitionLabels); //using hashset for performance boosting
     }
 
-    public ArrayList<String> getTransitionLabelsIntersection(Transition transition, List<String> transition2Alphabet) {
-        ArrayList<String> intersection = new ArrayList<>(transition.getLabel());
-        intersection.retainAll(transition2Alphabet);
+    public ArrayList<String> getTransitionLabelsIntersection(List<String> automaton1TransitionLabels, List<String> automaton2Alphabet) {
+        ArrayList<String> intersection = new ArrayList<>(automaton1TransitionLabels);
+        intersection.retainAll(automaton2Alphabet);
         return intersection;
     }
 
-    public ArrayList<String> getTransitionLabelsUnion(List<String> transition1Labels, List<String> transition2Labels) {
-        Set<String> unionSet = new HashSet<>(transition1Labels);
-        unionSet.addAll(transition2Labels);
+    public ArrayList<String> getTransitionLabelsUnion(List<String> automaton1TransitionLabels, List<String> automaton2TransitionLabels) {
+        Set<String> unionSet = new HashSet<>(automaton1TransitionLabels);
+        unionSet.addAll(automaton1TransitionLabels);
         return new ArrayList<>(unionSet);
     }
 }

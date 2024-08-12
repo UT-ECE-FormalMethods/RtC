@@ -48,7 +48,7 @@ public class AutomataJoin {
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                         if(transition != null) {
                             System.out.println(state1.getId() + " -> " + state2.getId());
-                            boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition, automaton_1.getAlphabet());
+                            boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_1.getAlphabet());
                             if(!intersectionExists) {
                                 Transition newTransition = new Transition();
                                 newTransition.setSource(state1.getId());
@@ -63,7 +63,7 @@ public class AutomataJoin {
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         if(transition != null) {
                             System.out.println(state1.getId() + " -> " + state2.getId());
-                            boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition, automaton_2.getAlphabet());
+                            boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_2.getAlphabet());
                             if(!intersectionExists) {
                                 Transition newTransition = new Transition();
                                 newTransition.setSource(state1.getId());
@@ -78,8 +78,8 @@ public class AutomataJoin {
                         System.out.println(state1.getId() + " -> " + state2.getId());
                         Transition transition1 = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         Transition transition2 = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
-                        ArrayList<String> intersection1 = automatonUtils.getTransitionLabelsIntersection(transition1, automaton_2.getAlphabet());
-                        ArrayList<String> intersection2 = automatonUtils.getTransitionLabelsIntersection(transition2, automaton_1.getAlphabet());
+                        ArrayList<String> intersection1 = automatonUtils.getTransitionLabelsIntersection(transition1.getLabel(), automaton_2.getAlphabet());
+                        ArrayList<String> intersection2 = automatonUtils.getTransitionLabelsIntersection(transition2.getLabel(), automaton_1.getAlphabet());
                         if(intersection1.equals(intersection2)) {
                             Transition newTransition = new Transition();
                             newTransition.setSource(state1.getId());
@@ -92,28 +92,6 @@ public class AutomataJoin {
                 }
             }
         }
-
-        // Create joined transitions
-//        for (Transition transition1 : automaton_1.getTransitions()) {
-//            for (Transition transition2 : automaton_2.getTransitions()) {
-//                List<String> commonLabels = new ArrayList<>(transition1.getLabel());
-//                commonLabels.retainAll(transition2.getLabel());
-//                System.out.println(commonLabels);
-//
-//                if (!commonLabels.isEmpty()) {
-//                    Transition joinedTransition = new Transition();
-//                    joinedTransition.setSource(transition1.getSource() + "_" + transition2.getSource());
-//                    joinedTransition.setTarget(transition1.getTarget() + "_" + transition2.getTarget());
-//                    joinedTransition.setLabel(commonLabels);
-//
-//                    List<Constraint> joinedConstraints = new ArrayList<>(transition1.getConstraints());
-//                    joinedConstraints.addAll(transition2.getConstraints());
-//                    joinedTransition.setConstraints(joinedConstraints);
-//
-//                    joinedTransitions.add(joinedTransition);
-//                }
-//            }
-//        }
 
         joinedAutomaton.setStates(joinedStates);
         joinedAutomaton.setTransitions(joinedTransitions);
