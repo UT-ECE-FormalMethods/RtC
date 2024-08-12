@@ -27,7 +27,7 @@ public class AutomatonUtils {
 
     public ArrayList<String> getTransitionLabelsUnion(List<String> automaton1TransitionLabels, List<String> automaton2TransitionLabels) {
         Set<String> unionSet = new HashSet<>(automaton1TransitionLabels);
-        unionSet.addAll(automaton1TransitionLabels);
+        unionSet.addAll(automaton2TransitionLabels);
         return new ArrayList<>(unionSet);
     }
 }
