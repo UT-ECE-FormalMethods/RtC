@@ -78,15 +78,17 @@ public class AutomataJoin {
                         System.out.println(state1.getId() + " -> " + state2.getId());
                         Transition transition1 = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         Transition transition2 = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
-                        ArrayList<String> intersection1 = automatonUtils.getTransitionLabelsIntersection(transition1.getLabel(), automaton_2.getAlphabet());
-                        ArrayList<String> intersection2 = automatonUtils.getTransitionLabelsIntersection(transition2.getLabel(), automaton_1.getAlphabet());
-                        if(intersection1.equals(intersection2)) {
-                            Transition newTransition = new Transition();
-                            newTransition.setSource(state1.getId());
-                            newTransition.setTarget(state2.getId());
-                            newTransition.setLabel(automatonUtils.getTransitionLabelsUnion(transition1.getLabel(), transition2.getLabel()));
-                            newTransition.setConstraints(new ArrayList<>());
-                            joinedTransitions.add(newTransition);
+                        if(transition1 != null && transition2 != null) { // check this !!!
+                            ArrayList<String> intersection1 = automatonUtils.getTransitionLabelsIntersection(transition1.getLabel(), automaton_2.getAlphabet());
+                            ArrayList<String> intersection2 = automatonUtils.getTransitionLabelsIntersection(transition2.getLabel(), automaton_1.getAlphabet());
+                            if (intersection1.equals(intersection2)) {
+                                Transition newTransition = new Transition();
+                                newTransition.setSource(state1.getId());
+                                newTransition.setTarget(state2.getId());
+                                newTransition.setLabel(automatonUtils.getTransitionLabelsUnion(transition1.getLabel(), transition2.getLabel()));
+                                newTransition.setConstraints(new ArrayList<>());
+                                joinedTransitions.add(newTransition);
+                            }
                         }
                     }
                 }

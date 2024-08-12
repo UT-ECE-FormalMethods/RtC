@@ -17,8 +17,8 @@ public class Main {
         AutomataJoin automataOps = new AutomataJoin();
 
         try {
-            ConstraintAutomaton automaton_1 = mapper.readValue(new File("src/main/java/org/example/assets/automaton-1.json"), ConstraintAutomaton.class);
-            ConstraintAutomaton automaton_2 = mapper.readValue(new File("src/main/java/org/example/assets/automaton-2.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_1 = mapper.readValue(new File("src/main/resources/testcases/2/automaton-1.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_2 = mapper.readValue(new File("src/main/resources/testcases/2/automaton-2.json"), ConstraintAutomaton.class);
 
             ConstraintAutomaton joinedAutomaton = automataOps.joinAutomata(automaton_1, automaton_2);
 
