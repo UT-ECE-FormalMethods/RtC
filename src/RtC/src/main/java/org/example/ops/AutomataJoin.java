@@ -47,9 +47,10 @@ public class AutomataJoin {
                     if ((Objects.equals(state1.getComposition().get(0), state2.getComposition().get(0)))) {
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                         if(transition != null) {
-                            System.out.println(state1.getId() + " -> " + state2.getId());
+
                             boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_1.getAlphabet());
                             if(!intersectionExists) {
+//                                System.out.println(state1.getId() + " -> " + state2.getId());
                                 Transition newTransition = new Transition();
                                 newTransition.setSource(state1.getId());
                                 newTransition.setTarget(state2.getId());
@@ -61,11 +62,13 @@ public class AutomataJoin {
                     }
 
                     else if ((Objects.equals(state1.getComposition().get(1), state2.getComposition().get(1)))) {
+
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         if(transition != null) {
-//                            System.out.println(state1.getId() + " -> " + state2.getId());
+                            System.out.println(state1.getId() + " -> " + state2.getId());
                             boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_2.getAlphabet());
                             if(!intersectionExists) {
+//                                System.out.println(state1.getId() + " -> " + state2.getId());
                                 Transition newTransition = new Transition();
                                 newTransition.setSource(state1.getId());
                                 newTransition.setTarget(state2.getId());
