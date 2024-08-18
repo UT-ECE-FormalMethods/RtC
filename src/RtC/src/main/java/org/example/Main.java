@@ -26,10 +26,16 @@ public class Main {
             ConstraintAutomaton automaton_2 = mapper.readValue(new File("src/main/resources/testcases/3/automaton-2.json"), ConstraintAutomaton.class);
             ConstraintAutomaton automaton_3 = mapper.readValue(new File("src/main/resources/testcases/3/automaton-3.json"), ConstraintAutomaton.class);
 
-            ConstraintAutomaton joinedAutomaton = automataOps.joinAutomata(automaton_1, automaton_2);
-            ConstraintAutomaton finalAutomaton = automataOps.joinAutomata(joinedAutomaton, automaton_3);
+//            ConstraintAutomaton joinedAutomaton = automataOps.joinAutomata(automaton_1, automaton_2);
+//            ConstraintAutomaton finalAutomaton = automataOps.joinAutomata(joinedAutomaton, automaton_3);
 
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/3/result-cp.json"), finalAutomaton);
+//            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/3/result.json"), finalAutomaton);
+
+            ConstraintAutomaton joinedAutomaton_2 = automataOps.joinAutomata(automaton_3, automaton_1);
+            ConstraintAutomaton finalAutomaton_2 = automataOps.joinAutomata(joinedAutomaton_2, automaton_2);
+
+            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/3/result-2.json"), finalAutomaton_2);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
