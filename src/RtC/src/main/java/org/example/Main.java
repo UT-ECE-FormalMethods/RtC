@@ -22,17 +22,26 @@ public class Main {
         System.out.println(automatonUtils.transitionsIntersectionExists(new ArrayList<>(List.of("a", "b")), new ArrayList<>(List.of("b", "d"))));
 
         try {
-            ConstraintAutomaton automaton_1 = mapper.readValue(new File("src/main/resources/testcases/4/automaton-1.json"), ConstraintAutomaton.class);
-            ConstraintAutomaton automaton_2 = mapper.readValue(new File("src/main/resources/testcases/4/automaton-2.json"), ConstraintAutomaton.class);
-//            ConstraintAutomaton automaton_3 = mapper.readValue(new File("src/main/resources/testcases/3/automaton-3.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_1 = mapper.readValue(new File("src/main/resources/testcases/5/automaton-1.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_2 = mapper.readValue(new File("src/main/resources/testcases/5/automaton-2.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_3 = mapper.readValue(new File("src/main/resources/testcases/5/automaton-3.json"), ConstraintAutomaton.class);
 
-            ConstraintAutomaton joinedAutomaton = automataOps.joinAutomata(automaton_1, automaton_2);
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/4/result.json"), joinedAutomaton);
+            long startTime = System.currentTimeMillis();
 
-//            ConstraintAutomaton joinedAutomaton_2 = automataOps.joinAutomata(automaton_3, automaton_1);
-//            ConstraintAutomaton finalAutomaton_2 = automataOps.joinAutomata(joinedAutomaton_2, automaton_2);
-//
-//            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/3/result-2.json"), finalAutomaton_2);
+            ConstraintAutomaton joinedAutomaton = automataOps.joinAutomata(automaton_1, automaton_3);
+            ConstraintAutomaton finalAutomaton = automataOps.joinAutomata(automaton_2, joinedAutomaton);
+            long endTime = System.currentTimeMillis();
+            long duration = (endTime - startTime);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/5/result.json"), finalAutomaton);
+            System.out.println("Execution time: " + duration + " milliseconds");
+
+            long startTime2 = System.currentTimeMillis();
+            ConstraintAutomaton joinedAutomaton2 = automataOps.joinAutomata(automaton_1, automaton_2);
+            ConstraintAutomaton finalAutomaton2 = automataOps.joinAutomata(automaton_3, joinedAutomaton2);
+            long endTime2 = System.currentTimeMillis();
+            long duration2 = (endTime2 - startTime2);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/5/result2.json"), finalAutomaton2);
+            System.out.println("Execution time: " + duration2 + " milliseconds");
 
         } catch (IOException e) {
             e.printStackTrace();

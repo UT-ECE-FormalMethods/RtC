@@ -65,7 +65,6 @@ public class AutomataJoin {
 
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         if(transition != null) {
-                            System.out.println(state1.getId() + " -> " + state2.getId());
                             boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_2.getAlphabet());
                             if(!intersectionExists) {
 //                                System.out.println(state1.getId() + " -> " + state2.getId());
