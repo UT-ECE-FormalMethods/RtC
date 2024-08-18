@@ -28,7 +28,8 @@ public class AutomataJoin {
                 joinedAlphabet.add(symbol); // the total sets of alphabets in total transitions
             }
         }
-        // Create joined states
+
+
         for (State state1 : states1) {
             for (State state2 : states2) {
                 State joinedState = new State();
@@ -43,7 +44,6 @@ public class AutomataJoin {
         for (State state1 : joinedStates) {
             for (State state2 : joinedStates) {
                 if (!Objects.equals(state1.getId(), state2.getId())) {
-//                    System.out.println(state1.getId() + " vs " + state2.getId());
                     if ((Objects.equals(state1.getComposition().get(0), state2.getComposition().get(0)))) {
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                         if(transition != null) {
@@ -59,10 +59,11 @@ public class AutomataJoin {
                             }
                         }
                     }
+
                     else if ((Objects.equals(state1.getComposition().get(1), state2.getComposition().get(1)))) {
                         Transition transition = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         if(transition != null) {
-                            System.out.println(state1.getId() + " -> " + state2.getId());
+//                            System.out.println(state1.getId() + " -> " + state2.getId());
                             boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_2.getAlphabet());
                             if(!intersectionExists) {
                                 Transition newTransition = new Transition();
@@ -74,8 +75,9 @@ public class AutomataJoin {
                             }
                         }
                     }
+
                     else {
-                        System.out.println(state1.getId() + " -> " + state2.getId());
+//                        System.out.println(state1.getId() + " -> " + state2.getId());
                         Transition transition1 = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         Transition transition2 = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                         if(transition1 != null && transition2 != null) { // check this !!!
@@ -95,13 +97,13 @@ public class AutomataJoin {
             }
         }
 
+        for(State state: joinedStates) {
+            state.setComposition(new ArrayList<>(List.of(state.getId())));
+        }
+
         joinedAutomaton.setStates(joinedStates);
         joinedAutomaton.setTransitions(joinedTransitions);
         joinedAutomaton.setAlphabet(joinedAlphabet);
-
-        for(Transition transition: joinedAutomaton.getTransitions()) {
-            System.out.println(transition.getSource() + " -> " + transition.getLabel() + " -> " + transition.getTarget());
-        }
 
         return joinedAutomaton;
     }

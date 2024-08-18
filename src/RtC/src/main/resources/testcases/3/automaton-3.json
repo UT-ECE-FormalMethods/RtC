@@ -1,0 +1,29 @@
+{
+  "states": [
+    {
+      "id": "q3",
+      "initial": true,
+      "composition": ["q3"]
+    },
+    {
+      "id": "p3",
+      "initial": false,
+      "composition": ["p3"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "q3",
+      "target": "p3",
+      "label": ["b"],
+      "constraints": []
+    },
+    {
+      "source": "p3",
+      "target": "q3",
+      "label": ["d"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["b", "d"]
+}
