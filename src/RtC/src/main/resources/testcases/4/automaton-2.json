@@ -1,0 +1,29 @@
+{
+  "states": [
+    {
+      "id": "q2",
+      "initial": true,
+      "composition": ["q2"]
+    },
+    {
+      "id": "p2",
+      "initial": false,
+      "composition": ["p2"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "q2",
+      "target": "p2",
+      "label": ["b"],
+      "constraints": []
+    },
+    {
+      "source": "p2",
+      "target": "q2",
+      "label": ["d"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["b", "d"]
+}
