@@ -10,10 +10,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class AutomataJoin {
+public class SingleJoin {
     private final AutomatonUtils automatonUtils;
 
-    public AutomataJoin(AutomatonUtils automatonUtils) {
+    public SingleJoin(AutomatonUtils automatonUtils) {
         this.automatonUtils = automatonUtils;
     }
 

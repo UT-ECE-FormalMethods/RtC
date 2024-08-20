@@ -1,7 +1,6 @@
 package org.example.ops;
 
 import org.example.constraintAutomaton.ConstraintAutomaton;
-import org.example.utils.AutomatonUtils;
 import org.example.utils.FileUtils;
 
 import java.util.ArrayList;
@@ -9,11 +8,11 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class MultiJoin {
-    private final AutomataJoin automatonJoin;
+    private final SingleJoin singleJoin;
     private final FileUtils fileUtils;
 
-    public MultiJoin(AutomataJoin automatonJoin, FileUtils fileUtils) {
-        this.automatonJoin = automatonJoin;
+    public MultiJoin(SingleJoin automatonJoin, FileUtils fileUtils) {
+        this.singleJoin = automatonJoin;
         this.fileUtils = fileUtils;
     }
 
@@ -27,7 +26,7 @@ public class MultiJoin {
             ConstraintAutomaton firstAutomaton = deque.pollFirst();
             ConstraintAutomaton secondAutomaton = deque.pollFirst();
             System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", second autom no. of states: " + secondAutomaton.getStates().size());
-            ConstraintAutomaton joinedAutomaton = automatonJoin.joinAutomata(firstAutomaton, secondAutomaton);
+            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(firstAutomaton, secondAutomaton);
             deque.addFirst(joinedAutomaton);
         }
 

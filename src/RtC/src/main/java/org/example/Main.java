@@ -2,7 +2,7 @@ package org.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.constraintAutomaton.ConstraintAutomaton;
-import org.example.ops.AutomataJoin;
+import org.example.ops.SingleJoin;
 import org.example.ops.MultiJoin;
 import org.example.utils.AutomatonUtils;
 import org.example.utils.FileUtils;
@@ -18,7 +18,7 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
         FileUtils fileUtils = new FileUtils();
         AutomatonUtils automatonUtils = new AutomatonUtils();
-        AutomataJoin automataOps = new AutomataJoin(automatonUtils);
+        SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils);
         System.out.println(automatonUtils.transitionsIntersectionExists(new ArrayList<>(List.of("a", "b")), new ArrayList<>(List.of("b", "d"))));
 
