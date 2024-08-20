@@ -1,10 +1,9 @@
 package org.example.ops;
 
 import org.example.constraintAutomaton.ConstraintAutomaton;
-import org.example.constraintAutomaton.constraint.Constraint;
 import org.example.constraintAutomaton.state.State;
 import org.example.constraintAutomaton.transition.Transition;
-import org.example.utils.automaton.AutomatonUtils;
+import org.example.utils.AutomatonUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,7 +28,6 @@ public class AutomataJoin {
             }
         }
 
-
         for (State state1 : states1) {
             for (State state2 : states2) {
                 State joinedState = new State();
@@ -50,7 +48,6 @@ public class AutomataJoin {
 
                             boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_1.getAlphabet());
                             if(!intersectionExists) {
-//                                System.out.println(state1.getId() + " -> " + state2.getId());
                                 Transition newTransition = new Transition();
                                 newTransition.setSource(state1.getId());
                                 newTransition.setTarget(state2.getId());
@@ -67,7 +64,6 @@ public class AutomataJoin {
                         if(transition != null) {
                             boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_2.getAlphabet());
                             if(!intersectionExists) {
-//                                System.out.println(state1.getId() + " -> " + state2.getId());
                                 Transition newTransition = new Transition();
                                 newTransition.setSource(state1.getId());
                                 newTransition.setTarget(state2.getId());
@@ -79,7 +75,6 @@ public class AutomataJoin {
                     }
 
                     else {
-//                        System.out.println(state1.getId() + " -> " + state2.getId());
                         Transition transition1 = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                         Transition transition2 = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                         if(transition1 != null && transition2 != null) { // check this !!!

@@ -2,11 +2,9 @@ package org.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.constraintAutomaton.ConstraintAutomaton;
-import org.example.constraintAutomaton.constraint.Constraint;
-import org.example.constraintAutomaton.state.State;
-import org.example.constraintAutomaton.transition.Transition;
 import org.example.ops.AutomataJoin;
-import org.example.utils.automaton.AutomatonUtils;
+import org.example.ops.MultiJoin;
+import org.example.utils.AutomatonUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,6 +17,7 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
         AutomataJoin automataOps = new AutomataJoin();
         AutomatonUtils automatonUtils = new AutomatonUtils();
+        MultiJoin multiJoin = new MultiJoin(automataOps);
         System.out.println(automatonUtils.transitionsIntersectionExists(new ArrayList<>(List.of("a", "b")), new ArrayList<>(List.of("b", "d"))));
 
         try {
@@ -27,7 +26,6 @@ public class Main {
             ConstraintAutomaton automaton_3 = mapper.readValue(new File("src/main/resources/testcases/5/automaton-3.json"), ConstraintAutomaton.class);
 
             long startTime = System.currentTimeMillis();
-
             ConstraintAutomaton joinedAutomaton = automataOps.joinAutomata(automaton_1, automaton_3);
             ConstraintAutomaton finalAutomaton = automataOps.joinAutomata(automaton_2, joinedAutomaton);
             long endTime = System.currentTimeMillis();
@@ -40,8 +38,13 @@ public class Main {
             ConstraintAutomaton finalAutomaton2 = automataOps.joinAutomata(automaton_3, joinedAutomaton2);
             long endTime2 = System.currentTimeMillis();
             long duration2 = (endTime2 - startTime2);
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/5/result2.json"), finalAutomaton2);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/5/result-2.json"), finalAutomaton2);
             System.out.println("Execution time: " + duration2 + " milliseconds");
+
+            ArrayList<Integer> test = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6));
+
+            multiJoin.joinMultipleAutomata(test);
+
 
         } catch (IOException e) {
             e.printStackTrace();

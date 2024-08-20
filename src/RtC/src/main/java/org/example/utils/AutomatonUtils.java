@@ -1,4 +1,4 @@
-package org.example.utils.automaton;
+package org.example.utils;
 
 import org.example.constraintAutomaton.ConstraintAutomaton;
 import org.example.constraintAutomaton.transition.Transition;
