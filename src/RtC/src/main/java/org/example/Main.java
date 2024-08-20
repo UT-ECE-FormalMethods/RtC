@@ -19,19 +19,21 @@ public class Main {
         FileUtils fileUtils = new FileUtils();
         AutomatonUtils automatonUtils = new AutomatonUtils();
         AutomataJoin automataOps = new AutomataJoin(automatonUtils);
-        MultiJoin multiJoin = new MultiJoin(automataOps);
+        MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils);
         System.out.println(automatonUtils.transitionsIntersectionExists(new ArrayList<>(List.of("a", "b")), new ArrayList<>(List.of("b", "d"))));
 
         try {
-            ConstraintAutomaton automaton_1 = mapper.readValue(new File("src/main/resources/testcases/6/automaton-1.json"), ConstraintAutomaton.class);
-            ConstraintAutomaton automaton_2 = mapper.readValue(new File("src/main/resources/testcases/6/automaton-2.json"), ConstraintAutomaton.class);
-            ConstraintAutomaton automaton_3 = mapper.readValue(new File("src/main/resources/testcases/6/automaton-3.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_1 = mapper.readValue(new File("src/main/resources/testcases/7/automaton-1.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_2 = mapper.readValue(new File("src/main/resources/testcases/7/automaton-2.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_3 = mapper.readValue(new File("src/main/resources/testcases/7/automaton-3.json"), ConstraintAutomaton.class);
+            ConstraintAutomaton automaton_4 = mapper.readValue(new File("src/main/resources/testcases/7/automaton-4.json"), ConstraintAutomaton.class);
 
-//            ArrayList<ConstraintAutomaton> automatonList2 = new ArrayList<>(List.of(automaton_1, automaton_2, automaton_3));
-//            ArrayList<ConstraintAutomaton> automatonList = new ArrayList<>(List.of(automaton_3, automaton_2, automaton_1));
+//            ArrayList<ConstraintAutomaton> automatonList = new ArrayList<>(List.of(automaton_1, automaton_2, automaton_3, automaton_4));
+            ArrayList<ConstraintAutomaton> automatonList = new ArrayList<>(List.of(automaton_3, automaton_4, automaton_2, automaton_1));
 
 
-//            ConstraintAutomaton result = multiJoin.joinWithNoHeuristic(automatonList);
+            ConstraintAutomaton result = multiJoin.joinWithNoHeuristic(automatonList);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/7/result-order-2.json"), result);
 
 
 
@@ -55,14 +57,14 @@ public class Main {
 //            System.out.println("Execution time: " + duration3 + " milliseconds");
 //            fileUtils.logExecutionTime(duration3, "src/main/resources/iteration_result_test.txt");
 
-            long startTime4 = System.currentTimeMillis();
-            ConstraintAutomaton joinedAutomaton2 = automataOps.joinAutomata(automaton_1, automaton_2);
-            ConstraintAutomaton finalAutomaton2 = automataOps.joinAutomata(automaton_3, joinedAutomaton2);
-            long endTime4 = System.currentTimeMillis();
-            long duration4 = (endTime4 - startTime4);
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/5/result-2.json"), finalAutomaton2);
-            System.out.println("Execution time: " + duration4 + " milliseconds");
-            fileUtils.logExecutionTime(duration4, "src/main/resources/iteration_result_test.txt");
+//            long startTime4 = System.currentTimeMillis();
+//            ConstraintAutomaton joinedAutomaton2 = automataOps.joinAutomata(automaton_1, automaton_2);
+//            ConstraintAutomaton finalAutomaton2 = automataOps.joinAutomata(automaton_3, joinedAutomaton2);
+//            long endTime4 = System.currentTimeMillis();
+//            long duration4 = (endTime4 - startTime4);
+//            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/testcases/5/result-2.json"), finalAutomaton2);
+//            System.out.println("Execution time: " + duration4 + " milliseconds");
+//            fileUtils.logExecutionTime(duration4, "src/main/resources/iteration_result_test.txt");
 
 
         } catch (IOException e) {
