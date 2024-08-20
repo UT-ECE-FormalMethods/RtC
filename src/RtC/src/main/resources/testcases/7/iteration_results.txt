@@ -101,7 +101,7 @@ Task executed in 512 ms
 Task executed in 563 ms
 Total: 50187 ms, avg: 501.87 ms
 -------------------------------
-Iteration results for using the best joining order: (((automaton_3 * automaton_4) * automaton_2) * automaton_1)
+Iteration results for using the worst joining order: (((automaton_3 * automaton_4) * automaton_2) * automaton_1)
 Task executed in 1685 ms
 Task executed in 1772 ms
 Task executed in 1745 ms
