@@ -11,10 +11,14 @@ import java.util.List;
 import java.util.Objects;
 
 public class AutomataJoin {
+    private final AutomatonUtils automatonUtils;
+
+    public AutomataJoin(AutomatonUtils automatonUtils) {
+        this.automatonUtils = automatonUtils;
+    }
+
     public ConstraintAutomaton joinAutomata(ConstraintAutomaton automaton_1, ConstraintAutomaton automaton_2) {
         ConstraintAutomaton joinedAutomaton = new ConstraintAutomaton();
-        AutomatonUtils automatonUtils = new AutomatonUtils();
-
         List<State> states1 = automaton_1.getStates();
         List<State> states2 = automaton_2.getStates();
 

@@ -6,7 +6,6 @@ import org.example.utils.AutomatonUtils;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class MultiJoin {
     private final AutomataJoin automatonJoin;
