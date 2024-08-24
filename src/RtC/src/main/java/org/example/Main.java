@@ -23,14 +23,14 @@ public class Main {
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
 
         try {
-            ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/7/");
+            ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/8/");
 
 //            ArrayList<ConstraintAutomaton> automatonList = new ArrayList<>(List.of(automaton_1, automaton_2, automaton_3, automaton_4));
 //            ArrayList<ConstraintAutomaton> automatonList = new ArrayList<>(List.of(automatonTestCaseList.get(2), automatonTestCaseList.get(3), automatonTestCaseList.get(1), automatonTestCaseList.get(0)));
 
 
-            ConstraintAutomaton result = multiJoin.joinWithInternalFieldHeuristic(automatonTestCaseList, 1);
-//            fileUtils.writeAutomatonToFile("src/main/resources/testcases/7/result-automated.json", result);
+            ConstraintAutomaton result = multiJoin.joinWithInternalFieldHeuristic(automatonTestCaseList, 3);
+            fileUtils.writeAutomatonToFile("src/main/resources/testcases/8/result-automated.json", result);
 
         } catch (Exception e) {
             e.printStackTrace();

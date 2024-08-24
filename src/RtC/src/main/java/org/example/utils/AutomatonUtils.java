@@ -15,18 +15,6 @@ public class AutomatonUtils {
         return null;
     }
 
-//    public boolean transitionsIntersectionExists(List<String> automaton1TransitionLabels, List<String> automaton2Alphabet) {
-//        for(String s: automaton1TransitionLabels)
-//            System.out.print(s + ", ");
-//        System.out.print("\n");
-//        for(String s: automaton2Alphabet)
-//            System.out.print(s + ", ");
-//        System.out.print("\n");
-//        System.out.println(new HashSet<>(automaton2Alphabet).containsAll(automaton1TransitionLabels));
-//        System.out.println("\n--------------------------");
-//        return new HashSet<>(automaton2Alphabet).containsAll(automaton1TransitionLabels); //using hashset for performance boosting
-//    }
-
     public boolean transitionsIntersectionExists(List<String> automaton1TransitionLabels, List<String> automaton2Alphabet) {
         Set<String> set1 = new HashSet<>(automaton1TransitionLabels);
         Set<String> set2 = new HashSet<>(automaton2Alphabet);
