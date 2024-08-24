@@ -6,6 +6,7 @@ import org.example.ops.SingleJoin;
 import org.example.ops.MultiJoin;
 import org.example.utils.AutomatonUtils;
 import org.example.utils.FileUtils;
+import org.example.utils.HeuristicUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,8 +18,9 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
         FileUtils fileUtils = new FileUtils(mapper);
         AutomatonUtils automatonUtils = new AutomatonUtils();
+        HeuristicUtils heuristicUtils = new HeuristicUtils();
         SingleJoin automataOps = new SingleJoin(automatonUtils);
-        MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils);
+        MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
 
         try {
             ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/7/");
