@@ -1,12 +1,13 @@
 package org.example.ops;
 
+import org.example.constraintAutomaton.AutomatonHeuristic;
 import org.example.constraintAutomaton.ConstraintAutomaton;
+import org.example.exceptions.AutomatonListSizeLowerThanTwoException;
+import org.example.exceptions.WrongHeuristicTypeSelectionException;
 import org.example.utils.FileUtils;
 import org.example.utils.HeuristicUtils;
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
+import java.util.*;
 
 public class MultiJoin {
     private final SingleJoin singleJoin;
@@ -40,8 +41,34 @@ public class MultiJoin {
         return deque.getFirst();
     }
 
-    public ConstraintAutomaton joinWithInternalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList) {
-        //todo
-        return new ConstraintAutomaton();
+    public ConstraintAutomaton joinWithInternalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType) throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException {
+        if(automatonList.size() < 2)
+            throw new AutomatonListSizeLowerThanTwoException();
+
+        ArrayList<AutomatonHeuristic> automata = heuristicUtils.createAutomataHeuristic(automatonList);
+        PriorityQueue<AutomatonHeuristic> minHeap = new PriorityQueue<>(Comparator.comparingDouble(ah -> {
+            try {
+                return heuristicUtils.getInternalFieldAsHeuristic(ah, heuristicType);
+            } catch (WrongHeuristicTypeSelectionException e) {
+                throw new RuntimeException(e);
+            }
+        }));
+        minHeap.addAll(automata);
+
+        long startTime = System.currentTimeMillis();
+        while (minHeap.size() > 1) {
+            AutomatonHeuristic automatonHeuristic_1 = minHeap.poll();
+            AutomatonHeuristic automatonHeuristic_2 = minHeap.poll();
+            System.out.println("selecting two with " + heuristicUtils.
+                    getInternalFieldAsHeuristic(automatonHeuristic_1, heuristicType)
+                    + " and " + heuristicUtils.getInternalFieldAsHeuristic(automatonHeuristic_2, heuristicType));
+            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
+            minHeap.add(heuristicUtils.createAutomatonHeuristic(joinedAutomaton));
+        }
+        long endTime = System.currentTimeMillis();
+        long duration = (endTime - startTime);
+        System.out.println("Execution time: " + duration + " milliseconds");
+
+        return minHeap.poll().getAutomaton();
     }
 }
