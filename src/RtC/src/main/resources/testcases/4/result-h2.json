@@ -1,99 +1,82 @@
 {
-  "states" : [
-    {
+  "id" : "(CA-1 X CA-2)",
+  "states" : [ {
     "id" : "q1_q2",
     "initial" : true,
     "composition" : [ "q1_q2" ]
-    },
-    {
+  }, {
     "id" : "q1_p2",
     "initial" : false,
     "composition" : [ "q1_p2" ]
-    },
-    {
+  }, {
     "id" : "p1_q2",
     "initial" : false,
     "composition" : [ "p1_q2" ]
-    },
-    {
+  }, {
     "id" : "p1_p2",
     "initial" : false,
     "composition" : [ "p1_p2" ]
-    }
-  ],
-  "transitions" : [
-    {
+  } ],
+  "transitions" : [ {
     "source" : "q1_q2",
     "target" : "q1_p2",
     "label" : [ "b" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "q1_q2",
     "target" : "p1_q2",
     "label" : [ "a" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "q1_q2",
     "target" : "p1_p2",
     "label" : [ "a", "b" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "q1_p2",
     "target" : "q1_q2",
     "label" : [ "d" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "q1_p2",
     "target" : "p1_q2",
     "label" : [ "a", "d" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "q1_p2",
     "target" : "p1_p2",
     "label" : [ "a" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "p1_q2",
     "target" : "q1_q2",
     "label" : [ "c" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "p1_q2",
     "target" : "q1_p2",
     "label" : [ "b", "c" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "p1_q2",
     "target" : "p1_p2",
     "label" : [ "b" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "p1_p2",
     "target" : "q1_q2",
     "label" : [ "c", "d" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "p1_p2",
     "target" : "q1_p2",
     "label" : [ "c" ],
     "constraints" : [ ]
-    },
-    {
+  }, {
     "source" : "p1_p2",
     "target" : "p1_q2",
     "label" : [ "d" ],
     "constraints" : [ ]
-    }
-  ],
+  } ],
   "alphabet" : [ "a", "c", "b", "d" ]
 }
