@@ -35,4 +35,8 @@ public class AutomatonUtils {
         unionSet.addAll(automaton2TransitionLabels);
         return new ArrayList<>(unionSet);
     }
+
+    public String getJoinedAutomatonId(String automatonId_1, String automatonId_2) {
+        return ("(" + automatonId_1 + " X " + automatonId_2 + ")");
+    }
 }

@@ -59,9 +59,7 @@ public class MultiJoin {
         while (minHeap.size() > 1) {
             AutomatonHeuristic automatonHeuristic_1 = minHeap.poll();
             AutomatonHeuristic automatonHeuristic_2 = minHeap.poll();
-            System.out.println("selecting two with " + heuristicUtils.
-                    getInternalFieldAsHeuristic(automatonHeuristic_1, heuristicType)
-                    + " and " + heuristicUtils.getInternalFieldAsHeuristic(automatonHeuristic_2, heuristicType));
+            System.out.println("Selecting " + automatonHeuristic_1.getAutomaton().getId() + " and " + automatonHeuristic_2.getAutomaton().getId() + " for joining");
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
             minHeap.add(heuristicUtils.createAutomatonHeuristic(joinedAutomaton));
         }

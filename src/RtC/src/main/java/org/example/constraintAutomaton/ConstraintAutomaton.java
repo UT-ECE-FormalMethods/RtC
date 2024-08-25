@@ -6,9 +6,18 @@ import org.example.constraintAutomaton.transition.Transition;
 import java.util.List;
 
 public class ConstraintAutomaton {
+    private String id;
     private List<State> states;
     private List<Transition> transitions;
     private List<String> alphabet;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public List<State> getStates() {
         return states;

@@ -30,7 +30,7 @@ public class Main {
 
 
             ConstraintAutomaton result = multiJoin.joinWithInternalFieldHeuristic(automatonTestCaseList, 3);
-            fileUtils.writeAutomatonToFile("src/main/resources/testcases/8/result-automated.json", result);
+            fileUtils.writeAutomatonToFile("src/main/resources/testcases/8/result-id-h3.json", result);
 
         } catch (Exception e) {
             e.printStackTrace();
