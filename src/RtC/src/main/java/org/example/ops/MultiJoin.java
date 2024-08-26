@@ -20,10 +20,11 @@ public class MultiJoin {
         this.heuristicUtils = heuristicUtils;
     }
 
-    public ConstraintAutomaton joinWithNoHeuristic(ArrayList<ConstraintAutomaton> automatonList) {
-        //should I shuffle the list first for randomness in join order?
-        Deque<ConstraintAutomaton> deque = new LinkedList<>(automatonList);
+    public ConstraintAutomaton joinWithNoHeuristic(ArrayList<ConstraintAutomaton> automatonList, boolean shuffle) {
+        if(shuffle)
+            Collections.shuffle(automatonList);
 
+        Deque<ConstraintAutomaton> deque = new LinkedList<>(automatonList);
         long startTime = System.currentTimeMillis();
 
         while (deque.size() > 1) {
