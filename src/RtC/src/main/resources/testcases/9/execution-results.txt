@@ -1,0 +1,3 @@
+Execution time with heuristic type 1 (min transitions): 513165 ms
+Execution time with heuristic type 2 (min states): 543640 ms
+Execution time with heuristic type 3 (transition density): 656030 ms
