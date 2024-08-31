@@ -21,8 +21,8 @@ public class Main {
         HeuristicUtils heuristicUtils = new HeuristicUtils();
         SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
-        String testcaseDirectoryName = "10";
-        int heuristicType = 3;
+        String testcaseDirectoryName = "11";
+        int heuristicType = 2;
 
         try {
             ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/" + testcaseDirectoryName + "/");
