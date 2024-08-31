@@ -38,3 +38,6 @@ Task executed in 385 ms
 Avg: 358.7 msTask executed in 87262 ms
 Task executed in 166943 ms
 Task executed in 84654 ms
+Task executed in 98234 ms
+Task executed in 145337 ms
+Task executed in 95191 ms

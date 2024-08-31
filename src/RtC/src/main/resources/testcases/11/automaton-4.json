@@ -99,6 +99,11 @@
       "id": "y20",
       "initial": false,
       "composition": ["y20"]
+    },
+    {
+      "id": "y21",
+      "initial": false,
+      "composition": ["y21"]
     }
   ],
   "transitions": [
@@ -214,6 +219,12 @@
       "source": "y19",
       "target": "y20",
       "label": ["i"],
+      "constraints": []
+    },
+    {
+      "source": "y20",
+      "target": "y21",
+      "label": ["l"],
       "constraints": []
     }
   ],
