@@ -67,7 +67,7 @@ public class MultiJoin {
         long endTime = System.currentTimeMillis();
         long duration = (endTime - startTime);
         System.out.println("Execution time: " + duration + " milliseconds");
-
+        fileUtils.logExecutionTime(duration, "src/main/resources/testcases/10/iteration_results.txt");
         return minHeap.poll().getAutomaton();
     }
 }

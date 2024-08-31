@@ -1,0 +1,38 @@
+Iteration results for using heuristic type 1 (min transitions)
+Task executed in 726 ms
+Task executed in 768 ms
+Task executed in 773 ms
+Task executed in 791 ms
+Task executed in 734 ms
+Task executed in 893 ms
+Task executed in 803 ms
+Task executed in 730 ms
+Task executed in 776 ms
+Task executed in 811 ms
+Avg: 780.5 ms
+
+Iteration results for using heuristic type 2 (min states)
+Task executed in 769 ms
+Task executed in 748 ms
+Task executed in 768 ms
+Task executed in 748 ms
+Task executed in 751 ms
+Task executed in 736 ms
+Task executed in 737 ms
+Task executed in 763 ms
+Task executed in 779 ms
+Task executed in 765 ms
+Avg: 756.4 ms
+
+Iteration results for using heuristic type 3 (transition density)
+Task executed in 390 ms
+Task executed in 387 ms
+Task executed in 395 ms
+Task executed in 377 ms
+Task executed in 377 ms
+Task executed in 375 ms
+Task executed in 393 ms
+Task executed in 387 ms
+Task executed in 391 ms
+Task executed in 385 ms
+Avg: 358.7 ms
