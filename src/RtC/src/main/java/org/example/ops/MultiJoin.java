@@ -81,6 +81,34 @@ public class MultiJoin {
 
         ArrayList<AutomatonHeuristic> automata = heuristicUtils.createAutomataHeuristic(automatonList);
 
+        while (automata.size() > 1) {
+            int minDisparity = Integer.MAX_VALUE;
+            int index1 = -1;
+            int index2 = -1;
+
+            for (int i = 0; i < automata.size(); i++) {
+                for (int j = i + 1; j < automata.size(); j++) {
+                    int disparity = Math.abs(automata.get(i).getTransitionCount() - automata.get(j).getTransitionCount());
+
+                    if (disparity < minDisparity) {
+                        minDisparity = disparity;
+                        index1 = i;
+                        index2 = j;
+                    }
+                }
+            }
+
+            AutomatonHeuristic automatonHeuristic1 = automata.get(index1);
+            AutomatonHeuristic automatonHeuristic2 = automata.get(index2);
+
+            System.out.println("Selecting " + automatonHeuristic1.getAutomaton().getId() + " and " + automatonHeuristic2.getAutomaton().getId() + " for joining");
+
+            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
+
+            automata.set(index1, heuristicUtils.createAutomatonHeuristic(joinedAutomaton));
+            automata.remove(index2);
+        }
+
         return automata.get(0).getAutomaton();
     }
 }
