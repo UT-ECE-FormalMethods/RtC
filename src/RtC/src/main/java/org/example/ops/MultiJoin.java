@@ -20,7 +20,7 @@ public class MultiJoin {
         this.heuristicUtils = heuristicUtils;
     }
 
-    public ConstraintAutomaton joinWithNoHeuristic(ArrayList<ConstraintAutomaton> automatonList, boolean shuffle) {
+    public ConstraintAutomaton joinWithNoHeuristic(ArrayList<ConstraintAutomaton> automatonList, boolean shuffle, boolean logExecutionTime) {
         if(shuffle)
             Collections.shuffle(automatonList);
 
@@ -38,11 +38,13 @@ public class MultiJoin {
         long endTime = System.currentTimeMillis();
         long duration = (endTime - startTime);
         System.out.println("Execution time: " + duration + " milliseconds");
-        fileUtils.logExecutionTime(duration, "src/main/resources/testcases/7/iteration_results.txt");
+        if(logExecutionTime)
+            fileUtils.logExecutionTime(duration, "src/main/resources/testcases/7/iteration_results.txt");
+
         return deque.getFirst();
     }
 
-    public ConstraintAutomaton joinWithInternalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType) throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException {
+    public ConstraintAutomaton joinWithInternalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName) throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
 
@@ -67,7 +69,9 @@ public class MultiJoin {
         long endTime = System.currentTimeMillis();
         long duration = (endTime - startTime);
         System.out.println("Execution time: " + duration + " milliseconds");
-        fileUtils.logExecutionTime(duration, "src/main/resources/testcases/10/iteration_results.txt");
+        if(logExecutionTime)
+            fileUtils.logExecutionTime(duration, "src/main/resources/testcases/" + testCaseDirectoryName + "/iteration_results.txt");
+
         return minHeap.poll().getAutomaton();
     }
 }
