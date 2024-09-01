@@ -48,6 +48,8 @@ public class MultiJoin {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
 
+        long totalJoiningTime = 0;
+
         ArrayList<AutomatonHeuristic> automata = heuristicUtils.createAutomataHeuristic(automatonList);
         PriorityQueue<AutomatonHeuristic> minHeap = new PriorityQueue<>(Comparator.comparingDouble(ah -> {
             try {
@@ -58,19 +60,21 @@ public class MultiJoin {
         }));
         minHeap.addAll(automata);
 
-        long startTime = System.currentTimeMillis();
         while (minHeap.size() > 1) {
             AutomatonHeuristic automatonHeuristic_1 = minHeap.poll();
             AutomatonHeuristic automatonHeuristic_2 = minHeap.poll();
             System.out.println("Selecting " + automatonHeuristic_1.getAutomaton().getId() + " and " + automatonHeuristic_2.getAutomaton().getId() + " for joining");
+            long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
+            long endTime = System.currentTimeMillis();
+            long duration = (endTime - startTime);
+            totalJoiningTime += duration;
             minHeap.add(heuristicUtils.createAutomatonHeuristic(joinedAutomaton));
         }
-        long endTime = System.currentTimeMillis();
-        long duration = (endTime - startTime);
-        System.out.println("Execution time: " + duration + " milliseconds");
+
+        System.out.println("Execution time: " + totalJoiningTime + " milliseconds");
         if(logExecutionTime)
-            fileUtils.logExecutionTime(duration, "src/main/resources/testcases/" + testCaseDirectoryName + "/iteration_results.txt");
+            fileUtils.logExecutionTime(totalJoiningTime, "src/main/resources/testcases/" + testCaseDirectoryName + "/iteration_results.txt");
 
         return minHeap.poll().getAutomaton();
     }
@@ -80,6 +84,7 @@ public class MultiJoin {
             throw new AutomatonListSizeLowerThanTwoException();
 
         ArrayList<AutomatonHeuristic> automata = heuristicUtils.createAutomataHeuristic(automatonList);
+        long totalJoiningTime = 0;
 
         while (automata.size() > 1) {
             int minDisparity = Integer.MAX_VALUE;
@@ -103,12 +108,19 @@ public class MultiJoin {
 
             System.out.println("Selecting " + automatonHeuristic1.getAutomaton().getId() + " and " + automatonHeuristic2.getAutomaton().getId() + " for joining");
 
+            long startTime = System.currentTimeMillis();
+
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
+
+            long endTime = System.currentTimeMillis();
+            long duration = (endTime - startTime);
+            totalJoiningTime += duration;
 
             automata.set(index1, heuristicUtils.createAutomatonHeuristic(joinedAutomaton));
             automata.remove(index2);
         }
 
+        System.out.println("total execution time: " + totalJoiningTime + " ms");
         return automata.get(0).getAutomaton();
     }
 }
