@@ -38,4 +38,28 @@ Task executed in 422 ms
 Avg: 416.4 ms
 
 Iteration results for using heuristic type 4 (transition disparity)
+Task executed in 102 ms
+Task executed in 103 ms
+Task executed in 97 ms
+Task executed in 96 ms
+Task executed in 95 ms
+Task executed in 96 ms
+Task executed in 95 ms
+Task executed in 99 ms
+Task executed in 103 ms
+Task executed in 96 ms
+Avg: 98.2 ms
 
+Iteration results for using heuristic type 5 (state disparity)
+
+Task executed in 96 ms
+Task executed in 95 ms
+Task executed in 99 ms
+Task executed in 99 ms
+Task executed in 98 ms
+Task executed in 95 ms
+Task executed in 96 ms
+Task executed in 97 ms
+Task executed in 94 ms
+Task executed in 97 ms
+Avg: 96.6 ms

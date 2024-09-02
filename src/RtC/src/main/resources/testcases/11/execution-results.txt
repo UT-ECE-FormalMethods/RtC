@@ -1,3 +1,0 @@
-Time taken for using heuristic type 1 (min transitions): 98234 ms
-Time taken for using heuristic type 2 (min states): 145337 ms
-Time taken for using heuristic type 3 (transition density): 95191 ms
