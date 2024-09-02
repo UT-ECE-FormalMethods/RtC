@@ -104,7 +104,7 @@ public class MultiJoin {
 
             AutomatonHeuristic automatonHeuristic1 = automata.get(index1);
             AutomatonHeuristic automatonHeuristic2 = automata.get(index2);
-
+            System.out.println("joining " + automatonHeuristic1.getAutomaton().getId() + " with " + automatonHeuristic2.getAutomaton().getId());
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
             long endTime = System.currentTimeMillis();
