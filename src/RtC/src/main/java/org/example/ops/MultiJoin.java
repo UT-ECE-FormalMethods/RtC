@@ -93,8 +93,7 @@ public class MultiJoin {
 
             for (int i = 0; i < automata.size(); i++) {
                 for (int j = i + 1; j < automata.size(); j++) {
-                    int disparity = Math.abs(automata.get(i).getTransitionCount() - automata.get(j).getTransitionCount());
-
+                    int disparity = Math.abs(heuristicUtils.getRelationalHeuristicValue(automata.get(i), automata.get(j), heuristicType));
                     if (disparity < minDisparity) {
                         minDisparity = disparity;
                         index1 = i;
@@ -106,12 +105,8 @@ public class MultiJoin {
             AutomatonHeuristic automatonHeuristic1 = automata.get(index1);
             AutomatonHeuristic automatonHeuristic2 = automata.get(index2);
 
-            System.out.println("Selecting " + automatonHeuristic1.getAutomaton().getId() + " and " + automatonHeuristic2.getAutomaton().getId() + " for joining");
-
             long startTime = System.currentTimeMillis();
-
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
-
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;
@@ -121,6 +116,19 @@ public class MultiJoin {
         }
 
         System.out.println("total execution time: " + totalJoiningTime + " ms");
+        if(logExecutionTime)
+            fileUtils.logExecutionTime(totalJoiningTime, "src/main/resources/testcases/" + testCaseDirectoryName + "/iteration_results.txt");
         return automata.get(0).getAutomaton();
+    }
+
+    public ConstraintAutomaton multiJoinAutomata(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName, boolean shuffleForNormalJoin) throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException {
+        if(heuristicType == 0)
+            return joinWithNoHeuristic(automatonList, shuffleForNormalJoin, logExecutionTime, testCaseDirectoryName);
+        else if(heuristicType >= 0 && heuristicType <= 3)
+            return joinWithInternalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);
+        else if (heuristicType >= 4)
+            return joinWithRelationalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);
+        else
+            throw new WrongHeuristicTypeSelectionException();
     }
 }

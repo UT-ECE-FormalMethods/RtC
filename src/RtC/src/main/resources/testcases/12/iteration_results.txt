@@ -36,3 +36,6 @@ Task executed in 420 ms
 Task executed in 417 ms
 Task executed in 422 ms
 Avg: 416.4 ms
+
+Iteration results for using heuristic type 4 (transition disparity)
+

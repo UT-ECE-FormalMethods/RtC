@@ -22,12 +22,13 @@ public class Main {
         SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
         String testcaseDirectoryName = "12";
-        int heuristicType = 2;
+        int heuristicType = 5;
 
         try {
             ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/" + testcaseDirectoryName + "/");
-            ConstraintAutomaton result = multiJoin.joinWithInternalFieldHeuristic(automatonTestCaseList, heuristicType, true, testcaseDirectoryName);
+//            ConstraintAutomaton result = multiJoin.joinWithInternalFieldHeuristic(automatonTestCaseList, heuristicType, true, testcaseDirectoryName);
 //            ConstraintAutomaton result = multiJoin.joinWithRelationalFieldHeuristic(automatonTestCaseList, 4, true, testcaseDirectoryName);
+            ConstraintAutomaton result = multiJoin.multiJoinAutomata(automatonTestCaseList, heuristicType, true, testcaseDirectoryName, false);
             fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-h" + heuristicType + ".json", result);
         } catch (Exception e) {
             e.printStackTrace();
