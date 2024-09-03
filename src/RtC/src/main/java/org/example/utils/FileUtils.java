@@ -27,11 +27,9 @@ public class FileUtils {
                 Arrays.sort(files, (f1, f2) -> {
                     int num1 = Integer.parseInt(f1.getName().replaceAll("\\D+", ""));
                     int num2 = Integer.parseInt(f2.getName().replaceAll("\\D+", ""));
-                    System.out.println(num1 + ", " + num2);
                     return Integer.compare(num1, num2);
                 });
                 for (File file : files) {
-                    System.out.print(file.getName() + ", ");
                     try {
                         ConstraintAutomaton automaton = objectMapper.readValue(file, ConstraintAutomaton.class);
                         automataList.add(automaton);

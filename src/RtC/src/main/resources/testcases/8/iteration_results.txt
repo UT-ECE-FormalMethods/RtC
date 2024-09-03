@@ -1,0 +1,64 @@
+Iteration results for using heuristic type 1 (min transitions)
+Task executed in 13810 ms
+Task executed in 14039 ms
+Task executed in 14387 ms
+Task executed in 14769 ms
+Task executed in 15350 ms
+Task executed in 14544 ms
+Task executed in 14175 ms
+Task executed in 15285 ms
+Task executed in 14931 ms
+Task executed in 15003 ms
+Avg: 14.62 s
+
+Iteration results for using heuristic type 2 (min states)
+Task executed in 14363 ms
+Task executed in 14290 ms
+Task executed in 14185 ms
+Task executed in 14218 ms
+Task executed in 14504 ms
+Task executed in 14352 ms
+Task executed in 14693 ms
+Task executed in 14375 ms
+Task executed in 14113 ms
+Task executed in 14917 ms
+Avg: 14.4 s
+
+Iteration results for using heuristic type 3 (transition density)
+Task executed in 15226 ms
+Task executed in 15625 ms
+Task executed in 15799 ms
+Task executed in 15516 ms
+Task executed in 16321 ms
+Task executed in 16538 ms
+Task executed in 14770 ms
+Task executed in 15416 ms
+Task executed in 16172 ms
+Task executed in 15668 ms
+Avg: 15.7 s
+
+Iteration results for using heuristic type 4 (transition disparity)
+Task executed in 14287 ms
+Task executed in 13821 ms
+Task executed in 14102 ms
+Task executed in 14280 ms
+Task executed in 14801 ms
+Task executed in 14431 ms
+Task executed in 14516 ms
+Task executed in 14651 ms
+Task executed in 14511 ms
+Task executed in 14577 ms
+Avg: 14.39 s
+
+Iteration results for using heuristic type 5 (state disparity)
+Task executed in 13678 ms
+Task executed in 13868 ms
+Task executed in 14046 ms
+Task executed in 13684 ms
+Task executed in 14165 ms
+Task executed in 13897 ms
+Task executed in 14455 ms
+Task executed in 13863 ms
+Task executed in 14346 ms
+Task executed in 14488 ms
+Avg: 14.04 s
