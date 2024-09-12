@@ -62,3 +62,16 @@ Task executed in 303 ms
 Task executed in 297 ms
 Task executed in 318 ms
 Avg: 303.9 ms
+
+Iteration results for using heuristic type 6 (transition & state harmonic mean)
+Task executed in 371 ms
+Task executed in 370 ms
+Task executed in 468 ms
+Task executed in 482 ms
+Task executed in 390 ms
+Task executed in 441 ms
+Task executed in 363 ms
+Task executed in 372 ms
+Task executed in 368 ms
+Task executed in 389 ms
+Avg: 401.1 ms
