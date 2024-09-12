@@ -1,0 +1,10 @@
+Iteration results for using heuristic type 1 (min transitions)
+Task executed in 513165 ms
+
+Iteration results for using heuristic type 2 (min states)
+Task executed in 543640 ms
+
+Iteration results for using heuristic type 3 (transition density)
+Task executed in 656030 ms
+
+Iteration results for using heuristic type 4 (transition disparity)

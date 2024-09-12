@@ -51,7 +51,6 @@ Task executed in 96 ms
 Avg: 98.2 ms
 
 Iteration results for using heuristic type 5 (state disparity)
-
 Task executed in 96 ms
 Task executed in 95 ms
 Task executed in 99 ms
@@ -63,3 +62,16 @@ Task executed in 97 ms
 Task executed in 94 ms
 Task executed in 97 ms
 Avg: 96.6 ms
+
+Iteration results for using heuristic type 6 (TranState harmonic mean)
+Task executed in 99 ms
+Task executed in 95 ms
+Task executed in 88 ms
+Task executed in 91 ms
+Task executed in 89 ms
+Task executed in 93 ms
+Task executed in 88 ms
+Task executed in 89 ms
+Task executed in 88 ms
+Task executed in 86 ms
+Avg: 90.6 ms

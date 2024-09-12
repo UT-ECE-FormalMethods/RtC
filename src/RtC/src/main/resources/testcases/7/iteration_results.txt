@@ -64,6 +64,19 @@ Task executed in 366 ms
 Task executed in 384 ms
 Avg: 371.5 ms
 
+Iteration results for using heuristic type 6 (TranState harmonic mean)
+Task executed in 357 ms
+Task executed in 355 ms
+Task executed in 354 ms
+Task executed in 347 ms
+Task executed in 344 ms
+Task executed in 349 ms
+Task executed in 354 ms
+Task executed in 349 ms
+Task executed in 351 ms
+Task executed in 352 ms
+Avg: 351.2 ms
+
 Iteration results for using the worst joining order: (((CA-3 X CA-4) X CA-2) X CA-1)
 Task executed in 1685 ms
 Task executed in 1772 ms
