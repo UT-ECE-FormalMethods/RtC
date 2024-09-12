@@ -12,3 +12,6 @@ Task executed in 147404 ms
 
 Iteration results for using heuristic type 5 (state disparity)
 Task executed in 153945 ms
+
+Iteration results for using heuristic type 6 (transition & state harmonic mean)
+Task executed in 257335 ms

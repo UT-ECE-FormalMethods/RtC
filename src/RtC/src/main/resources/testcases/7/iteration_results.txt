@@ -63,3 +63,16 @@ Task executed in 359 ms
 Task executed in 366 ms
 Task executed in 384 ms
 Avg: 371.5 ms
+
+Iteration results for using the worst joining order: (((CA-3 X CA-4) X CA-2) X CA-1)
+Task executed in 1685 ms
+Task executed in 1772 ms
+Task executed in 1745 ms
+Task executed in 1690 ms
+Task executed in 1702 ms
+Task executed in 1655 ms
+Task executed in 1779 ms
+Task executed in 1844 ms
+Task executed in 1773 ms
+Task executed in 1725 ms
+Avg: 1737 ms

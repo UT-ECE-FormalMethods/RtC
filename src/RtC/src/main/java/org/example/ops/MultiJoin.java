@@ -124,7 +124,7 @@ public class MultiJoin {
     public ConstraintAutomaton multiJoinAutomata(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName, boolean shuffleForNormalJoin) throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException {
         if(heuristicType == 0)
             return joinWithNoHeuristic(automatonList, shuffleForNormalJoin, logExecutionTime, testCaseDirectoryName);
-        else if(heuristicType >= 0 && heuristicType <= 3)
+        else if((heuristicType >= 0 && heuristicType <= 3) || heuristicType >= 6)
             return joinWithInternalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);
         else if (heuristicType >= 4)
             return joinWithRelationalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);
