@@ -14,10 +14,10 @@ Iteration results for using heuristic type 5 (state disparity)
 Task executed in 717933 ms
 
 Iteration results for using heuristic type 6 (transition & state harmonic mean)
-Task executed in 674086 ms
+Task executed in 537461 ms
 
 Iteration results for using heuristic type 7 (transition & state sum)
-Task executed in 621506 ms
+Task executed in 549866 ms
 
 Results:
-h1 | h2 = h7 | h3 | h2 = h5 = h6
+h1 | h2 = h5 = h6 = h7 | h3 | h4
