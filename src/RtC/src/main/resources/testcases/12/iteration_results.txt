@@ -75,3 +75,18 @@ Task executed in 89 ms
 Task executed in 88 ms
 Task executed in 86 ms
 Avg: 90.6 ms
+
+Iteration results for using heuristic type 6 (TranState sum)
+Task executed in 95 ms
+Task executed in 91 ms
+Task executed in 93 ms
+Task executed in 93 ms
+Task executed in 88 ms
+Task executed in 87 ms
+Task executed in 88 ms
+Task executed in 88 ms
+Task executed in 93 ms
+Task executed in 97 ms
+Avg: 91.3 ms
+
+results: h1=h2=h4=h5=h6=h7 | h3

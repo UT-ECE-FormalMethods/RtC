@@ -6,6 +6,7 @@ public class AutomatonHeuristic {
     private double transitionDensity;
     private int statesCount;
     private double tranStateHarmonicMean;
+    private int tranStateSum;
 
     public AutomatonHeuristic(ConstraintAutomaton automaton) {
         this.automaton = automaton;
@@ -13,6 +14,7 @@ public class AutomatonHeuristic {
         this.statesCount = automaton.getStates().size();
         this.transitionDensity = (double) this.transitionCount / this.statesCount;
         this.tranStateHarmonicMean = (double) (2 * (this.transitionCount * this.statesCount)) / (this.transitionCount + this.statesCount);
+        this.tranStateSum = automaton.getStates().size() + automaton.getTransitions().size();
     }
 
     public ConstraintAutomaton getAutomaton() {
@@ -53,5 +55,13 @@ public class AutomatonHeuristic {
 
     public void setTranStateHarmonicMean(double tranStateHarmonicMean) {
         this.tranStateHarmonicMean = tranStateHarmonicMean;
+    }
+
+    public int getTranStateSum() {
+        return tranStateSum;
+    }
+
+    public void setTranStateSum(int tranStateSum) {
+        this.tranStateSum = tranStateSum;
     }
 }
