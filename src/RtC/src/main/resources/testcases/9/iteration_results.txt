@@ -1,7 +1,7 @@
 Iteration results for using heuristic type 1 (min transitions)
 Task executed in 513165 ms
 
-Iteration results for using heuristic type 2 (min states) : (((CA-1 X CA-2) X CA-4) X (CA-3 X CA-5))
+Iteration results for using heuristic type 2 (min states)
 Task executed in 543640 ms
 
 Iteration results for using heuristic type 3 (transition density)
@@ -10,10 +10,14 @@ Task executed in 656030 ms
 Iteration results for using heuristic type 4 (transition disparity)
 Task executed in 716381 ms
 
-Iteration results for using heuristic type 5 (state disparity) : (((CA-1 X CA-2) X CA-4) X (CA-3 X CA-5))
+Iteration results for using heuristic type 5 (state disparity)
 Task executed in 717933 ms
 
-Iteration results for using heuristic type 6 (transition & state harmonic mean) : (((CA-1 X CA-2) X CA-4) X (CA-3 X CA-5))
+Iteration results for using heuristic type 6 (transition & state harmonic mean)
 Task executed in 674086 ms
 
-2, 5, and 6 are same!
+Iteration results for using heuristic type 7 (transition & state sum)
+Task executed in 621506 ms
+
+Results:
+h1 | h2 = h7 | h3 | h2 = h5 = h6

@@ -75,3 +75,19 @@ Task executed in 12722 ms
 Task executed in 13220 ms
 Task executed in 12710 ms
 Avg: 13.01 s
+
+Iteration results for using heuristic type 7 (transition & state sum)
+Task executed in 12848 ms
+Task executed in 13169 ms
+Task executed in 13484 ms
+Task executed in 13221 ms
+Task executed in 12946 ms
+Task executed in 13391 ms
+Task executed in 13408 ms
+Task executed in 13190 ms
+Task executed in 13258 ms
+Task executed in 13397 ms
+Avg: 13.23 ms
+
+Results:
+h1 = h2 = h4 = h5 = h6 = h7 | h3
