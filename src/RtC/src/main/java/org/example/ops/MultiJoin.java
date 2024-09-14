@@ -3,6 +3,7 @@ package org.example.ops;
 import org.example.constraintAutomaton.AutomatonHeuristic;
 import org.example.constraintAutomaton.ConstraintAutomaton;
 import org.example.exceptions.AutomatonListSizeLowerThanTwoException;
+import org.example.exceptions.ExecutionTimeLoggingException;
 import org.example.exceptions.JoinOperationFailedException;
 import org.example.exceptions.WrongHeuristicTypeSelectionException;
 import org.example.utils.FileUtils;
@@ -22,7 +23,7 @@ public class MultiJoin {
     }
 
     public ConstraintAutomaton joinWithNoHeuristic(ArrayList<ConstraintAutomaton> automatonList, boolean shuffle, boolean logExecutionTime, String testCaseDirectoryName)
-            throws AutomatonListSizeLowerThanTwoException, JoinOperationFailedException {
+            throws AutomatonListSizeLowerThanTwoException, JoinOperationFailedException, ExecutionTimeLoggingException {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
 
@@ -50,7 +51,7 @@ public class MultiJoin {
     }
 
     public ConstraintAutomaton joinWithInternalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName)
-            throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException {
+            throws AutomatonListSizeLowerThanTwoException, JoinOperationFailedException, ExecutionTimeLoggingException {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
 
@@ -86,7 +87,7 @@ public class MultiJoin {
     }
 
     public ConstraintAutomaton joinWithRelationalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName)
-            throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException {
+            throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException, ExecutionTimeLoggingException {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
 
@@ -129,7 +130,7 @@ public class MultiJoin {
     }
 
     public ConstraintAutomaton multiJoinAutomata(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName, boolean shuffleForNormalJoin)
-            throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException {
+            throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException, ExecutionTimeLoggingException {
         if(heuristicType == 0)
             return joinWithNoHeuristic(automatonList, shuffleForNormalJoin, logExecutionTime, testCaseDirectoryName);
         else if((heuristicType >= 0 && heuristicType <= 3) || heuristicType >= 6)

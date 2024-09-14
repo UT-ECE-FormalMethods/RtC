@@ -2,6 +2,8 @@ package org.example.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.constraintAutomaton.ConstraintAutomaton;
+import org.example.exceptions.AutomatonFileIOException;
+import org.example.exceptions.ExecutionTimeLoggingException;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -17,45 +19,55 @@ public class FileUtils {
         this.objectMapper = objectMapper;
     }
 
-    public ArrayList<ConstraintAutomaton> readConstraintAutomataFromTestcases(String directory) {
+    public ArrayList<ConstraintAutomaton> readConstraintAutomataFromTestcases(String directory) throws AutomatonFileIOException {
         ArrayList<ConstraintAutomaton> automataList = new ArrayList<>();
 
-        File dir = new File(directory);
-        if (dir.exists() && dir.isDirectory()) {
-            File[] files = dir.listFiles((d, name) -> name.matches("automaton-\\d+\\.json"));
-            if (files != null) {
-                Arrays.sort(files, (f1, f2) -> {
-                    int num1 = Integer.parseInt(f1.getName().replaceAll("\\D+", ""));
-                    int num2 = Integer.parseInt(f2.getName().replaceAll("\\D+", ""));
-                    return Integer.compare(num1, num2);
-                });
-                for (File file : files) {
-                    try {
+        try {
+            File dir = new File(directory);
+            if (dir.exists() && dir.isDirectory()) {
+                File[] files = dir.listFiles((d, name) -> name.matches("automaton-\\d+\\.json"));
+                if (files != null) {
+                    Arrays.sort(files, (f1, f2) -> {
+                        int num1 = Integer.parseInt(f1.getName().replaceAll("\\D+", ""));
+                        int num2 = Integer.parseInt(f2.getName().replaceAll("\\D+", ""));
+                        return Integer.compare(num1, num2);
+                    });
+                    for (File file : files) {
                         ConstraintAutomaton automaton = objectMapper.readValue(file, ConstraintAutomaton.class);
                         automataList.add(automaton);
-                    } catch (IOException e) {
-                        e.printStackTrace();
                     }
                 }
             }
+            return automataList;
         }
-        return automataList;
+        catch (IOException e) {
+            throw new AutomatonFileIOException(e.getMessage());
+        }
     }
 
-    public ConstraintAutomaton readAutomatonFromFile(String filename) throws IOException {
-        return objectMapper.readValue(new File(filename), ConstraintAutomaton.class);
+    public ConstraintAutomaton readAutomatonFromFile(String filename) throws AutomatonFileIOException {
+        try {
+            return objectMapper.readValue(new File(filename), ConstraintAutomaton.class);
+        }
+        catch (IOException e) {
+            throw new AutomatonFileIOException(e.getMessage());
+        }
     }
 
-    public void writeAutomatonToFile(String filename, ConstraintAutomaton automaton) throws IOException {
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filename), automaton);
+    public void writeAutomatonToFile(String filename, ConstraintAutomaton automaton) throws AutomatonFileIOException {
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filename), automaton);
+        }
+        catch (IOException e) {
+            throw new AutomatonFileIOException(e.getMessage());
+        }
     }
 
-    public void logExecutionTime(long timeElapsed, String filename) {
+    public void logExecutionTime(long timeElapsed, String filename) throws ExecutionTimeLoggingException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
             writer.write("Task executed in " + timeElapsed + " ms\n");
         } catch (IOException e) {
-            System.out.println("An error occurred while writing to the file.");
-            e.printStackTrace();
+            throw new ExecutionTimeLoggingException(e.getMessage());
         }
     }
 }
