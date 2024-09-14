@@ -1,0 +1,41 @@
+Iteration results for using heuristic type 1 (min transitions)
+Task executed in 2 ms
+Task executed in 1 ms
+Task executed in 3 ms
+Task executed in 3 ms
+Task executed in 3 ms
+Task executed in 1 ms
+Task executed in 3 ms
+Task executed in 3 ms
+Task executed in 3 ms
+Task executed in 3 ms
+Avg: 2.5 ms
+
+Iteration results for using heuristic type 2 (min states)
+Task executed in 3 ms
+Task executed in 3 ms
+Task executed in 3 ms
+Task executed in 2 ms
+Task executed in 2 ms
+Task executed in 3 ms
+Task executed in 2 ms
+Task executed in 2 ms
+Task executed in 4 ms
+Task executed in 3 ms
+Avg: 2.7 ms
+
+Iteration results for using heuristic type 3 (transition density)
+
+
+Iteration results for using heuristic type 4 (transition disparity)
+
+
+Iteration results for using heuristic type 5 (state disparity)
+
+
+Iteration results for using heuristic type 6 (TranState harmonic mean)
+
+
+Iteration results for using heuristic type 7 (TranState sum)
+
+
