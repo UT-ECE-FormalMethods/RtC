@@ -18,9 +18,7 @@ public class AutomatonUtils {
     public boolean transitionsIntersectionExists(List<String> automaton1TransitionLabels, List<String> automaton2Alphabet) {
         Set<String> set1 = new HashSet<>(automaton1TransitionLabels);
         Set<String> set2 = new HashSet<>(automaton2Alphabet);
-
         set1.retainAll(set2);
-
         return !set1.isEmpty();
     }
 

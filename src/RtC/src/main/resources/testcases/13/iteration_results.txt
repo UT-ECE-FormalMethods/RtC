@@ -89,5 +89,18 @@ Task executed in 1308 ms
 Task executed in 1302 ms
 Avg: 1.29 s
 
+Iteration results for using heuristic type 8 (Max connectivity)
+Task executed in 7089 ms
+Task executed in 7390 ms
+Task executed in 7212 ms
+Task executed in 7205 ms
+Task executed in 7188 ms
+Task executed in 7027 ms
+Task executed in 6914 ms
+Task executed in 6891 ms
+Task executed in 7145 ms
+Task executed in 6963 ms
+Avg: 7.1 s
+
 Results:
-h1 = h3 | h2 = h5 = h6 = h7 | h4
+h1 = h3 | h2 = h5 = h6 = h7 | h4 = h8

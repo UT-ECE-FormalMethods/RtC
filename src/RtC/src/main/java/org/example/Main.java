@@ -18,11 +18,11 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
         FileUtils fileUtils = new FileUtils(mapper);
         AutomatonUtils automatonUtils = new AutomatonUtils();
-        HeuristicUtils heuristicUtils = new HeuristicUtils();
+        HeuristicUtils heuristicUtils = new HeuristicUtils(automatonUtils);
         SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
         String testcaseDirectoryName = "13";
-        int heuristicType = 7;
+        int heuristicType = 8;
 
         System.out.println("testcase : " + testcaseDirectoryName + ", heuristic type: " + heuristicType);
         try {

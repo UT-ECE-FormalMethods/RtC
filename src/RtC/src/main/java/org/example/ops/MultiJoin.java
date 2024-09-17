@@ -95,13 +95,13 @@ public class MultiJoin {
         long totalJoiningTime = 0;
 
         while (automata.size() > 1) {
-            int minDisparity = Integer.MAX_VALUE;
+            double minDisparity = Integer.MAX_VALUE;
             int index1 = -1;
             int index2 = -1;
 
             for (int i = 0; i < automata.size(); i++) {
                 for (int j = i + 1; j < automata.size(); j++) {
-                    int disparity = Math.abs(heuristicUtils.getRelationalHeuristicValue(automata.get(i), automata.get(j), heuristicType));
+                    double disparity = Math.abs(heuristicUtils.getRelationalHeuristicValue(automata.get(i), automata.get(j), heuristicType));
                     if (disparity < minDisparity) {
                         minDisparity = disparity;
                         index1 = i;
@@ -113,6 +113,7 @@ public class MultiJoin {
             AutomatonHeuristic automatonHeuristic1 = automata.get(index1);
             AutomatonHeuristic automatonHeuristic2 = automata.get(index2);
             System.out.println("joining " + automatonHeuristic1.getAutomaton().getId() + " with " + automatonHeuristic2.getAutomaton().getId());
+
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
             long endTime = System.currentTimeMillis();
@@ -133,7 +134,7 @@ public class MultiJoin {
             throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException, ExecutionTimeLoggingException {
         if(heuristicType == 0)
             return joinWithNoHeuristic(automatonList, shuffleForNormalJoin, logExecutionTime, testCaseDirectoryName);
-        else if((heuristicType >= 0 && heuristicType <= 3) || heuristicType >= 6)
+        else if((heuristicType >= 0 && heuristicType <= 3) || (heuristicType >= 6 && heuristicType < 8))
             return joinWithInternalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);
         else if (heuristicType >= 4)
             return joinWithRelationalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);

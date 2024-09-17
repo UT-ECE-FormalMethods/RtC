@@ -1,5 +1,7 @@
 package org.example.constraintAutomaton;
 
+import java.util.List;
+
 public class AutomatonHeuristic {
     private ConstraintAutomaton automaton;
     private int transitionCount;
@@ -63,5 +65,9 @@ public class AutomatonHeuristic {
 
     public void setTranStateSum(int tranStateSum) {
         this.tranStateSum = tranStateSum;
+    }
+
+    public List<String> getAutomatonAlphabet() {
+        return this.automaton.getAlphabet();
     }
 }
