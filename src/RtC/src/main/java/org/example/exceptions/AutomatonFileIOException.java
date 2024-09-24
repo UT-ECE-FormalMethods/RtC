@@ -6,6 +6,6 @@ public class AutomatonFileIOException extends Exception {
                 "Please check the directory name and the containing files.\n" +
                 "The input automaton file names must be in this format having a constraint automaton structure:\n" +
                 "'automaton-[i].json' where i >= 1.\n" +
-                "Details: " + msg);
+                "Details:\n" + msg);
     }
 }
