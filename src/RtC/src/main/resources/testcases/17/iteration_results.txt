@@ -1,0 +1,6 @@
+Iteration results for using heuristic type 1 (min transitions)
+Task executed in 1136 ms
+
+Iteration results for using heuristic type 8 (max connectivity)
+Task executed in 332 ms
+

@@ -1,2 +1,2 @@
-Task executed in 26 ms
+Iteration results for using heuristic type 8 (max connectivity)
 Task executed in 34 ms

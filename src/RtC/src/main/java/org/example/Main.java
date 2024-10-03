@@ -21,8 +21,8 @@ public class Main {
         HeuristicUtils heuristicUtils = new HeuristicUtils(automatonUtils);
         SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
-        String testcaseDirectoryName = "16";
-        int heuristicType = 8;
+        String testcaseDirectoryName = "17";
+        int heuristicType = 1;
 
         System.out.println("testcase : " + testcaseDirectoryName + ", heuristic type: " + heuristicType);
         try {
