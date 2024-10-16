@@ -3,7 +3,7 @@ package org.example.utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.constraintAutomaton.ConstraintAutomaton;
 import org.example.exceptions.AutomatonFileIOException;
-import org.example.exceptions.ExecutionTimeLoggingException;
+import org.example.exceptions.OperationLoggingException;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class FileUtils {
     private final ObjectMapper objectMapper;
@@ -63,11 +64,27 @@ public class FileUtils {
         }
     }
 
-    public void logExecutionTime(long timeElapsed, String filename) throws ExecutionTimeLoggingException {
+    public void logExecutionTime(long timeElapsed, String filename) throws OperationLoggingException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
             writer.write("Task executed in " + timeElapsed + " ms\n");
         } catch (IOException e) {
-            throw new ExecutionTimeLoggingException(e.getMessage());
+            throw new OperationLoggingException(e.getMessage());
+        }
+    }
+
+    public void logIntermediateAutomataDetails(List<String> intermediateAutomata, String filename) throws OperationLoggingException {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
+            writer.write("Intermediate compounds:\n");
+
+            if(intermediateAutomata.isEmpty())
+                writer.write("No intermediate compounds!");
+
+            for(String details: intermediateAutomata) {
+                writer.write(details + " ");
+            }
+            writer.write("\n");
+        } catch (IOException e) {
+            throw new OperationLoggingException(e.getMessage());
         }
     }
 }
