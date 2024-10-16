@@ -1,92 +1,29 @@
 Iteration results for using heuristic type 1 (min transitions)
-Task executed in 726 ms
-Task executed in 768 ms
-Task executed in 773 ms
-Task executed in 791 ms
-Task executed in 734 ms
-Task executed in 893 ms
-Task executed in 803 ms
-Task executed in 730 ms
-Task executed in 776 ms
-Task executed in 811 ms
+726 ms, 768 ms, 773 ms, 791 ms, 734 ms, 893 ms, 803 ms, 730 ms, 776 ms, 811 ms
 Avg: 780.5 ms
 
 Iteration results for using heuristic type 2 (min states)
-Task executed in 769 ms
-Task executed in 748 ms
-Task executed in 768 ms
-Task executed in 748 ms
-Task executed in 751 ms
-Task executed in 736 ms
-Task executed in 737 ms
-Task executed in 763 ms
-Task executed in 779 ms
-Task executed in 765 ms
+769 ms, 748 ms, 768 ms, 748 ms, 751 ms, 736 ms, 737 ms, 763 ms, 779 ms, 765 ms
 Avg: 756.4 ms
 
 Iteration results for using heuristic type 3 (transition density)
-Task executed in 390 ms
-Task executed in 387 ms
-Task executed in 395 ms
-Task executed in 377 ms
-Task executed in 377 ms
-Task executed in 375 ms
-Task executed in 393 ms
-Task executed in 387 ms
-Task executed in 391 ms
-Task executed in 385 ms
+390 ms, 387 ms, 395 ms, 377 ms, 377 ms, 375 ms, 393 ms, 387 ms, 391 ms, 385 ms
 Avg: 385.7 ms
 
 Iteration results for using heuristic type 4 (transition disparity)
-Task executed in 1262 ms
-Task executed in 1242 ms
-Task executed in 1252 ms
-Task executed in 1291 ms
-Task executed in 1225 ms
-Task executed in 1261 ms
-Task executed in 1296 ms
-Task executed in 1250 ms
-Task executed in 1297 ms
-Task executed in 1274 ms
-Avg: 1265 ms
+1262 ms, 1242 ms, 1252 ms, 1291 ms, 1225 ms, 1261 ms, 1296 ms, 1250 ms, 1297 ms, 1274 ms
+Avg: 1.26 s
 
 Iteration results for using heuristic type 5 (state disparity)
-Task executed in 296 ms
-Task executed in 296 ms
-Task executed in 305 ms
-Task executed in 305 ms
-Task executed in 308 ms
-Task executed in 293 ms
-Task executed in 318 ms
-Task executed in 303 ms
-Task executed in 297 ms
-Task executed in 318 ms
+296 ms, 296 ms, 305 ms, 305 ms, 308 ms, 293 ms, 318 ms, 303 ms, 297 ms, 318 ms
 Avg: 303.9 ms
 
 Iteration results for using heuristic type 6 (transition & state harmonic mean)
-Task executed in 371 ms
-Task executed in 370 ms
-Task executed in 468 ms
-Task executed in 482 ms
-Task executed in 390 ms
-Task executed in 441 ms
-Task executed in 363 ms
-Task executed in 372 ms
-Task executed in 368 ms
-Task executed in 389 ms
+371 ms, 370 ms, 468 ms, 482 ms, 390 ms, 441 ms, 363 ms, 372 ms, 368 ms, 389 ms
 Avg: 401.1 ms
 
 Iteration results for using heuristic type 7 (transition & state sum)
-Task executed in 315 ms
-Task executed in 303 ms
-Task executed in 298 ms
-Task executed in 288 ms
-Task executed in 353 ms
-Task executed in 293 ms
-Task executed in 291 ms
-Task executed in 287 ms
-Task executed in 294 ms
-Task executed in 287 ms
+315 ms, 303 ms, 298 ms, 288 ms, 353 ms, 293 ms, 291 ms, 287 ms, 294 ms, 287 ms
 Avg: 300.9 ms
 
 Results:

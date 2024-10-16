@@ -1,119 +1,47 @@
 Iteration results for using heuristic type 1 (min transitions)
-Task executed in 983 ms
-Task executed in 982 ms
-Task executed in 984 ms
-Task executed in 997 ms
-Task executed in 944 ms
-Task executed in 984 ms
-Task executed in 985 ms
-Task executed in 971 ms
-Task executed in 949 ms
-Task executed in 984 ms
+983 ms, 982 ms, 984 ms, 997 ms, 944 ms, 984 ms, 985 ms, 971 ms, 949 ms, 984 ms
 Avg: 976.3 ms
 Intermediate compounds:
 (S: 70, T: 480)
 
 Iteration results for using heuristic type 2 (min states)
-Task executed in 1059 ms
-Task executed in 1014 ms
-Task executed in 970 ms
-Task executed in 1012 ms
-Task executed in 960 ms
-Task executed in 1016 ms
-Task executed in 1010 ms
-Task executed in 1013 ms
-Task executed in 1021 ms
-Task executed in 986 ms
+1059 ms, 1014 ms, 970 ms, 1012 ms, 960 ms, 1016 ms, 1010 ms, 1013 ms, 1021 ms, 986 ms
 Avg: 1.00 s
 Intermediate compounds:
 (S: 70, T: 480)
 
 Iteration results for using heuristic type 3 (transition density)
-Task executed in 282 ms
-Task executed in 292 ms
-Task executed in 288 ms
-Task executed in 285 ms
-Task executed in 291 ms
-Task executed in 286 ms
-Task executed in 301 ms
-Task executed in 297 ms
-Task executed in 293 ms
-Task executed in 280 ms
+282 ms, 292 ms, 288 ms, 285 ms, 291 ms, 286 ms, 301 ms, 297 ms, 293 ms, 280 ms
 Avg: 289.5 ms
 Intermediate compounds:
 (S: 100, T: 111)
 
 Iteration results for using heuristic type 4 (transition disparity)
-Task executed in 982 ms
-Task executed in 956 ms
-Task executed in 970 ms
-Task executed in 978 ms
-Task executed in 969 ms
-Task executed in 983 ms
-Task executed in 960 ms
-Task executed in 954 ms
-Task executed in 926 ms
-Task executed in 966 ms
+982 ms, 956 ms, 970 ms, 978 ms, 969 ms, 983 ms, 960 ms, 954 ms, 926 ms, 966 ms
 Avg: 964.4
 Intermediate compounds:
 (S: 70, T: 480)
 
 Iteration results for using heuristic type 5 (state disparity)
-Task executed in 295 ms
-Task executed in 300 ms
-Task executed in 289 ms
-Task executed in 300 ms
-Task executed in 281 ms
-Task executed in 287 ms
-Task executed in 297 ms
-Task executed in 291 ms
-Task executed in 309 ms
-Task executed in 294 ms
+295 ms, 300 ms, 289 ms, 300 ms, 281 ms, 287 ms, 297 ms, 291 ms, 309 ms, 294 ms
 Avg: 294.3 ms
 Intermediate compounds:
 (S: 100, T: 111)
 
 Iteration results for using heuristic type 6 (transition & state harmonic mean)
-Task executed in 963 ms
-Task executed in 978 ms
-Task executed in 1009 ms
-Task executed in 1033 ms
-Task executed in 969 ms
-Task executed in 1017 ms
-Task executed in 1028 ms
-Task executed in 1009 ms
-Task executed in 1012 ms
-Task executed in 1018 ms
+963 ms, 978 ms, 1009 ms, 1033 ms, 969 ms, 1017 ms, 1028 ms, 1009 ms, 1012 ms, 1018 ms
 Avg: 1.00 s
 Intermediate compounds:
 (S: 70, T: 480)
 
 Iteration results for using heuristic type 7 (transition & state sum)
-Task executed in 1021 ms
-Task executed in 960 ms
-Task executed in 957 ms
-Task executed in 1006 ms
-Task executed in 969 ms
-Task executed in 957 ms
-Task executed in 1013 ms
-Task executed in 993 ms
-Task executed in 982 ms
-Task executed in 1004 ms
+1021 ms, 960 ms, 957 ms, 1006 ms, 969 ms, 957 ms, 1013 ms, 993 ms, 982 ms, 1004 ms
 Avg: 986.2 ms
 Intermediate compounds:
 (S: 70, T: 480)
 
 Iteration results for using heuristic type 8 (max connectivity)
-Task executed in 295 ms
-Task executed in 284 ms
-Task executed in 299 ms
-Task executed in 285 ms
-Task executed in 297 ms
-Task executed in 294 ms
-Task executed in 287 ms
-Task executed in 297 ms
-Task executed in 299 ms
-Task executed in 306 ms
+295 ms, 284 ms, 299 ms, 285 ms, 297 ms, 294 ms, 287 ms, 297 ms, 299 ms, 306 ms
 Avg: 294.3 ms
 Intermediate compounds:
 (S: 100, T: 111)
