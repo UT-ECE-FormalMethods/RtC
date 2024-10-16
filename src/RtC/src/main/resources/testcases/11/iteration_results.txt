@@ -19,5 +19,10 @@ Task executed in 214830 ms
 Iteration results for using heuristic type 7 (transition & state sum)
 Task executed in 204282 ms
 
+Iteration results for using heuristic type 8 (Max connectivity)
+Task executed in 2247500 ms (37 minutes!!)
+Intermediate compounds:
+(S: 200, T: 323) (S: 4200, T: 4748)
+
 Results:
-h1 = h3 | h2 | h3 | h4 | h5 | h6 = h7
+h1 = h3 | h2 | h3 | h4 | h5 | h6 = h7 | h8

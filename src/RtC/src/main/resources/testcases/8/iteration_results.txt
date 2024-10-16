@@ -1,30 +1,49 @@
 Iteration results for using heuristic type 1 (min transitions)
 13810 ms, 14039 ms, 14387 ms, 14769 ms, 15350 ms, 14544 ms, 14175 ms, 15285 ms, 14931 ms, 15003 ms
 Avg: 14.62 s
+Intermediate compounds:
+(S: 4, T: 6) (S: 24, T: 112) (S: 150, T: 210)
 
 Iteration results for using heuristic type 2 (min states)
 14363 ms, 14290 ms, 14185 ms, 14218 ms, 14504 ms, 14352 ms, 14693 ms, 14375 ms, 14113 ms, 14917 ms
 Avg: 14.4 s
+Intermediate compounds:
+(S: 4, T: 6) (S: 24, T: 112) (S: 150, T: 210)
 
 Iteration results for using heuristic type 3 (transition density)
-15226 ms, 15625 ms, 15799 ms, 15516 ms, 16321 ms, 16538 ms, 14770 ms, 15416 ms, 16172 ms, 15668 ms
-Avg: 15.7 s
+14013 ms, 14343 ms, 14631 ms, 16290 ms, 15962 ms, 15249 ms, 15169 ms, 14221 ms, 14988 ms, 13981 ms
+Avg: 14.88 s
+Intermediate compounds:
+(S: 4, T: 6) (S: 60, T: 240) (S: 60, T: 108)
 
 Iteration results for using heuristic type 4 (transition disparity)
 14287 ms, 13821 ms, 14102 ms, 14280 ms, 14801 ms, 14431 ms, 14516 ms, 14651 ms, 14511 ms, 14577 ms
 Avg: 14.39 s
+Intermediate compounds:
+(S: 4, T: 6) (S: 24, T: 112) (S: 150, T: 210)
 
 Iteration results for using heuristic type 5 (state disparity)
 13678 ms, 13868 ms, 14046 ms, 13684 ms, 14165 ms, 13897 ms, 14455 ms, 13863 ms, 14346 ms, 14488 ms
 Avg: 14.04 s
+Intermediate compounds:
+(S: 4, T: 6) (S: 24, T: 112) (S: 150, T: 210)
 
 Iteration results for using heuristic type 6 (TranState harmonic mean)
 12900 ms, 13237 ms, 12960 ms, 12822 ms, 13437 ms, 13122 ms, 12972 ms, 12722 ms, 13220 ms, 12710 ms
 Avg: 13.01 s
+Intermediate compounds:
+(S: 4, T: 6) (S: 24, T: 112) (S: 150, T: 210)
 
 Iteration results for using heuristic type 7 (transition & state sum)
 12848 ms, 13169 ms, 13484 ms, 13221 ms, 12946 ms, 13391 ms, 13408 ms, 13190 ms, 13258 ms, 13397 ms
 Avg: 13.23 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 24, T: 112) (S: 150, T: 210)
 
-Results:
-h1 = h2 = h4 = h5 = h6 = h7 | h3
+Iteration results for using heuristic type 8 (Max connectivity)
+164039 ms, 160630 ms, 161439 ms
+Avg: 162 s
+Intermediate compounds:
+(S: 150, T: 210) (S: 900, T: 1134) (S: 1800, T: 1827)
+
+h1 | h2 | h3 | h4 | h5=h6=h7 | h8

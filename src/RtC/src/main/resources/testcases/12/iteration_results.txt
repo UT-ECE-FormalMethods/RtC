@@ -1,29 +1,50 @@
 Iteration results for using heuristic type 1 (min transitions)
 92 ms, 91 ms, 91 ms, 89 ms, 92 ms, 88 ms, 91 ms, 89 ms, 92 ms, 90 ms
 Avg: 90.5 ms
+Intermediate compounds:
+(S: 6, T: 16) (S: 24, T: 78)
 
 Iteration results for using heuristic type 2 (min states)
 95 ms, 95 ms, 93 ms, 92 ms, 96 ms, 94 ms, 99 ms, 95 ms, 96 ms, 93 ms
 Avg: 94.8 ms
+Intermediate compounds:
+(S: 6, T: 16) (S: 24, T: 78)
 
 Iteration results for using heuristic type 3 (transition density)
 425 ms, 408 ms, 405 ms, 407 ms, 411 ms, 438 ms, 411 ms, 420 ms, 417 ms, 422 ms
 Avg: 416.4 ms
+Intermediate compounds:
+(S: 6, T: 16) (S: 90, T: 812)
 
 Iteration results for using heuristic type 4 (transition disparity)
 102 ms, 103 ms, 97 ms, 96 ms, 95 ms, 96 ms, 95 ms, 99 ms, 103 ms, 96 ms
 Avg: 98.2 ms
+Intermediate compounds:
+(S: 6, T: 16) (S: 24, T: 78)
 
 Iteration results for using heuristic type 5 (state disparity)
 96 ms, 95 ms, 99 ms, 99 ms, 98 ms, 95 ms, 96 ms, 97 ms, 94 ms, 97 ms
 Avg: 96.6 ms
+Intermediate compounds:
+(S: 6, T: 16) (S: 24, T: 78)
 
 Iteration results for using heuristic type 6 (TranState harmonic mean)
 99 ms, 95 ms, 88 ms, 91 ms, 89 ms, 93 ms, 88 ms, 89 ms, 88 ms, 86 ms
 Avg: 90.6 ms
+Intermediate compounds:
+(S: 6, T: 16) (S: 24, T: 78)
 
 Iteration results for using heuristic type 7 (TranState sum)
 95 ms, 91 ms, 93 ms, 93 ms, 88 ms, 87 ms, 88 ms, 88 ms, 93 ms, 97 ms
 Avg: 91.3 ms
+Intermediate compounds:
+(S: 6, T: 16) (S: 24, T: 78)
 
-results: h1=h2=h4=h5=h6=h7 | h3
+Iteration results for using heuristic type 8 (Max connectivity)
+95 ms, 94 ms, 94 ms, 93 ms, 96 ms, 91 ms, 93 ms, 91 ms, 91 ms, 90 ms
+Avg: 92.8 ms
+Intermediate compounds:
+(S: 12, T: 24) (S: 24, T: 78)
+
+results: h1=h2=h4=h5=h6=h7 | h3 | h8
+Note: h8 is a little bit worse than h7 and similar results
