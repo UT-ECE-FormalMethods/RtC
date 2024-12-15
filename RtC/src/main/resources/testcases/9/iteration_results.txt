@@ -19,5 +19,10 @@ Task executed in 537461 ms
 Iteration results for using heuristic type 7 (transition & state sum)
 Task executed in 549866 ms
 
+Iteration results for using heuristic type 8 (max connectivity)
+Took more than 2 hours with no results!
+Used the following order of join:
+((CA-1 X ((CA-3 X CA-4) X CA-5)) X CA-2)
+
 Results:
 h1 | h2 = h5 = h6 = h7 | h3 | h4
