@@ -116,7 +116,8 @@
           ],
           "order": "((CA-1 X (CA-3 X CA-4)) X CA-2)"
         }
-      ]
+      ],
+      "worst_time": 1770
     },
     {
       "testcase_direcory": "8",
@@ -313,7 +314,7 @@
         {
           "name": "max_connectivity",
           "id_to_show": "7",
-          "avg_time": 0,
+          "avg_time": 7000000,
           "intermediate_CAs": [],
           "order": "((CA-1 X ((CA-3 X CA-4) X CA-5)) X CA-2)"
         }
