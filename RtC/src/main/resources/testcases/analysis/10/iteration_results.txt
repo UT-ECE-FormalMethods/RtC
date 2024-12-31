@@ -1,0 +1,52 @@
+Iteration results for using heuristic type 1 (min transitions)
+726 ms, 768 ms, 773 ms, 791 ms, 734 ms, 893 ms, 803 ms, 730 ms, 776 ms, 811 ms
+Avg: 780.5 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 80, T: 300)
+
+Iteration results for using heuristic type 2 (min states)
+769 ms, 748 ms, 768 ms, 748 ms, 751 ms, 736 ms, 737 ms, 763 ms, 779 ms, 765 ms
+Avg: 756.4 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 3 (transition density)
+390 ms, 387 ms, 395 ms, 377 ms, 377 ms, 375 ms, 393 ms, 387 ms, 391 ms, 385 ms
+Avg: 385.7 ms
+Intermediate compounds:
+(S: 40, T: 112) (S: 20, T: 43)
+
+Iteration results for using heuristic type 4 (transition disparity)
+1262 ms, 1242 ms, 1252 ms, 1291 ms, 1225 ms, 1261 ms, 1296 ms, 1250 ms, 1297 ms, 1274 ms
+Avg: 1.26 s
+Intermediate compounds:
+(S: 4, T: 6) (S: 200, T: 494)
+
+Iteration results for using heuristic type 5 (state disparity)
+296 ms, 296 ms, 305 ms, 305 ms, 308 ms, 293 ms, 318 ms, 303 ms, 297 ms, 318 ms
+Avg: 303.9 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 6 (transition & state harmonic mean)
+371 ms, 370 ms, 468 ms, 482 ms, 390 ms, 441 ms, 363 ms, 372 ms, 368 ms, 389 ms
+Avg: 401.1 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 7 (transition & state sum)
+315 ms, 303 ms, 298 ms, 288 ms, 353 ms, 293 ms, 291 ms, 287 ms, 294 ms, 287 ms
+Avg: 300.9 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 8 (Max connectivity)
+2323 ms, 2321 ms, 2345 ms, 2331 ms, 2319 ms, 2309 ms, 2320 ms, 2418 ms, 2435 ms, 2399 ms
+Avg: 2.35s
+Intermediate compounds:
+(S: 200, T: 494) (S: 400, T: 785)
+
+Results:
+h1 | h2 | h3 | h4 | h5=h6=h7 | h8
+
+
