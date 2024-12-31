@@ -49,6 +49,7 @@ public class SingleJoin {
             for (State state1 : joinedStates) {
                 for (State state2 : joinedStates) {
                     if (!Objects.equals(state1.getId(), state2.getId())) {
+                        //e.g. this if is for the case of transition from p1_p2 -> p1_q2 (first p1 is same)
                         if ((Objects.equals(state1.getComposition().get(0), state2.getComposition().get(0)))) {
                             Transition transition = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                             if (transition != null) {
@@ -63,7 +64,10 @@ public class SingleJoin {
                                     joinedTransitions.add(newTransition);
                                 }
                             }
-                        } else if ((Objects.equals(state1.getComposition().get(1), state2.getComposition().get(1)))) {
+                        }
+
+                        //e.g. this if is for the case of transition from q1_q2 -> p1_q2 (second q2 is same)
+                        else if ((Objects.equals(state1.getComposition().get(1), state2.getComposition().get(1)))) {
 
                             Transition transition = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                             if (transition != null) {
@@ -77,7 +81,10 @@ public class SingleJoin {
                                     joinedTransitions.add(newTransition);
                                 }
                             }
-                        } else {
+                        }
+
+                        // this case is for when neither the first nor the second are the same (e.g. q1_p2 -> p1_q2)
+                        else {
                             Transition transition1 = automatonUtils.getAutomatonTransition(automaton_1.getTransitions(), state1.getComposition().get(0), state2.getComposition().get(0));
                             Transition transition2 = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                             if (transition1 != null && transition2 != null) { // check this !!!

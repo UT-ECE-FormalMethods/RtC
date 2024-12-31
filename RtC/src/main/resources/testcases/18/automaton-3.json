@@ -1,0 +1,19 @@
+{
+  "id": "CA-3",
+  "states": [
+    {
+      "id": "z1",
+      "initial": true,
+      "composition": ["z1"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "z1",
+      "target": "z1",
+      "label": ["X", "Z"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["X", "Z"]
+}

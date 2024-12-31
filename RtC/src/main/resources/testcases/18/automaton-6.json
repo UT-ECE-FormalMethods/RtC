@@ -1,0 +1,19 @@
+{
+  "id": "CA-6",
+  "states": [
+    {
+      "id": "u1",
+      "initial": true,
+      "composition": ["u1"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "u1",
+      "target": "u1",
+      "label": ["N", "U"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["N", "U"]
+}

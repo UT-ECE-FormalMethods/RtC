@@ -1,0 +1,19 @@
+{
+  "id": "CA-5",
+  "states": [
+    {
+      "id": "w1",
+      "initial": true,
+      "composition": ["w1"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "w1",
+      "target": "w1",
+      "label": ["F", "X"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["F", "X"]
+}
