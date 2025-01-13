@@ -18,7 +18,7 @@ public class SingleJoin {
         this.automatonUtils = automatonUtils;
     }
 
-    public ConstraintAutomaton joinAutomata(ConstraintAutomaton automaton_1, ConstraintAutomaton automaton_2) throws JoinOperationFailedException {
+    public ConstraintAutomaton joinAutomataByStateChecking(ConstraintAutomaton automaton_1, ConstraintAutomaton automaton_2) throws JoinOperationFailedException {
         ConstraintAutomaton joinedAutomaton = new ConstraintAutomaton();
         joinedAutomaton.setId(automatonUtils.getJoinedAutomatonId(automaton_1.getId(), automaton_2.getId()));
         List<State> states1 = automaton_1.getStates();
