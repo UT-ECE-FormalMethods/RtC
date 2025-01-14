@@ -6,10 +6,7 @@ import org.example.constraintAutomaton.transition.Transition;
 import org.example.exceptions.JoinOperationFailedException;
 import org.example.utils.AutomatonUtils;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class SingleJoin {
     private final AutomatonUtils automatonUtils;
@@ -24,17 +21,14 @@ public class SingleJoin {
         List<State> states1 = automaton_1.getStates();
         List<State> states2 = automaton_2.getStates();
 
+        HashSet<String> joinedTransitionsIds = new HashSet<>();
+        HashSet<String> joinedStatesIds = new HashSet<>();
+
         List<State> joinedStates = new ArrayList<>();
+        List<State> joinedStatesFinal = new ArrayList<>();
         List<Transition> joinedTransitions = new ArrayList<>();
-        List<String> joinedAlphabet = new ArrayList<>(automaton_1.getAlphabet());
 
         try {
-            for (String symbol : automaton_2.getAlphabet()) {
-                if (!joinedAlphabet.contains(symbol)) {
-                    joinedAlphabet.add(symbol); // the total sets of alphabets in total transitions
-                }
-            }
-
             for (State state1 : states1) {
                 for (State state2 : states2) {
                     State joinedState = new State();
@@ -53,7 +47,6 @@ public class SingleJoin {
                         if ((Objects.equals(state1.getComposition().get(0), state2.getComposition().get(0)))) {
                             Transition transition = automatonUtils.getAutomatonTransition(automaton_2.getTransitions(), state1.getComposition().get(1), state2.getComposition().get(1));
                             if (transition != null) {
-
                                 boolean intersectionExists = automatonUtils.transitionsIntersectionExists(transition.getLabel(), automaton_1.getAlphabet());
                                 if (!intersectionExists) {
                                     Transition newTransition = new Transition();
@@ -61,7 +54,20 @@ public class SingleJoin {
                                     newTransition.setTarget(state2.getId());
                                     newTransition.setLabel(transition.getLabel());
                                     newTransition.setConstraints(new ArrayList<>());
-                                    joinedTransitions.add(newTransition);
+                                    String transitionId = newTransition.getSource() + "_" + newTransition.getLabel() + "_" + newTransition.getTarget();
+
+                                    if(!joinedTransitionsIds.contains(transitionId)) {
+                                        joinedTransitionsIds.add(transitionId);
+                                        joinedTransitions.add(newTransition);
+                                    }
+                                    if(!joinedStatesIds.contains(state1.getId())) {
+                                        joinedStatesIds.add(state1.getId());
+                                        joinedStatesFinal.add(state1);
+                                    }
+                                    if(!joinedStatesIds.contains(state2.getId())) {
+                                        joinedStatesIds.add(state2.getId());
+                                        joinedStatesFinal.add(state2);
+                                    }
                                 }
                             }
                         }
@@ -78,7 +84,20 @@ public class SingleJoin {
                                     newTransition.setTarget(state2.getId());
                                     newTransition.setLabel(transition.getLabel());
                                     newTransition.setConstraints(new ArrayList<>());
-                                    joinedTransitions.add(newTransition);
+                                    String transitionId = newTransition.getSource() + "_" + newTransition.getLabel() + "_" + newTransition.getTarget();
+
+                                    if(!joinedTransitionsIds.contains(transitionId)) {
+                                        joinedTransitionsIds.add(transitionId);
+                                        joinedTransitions.add(newTransition);
+                                    }
+                                    if(!joinedStatesIds.contains(state1.getId())) {
+                                        joinedStatesIds.add(state1.getId());
+                                        joinedStatesFinal.add(state1);
+                                    }
+                                    if(!joinedStatesIds.contains(state2.getId())) {
+                                        joinedStatesIds.add(state2.getId());
+                                        joinedStatesFinal.add(state2);
+                                    }
                                 }
                             }
                         }
@@ -96,7 +115,20 @@ public class SingleJoin {
                                     newTransition.setTarget(state2.getId());
                                     newTransition.setLabel(automatonUtils.getTransitionLabelsUnion(transition1.getLabel(), transition2.getLabel()));
                                     newTransition.setConstraints(new ArrayList<>());
-                                    joinedTransitions.add(newTransition);
+                                    String transitionId = newTransition.getSource() + "_" + newTransition.getLabel() + "_" + newTransition.getTarget();
+
+                                    if(!joinedTransitionsIds.contains(transitionId)) {
+                                        joinedTransitionsIds.add(transitionId);
+                                        joinedTransitions.add(newTransition);
+                                    }
+                                    if(!joinedStatesIds.contains(state1.getId())) {
+                                        joinedStatesIds.add(state1.getId());
+                                        joinedStatesFinal.add(state1);
+                                    }
+                                    if(!joinedStatesIds.contains(state2.getId())) {
+                                        joinedStatesIds.add(state2.getId());
+                                        joinedStatesFinal.add(state2);
+                                    }
                                 }
                             }
                         }
@@ -108,9 +140,9 @@ public class SingleJoin {
                 state.setComposition(new ArrayList<>(List.of(state.getId())));
             }
 
-            joinedAutomaton.setStates(joinedStates);
+            joinedAutomaton.setStates(joinedStatesFinal);
             joinedAutomaton.setTransitions(joinedTransitions);
-            joinedAutomaton.setAlphabet(joinedAlphabet);
+            joinedAutomaton.setAlphabet(automatonUtils.getAutomatonAlphabetNames(joinedTransitions));
 
             return joinedAutomaton;
         }

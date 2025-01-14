@@ -1,0 +1,74 @@
+Iteration results for using heuristic type 1 (min transitions)
+360 ms, 374 ms, 387 ms, 383 ms, 382 ms, 374 ms, 363 ms, 368 ms, 374 ms, 371 ms
+Avg: 373.6 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 2 (min states)
+384 ms, 372 ms, 368 ms, 371 ms, 385 ms, 373 ms, 372 ms, 369 ms, 380 ms, 388 ms
+Avg: 376.2 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 3 (transition density)
+490 ms, 500 ms, 499 ms, 489 ms, 494 ms, 498 ms, 504 ms, 512 ms, 501 ms, 515 ms
+Avg: 500 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 80, T: 168)
+
+Iteration results for using heuristic type 4 (transition disparity)
+371 ms, 377 ms, 390 ms, 378 ms, 370 ms, 363 ms, 372 ms, 406 ms, 392 ms, 381 ms
+Avg: 380 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 5 (state disparity)
+364 ms, 387 ms, 373 ms, 367 ms, 373 ms, 368 ms, 374 ms, 359 ms, 366 ms, 384 ms
+Avg: 371.5 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 6 (TranState harmonic mean)
+357 ms, 355 ms, 354 ms, 347 ms, 344 ms, 349 ms, 354 ms, 349 ms, 351 ms, 352 ms
+Avg: 351.2 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 7 (transition & state sum)
+350 ms, 404 ms, 410 ms, 361 ms, 352 ms, 368 ms, 370 ms, 357 ms, 354 ms, 345 ms
+Avg: 367.1 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Iteration results for using heuristic type 8 (Max connectivity)
+1755 ms, 1793 ms, 1778 ms, 1749 ms, 1754 ms, 1751 ms, 1783 ms, 1741 ms, 1774 ms, 1822 ms
+Avg: 1.77 s
+Intermediate compounds:
+(S: 200, T: 323) (S: 400, T: 628)  => worst order
+
+Iteration results for using the worst joining order: (((CA-3 X CA-4) X CA-2) X CA-1)
+1685 ms, 1772 ms, 1745 ms, 1690 ms, 1702 ms, 1655 ms, 1779 ms, 1844 ms, 1773 ms, 1725 ms
+Avg: 1737 ms
+
+h3 | h1=h2=h4=h5=h6=h7 | h8
+Task executed in 406 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 
+Task executed in 409 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 
+Task executed in 1911 ms
+Intermediate compounds:
+(S: 189, T: 323) (S: 378, T: 628) 
+Task executed in 1887 ms
+Intermediate compounds:
+(S: 189, T: 323) (S: 378, T: 628) 
+Task executed in 1874 ms
+Intermediate compounds:
+(S: 189, T: 323) (S: 378, T: 628) 
+Task executed in 1306 ms
+Intermediate compounds:
+(S: 179, T: 304) (S: 314, T: 521) 
+Task executed in 415 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 38, T: 74) 
