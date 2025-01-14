@@ -1,6 +1,7 @@
 package org.example.utils;
 
 import org.example.constraintAutomaton.ConstraintAutomaton;
+import org.example.constraintAutomaton.state.State;
 import org.example.constraintAutomaton.transition.Transition;
 
 import java.util.*;
@@ -36,5 +37,42 @@ public class AutomatonUtils {
 
     public String getJoinedAutomatonId(String automatonId_1, String automatonId_2) {
         return ("(" + automatonId_1 + " X " + automatonId_2 + ")");
+    }
+
+    public String getJoinedTransitionId(Transition joinedTransition) {
+        return (joinedTransition.getSource() + "_" + joinedTransition.getLabels() + "_" + joinedTransition.getTarget());
+    }
+
+    public List<Transition> getAutomatonTransitionsBySource(ConstraintAutomaton automaton, String stateName, boolean sourceOrTarget) {
+        //true for checking source, false for checking target/destination
+        List<Transition> filteredTransitions = new ArrayList<>();
+        for (Transition transition : automaton.getTransitions()) {
+            if (transition.getSource().equals(stateName) && sourceOrTarget)
+                filteredTransitions.add(transition);
+            if(transition.getTarget().equals(stateName) && !sourceOrTarget)
+                filteredTransitions.add(transition);
+        }
+        return filteredTransitions;
+    }
+
+    public HashMap<String, List<Transition>> createStateTransitionMap(ConstraintAutomaton automaton) {
+        HashMap<String, List<Transition>> stateTransitionMap = new HashMap<>();
+
+        for (State state : automaton.getStates()) {
+            List<Transition> transitionsFromState = getAutomatonTransitionsBySource(automaton, state.getId(), true);
+            stateTransitionMap.put(state.getId(), transitionsFromState);
+        }
+
+        return stateTransitionMap;
+    }
+
+    public ArrayList<String> getAutomatonAlphabetNames(List<Transition> transitions) {
+        Set<String> uniqueLabelsSet = new HashSet<>();
+        for (Transition transition : transitions) {
+            if (transition.getLabels() != null) {
+                uniqueLabelsSet.addAll(transition.getLabels());
+            }
+        }
+        return new ArrayList<>(uniqueLabelsSet);
     }
 }
