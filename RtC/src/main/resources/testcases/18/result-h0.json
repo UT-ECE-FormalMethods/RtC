@@ -1,0 +1,15 @@
+{
+  "id" : "((((((((CA-1 X CA-2) X CA-3) X CA-4) X CA-5) X CA-6) X CA-7) X CA-8) X CA-9)",
+  "states" : [ {
+    "id" : "x1_y1_z1_t1_w1_u1_v1_p1_q1",
+    "initial" : true,
+    "composition" : [ "x1_y1_z1_t1_w1_u1_v1_p1_q1" ]
+  } ],
+  "transitions" : [ {
+    "source" : "x1_y1_z1_t1_w1_u1_v1_p1_q1",
+    "target" : "x1_y1_z1_t1_w1_u1_v1_p1_q1",
+    "label" : [ "B", "U", "E", "F", "W", "X", "Z", "M", "N" ],
+    "constraints" : null
+  } ],
+  "alphabet" : [ "B", "U", "E", "F", "W", "X", "Z", "M", "N" ]
+}

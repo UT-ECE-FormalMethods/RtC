@@ -1,0 +1,19 @@
+{
+  "id": "CA-8",
+  "states": [
+    {
+      "id": "p1",
+      "initial": true,
+      "composition": ["p1"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "p1",
+      "target": "p1",
+      "label": ["M", "E"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["M", "E"]
+}

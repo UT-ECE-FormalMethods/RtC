@@ -38,7 +38,7 @@ public class MultiJoin {
             ConstraintAutomaton firstAutomaton = deque.pollFirst();
             ConstraintAutomaton secondAutomaton = deque.pollFirst();
             System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", second autom no. of states: " + secondAutomaton.getStates().size());
-            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomataByStateChecking(firstAutomaton, secondAutomaton);
+            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomataByStateChecking2(firstAutomaton, secondAutomaton);
 
             intermediateAutomataSizes.add("(S: " + joinedAutomaton.getStates().size() + ", T: " + joinedAutomaton.getTransitions().size() + ")");
             deque.addFirst(joinedAutomaton);

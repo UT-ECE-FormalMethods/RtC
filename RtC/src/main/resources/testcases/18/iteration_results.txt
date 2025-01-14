@@ -1,0 +1,57 @@
+Task executed in 18 ms
+Intermediate compounds:
+(S: 0, T: 0) (S: 0, T: 0) (S: 0, T: 0) (S: 0, T: 0) (S: 0, T: 0) (S: 0, T: 0) (S: 0, T: 0) 
+Task executed in 15 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) (S: 1, T: 8) (S: 0, T: 0) (S: 0, T: 0) (S: 0, T: 0) 
+Task executed in 17 ms
+Intermediate compounds:
+(S: 1, T: 4) 
+Task executed in 18 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) 
+Task executed in 17 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 18 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) (S: 1, T: 8) 
+Task executed in 17 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 6073 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 2908 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 27413 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 6479 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 17 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 16 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 16 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 17 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) 
+Task executed in 19 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) (S: 1, T: 8) 
+Task executed in 18 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) (S: 1, T: 8) 
+Task executed in 90 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) (S: 1, T: 8) (S: 1, T: 2) 
+Task executed in 18 ms
+Intermediate compounds:
+(S: 1, T: 4) (S: 1, T: 4) (S: 1, T: 8) (S: 1, T: 8) (S: 1, T: 2) (S: 1, T: 1) (S: 1, T: 1) 

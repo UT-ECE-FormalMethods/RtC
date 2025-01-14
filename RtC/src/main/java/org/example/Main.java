@@ -21,14 +21,17 @@ public class Main {
         HeuristicUtils heuristicUtils = new HeuristicUtils(automatonUtils);
         SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
-        String testcaseDirectoryName = "9";
-        int heuristicType = 8;
+        SingleJoin singleJoin = new SingleJoin(automatonUtils);
+        String testcaseDirectoryName = "7";
+        int heuristicType = 0;
 
         System.out.println("testcase : " + testcaseDirectoryName + ", heuristic type: " + heuristicType);
         try {
             ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/" + testcaseDirectoryName + "/");
             ConstraintAutomaton result = multiJoin.multiJoinAutomata(automatonTestCaseList, heuristicType, true, testcaseDirectoryName, false);
-            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-h" + heuristicType + ".json", result);
+            System.out.println(result.getTransitions());
+            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-h-u-" + heuristicType + ".json", result);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

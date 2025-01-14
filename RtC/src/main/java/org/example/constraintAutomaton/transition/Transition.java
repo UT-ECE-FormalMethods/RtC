@@ -6,7 +6,7 @@ import java.util.List;
 public class Transition {
     private String source;
     private String target;
-    private List<String> labels;
+    private List<String> label;
     private List<Constraint> constraints;
 
     public String getSource() {
@@ -25,12 +25,12 @@ public class Transition {
         this.target = target;
     }
 
-    public List<String> getLabels() {
-        return labels;
+    public List<String> getLabel() {
+        return label;
     }
 
-    public void setLabels(List<String> labels) {
-        this.labels = labels;
+    public void setLabel(List<String> label) {
+        this.label = label;
     }
 
     public List<Constraint> getConstraints() {
