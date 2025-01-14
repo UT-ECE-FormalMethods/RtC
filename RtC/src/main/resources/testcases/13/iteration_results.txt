@@ -1,0 +1,84 @@
+Iteration results for using heuristic type 1 (min transitions)
+3417 ms, 3097 ms, 3053 ms, 3002 ms, 3226 ms, 3069 ms, 3054 ms, 3161 ms, 3139 ms, 3243 ms
+Avg: 3.14 s
+Intermediate compounds:
+(S: 88, T: 260)
+
+Iteration results for using heuristic type 2 (min states)
+1266 ms, 1320 ms, 1292 ms, 1253 ms, 1260 ms, 1323 ms, 1316 ms, 1313 ms, 1330 ms, 1312 ms
+Avg: 1.29 s
+Intermediate compounds:
+(S: 40, T: 87)
+
+Iteration results for using heuristic type 3 (transition density)
+3238 ms, 3135 ms, 3183 ms, 3124 ms, 3140 ms, 3254 ms, 3118 ms, 3195 ms, 3304 ms, 3161 ms
+Avg: 3.18 s
+Intermediate compounds:
+(S: 88, T: 260)
+
+Iteration results for using heuristic type 4 (transition disparity)
+7011 ms, 6815 ms, 7105 ms, 6938 ms, 6982 ms, 6700 ms, 6737 ms, 6863 ms, 7056 ms, 7072 ms
+Avg: 6.92 s
+Intermediate compounds:
+(S: 880, T: 623)
+
+Iteration results for using heuristic type 5 (state disparity)
+1315 ms, 1321 ms, 1278 ms, 1335 ms, 1341 ms, 1295 ms, 1300 ms, 1290 ms, 1293 ms, 1301 ms
+Avg: 1.3 s
+Intermediate compounds:
+(S: 40, T: 87)
+
+Iteration results for using heuristic type 6 (transition & state harmonic mean)
+1272 ms, 1314 ms, 1262 ms, 1251 ms, 1260 ms, 1302 ms, 1307 ms, 1326 ms, 1262 ms, 1280 ms
+Avg: 1.28 s
+Intermediate compounds:
+(S: 40, T: 87)
+
+Iteration results for using heuristic type 7 (transition & state sum)
+1315 ms, 1247 ms, 1305 ms, 1306 ms, 1262 ms, 1270 ms, 1306 ms, 1320 ms, 1308 ms, 1302 ms
+Avg: 1.29 s
+Intermediate compounds:
+(S: 40, T: 87)
+
+Iteration results for using heuristic type 8 (Max connectivity)
+7089 ms, 7390 ms, 7212 ms, 7205 ms, 7188 ms, 7027 ms, 6914 ms, 6891 ms, 7145 ms, 6963 ms
+Avg: 7.1 s
+Intermediate compounds:
+(S: 880, T: 623)
+
+Results:
+h1 = h3 | h2 = h5 = h6 = h7 | h4 = h8
+
+Type 1
+Task executed in 3461 ms
+Intermediate compounds:
+(S: 88, T: 260)
+
+Task executed in 1552 ms
+Intermediate compounds:
+(S: 40, T: 87)
+
+Task executed in 3320 ms
+Intermediate compounds:
+(S: 88, T: 260) 
+
+Task executed in 392 ms
+Intermediate compounds:
+(S: 12, T: 13)
+
+
+Task executed in 1573 ms
+Intermediate compounds:
+(S: 40, T: 87)
+
+Task executed in 1549 ms
+Intermediate compounds:
+(S: 40, T: 87)
+
+Task executed in 1571 ms
+Intermediate compounds:
+(S: 40, T: 87)
+
+Task executed in 379 ms
+Intermediate compounds:
+(S: 12, T: 13) 

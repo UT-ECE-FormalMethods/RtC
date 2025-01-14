@@ -51,24 +51,45 @@ Iteration results for using the worst joining order: (((CA-3 X CA-4) X CA-2) X C
 Avg: 1737 ms
 
 h3 | h1=h2=h4=h5=h6=h7 | h8
-Task executed in 406 ms
+
+Updated results after deleting unreachable states after every each two CA are joined:
+
+Type 1
+Task executed in 375 ms
 Intermediate compounds:
-(S: 4, T: 6) (S: 40, T: 77) 
-Task executed in 409 ms
-Intermediate compounds:
-(S: 4, T: 6) (S: 40, T: 77) 
-Task executed in 1911 ms
-Intermediate compounds:
-(S: 189, T: 323) (S: 378, T: 628) 
-Task executed in 1887 ms
-Intermediate compounds:
-(S: 189, T: 323) (S: 378, T: 628) 
-Task executed in 1874 ms
-Intermediate compounds:
-(S: 189, T: 323) (S: 378, T: 628) 
-Task executed in 1306 ms
-Intermediate compounds:
-(S: 179, T: 304) (S: 314, T: 521) 
-Task executed in 415 ms
+(S: 4, T: 6) (S: 38, T: 74)
+
+Type 2
+Task executed in 396 ms
 Intermediate compounds:
 (S: 4, T: 6) (S: 38, T: 74) 
+
+Type 3
+Task executed in 582 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 80, T: 168) 
+
+Type 4
+Task executed in 429 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 38, T: 74)
+
+Type 5
+Task executed in 384 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 38, T: 74) 
+
+Type 6
+Task executed in 370 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 38, T: 74)
+
+Type 7
+Task executed in 382 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 38, T: 74)
+
+Type 8
+Task executed in 1278 ms
+Intermediate compounds:
+(S: 179, T: 304) (S: 314, T: 521) 

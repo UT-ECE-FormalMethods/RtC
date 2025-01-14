@@ -6,6 +6,7 @@ import org.example.exceptions.AutomatonListSizeLowerThanTwoException;
 import org.example.exceptions.OperationLoggingException;
 import org.example.exceptions.JoinOperationFailedException;
 import org.example.exceptions.WrongHeuristicTypeSelectionException;
+import org.example.utils.AutomatonUtils;
 import org.example.utils.FileUtils;
 import org.example.utils.HeuristicUtils;
 
@@ -39,7 +40,7 @@ public class MultiJoin {
             ConstraintAutomaton secondAutomaton = deque.pollFirst();
             System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", second autom no. of states: " + secondAutomaton.getStates().size());
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(firstAutomaton, secondAutomaton);
-
+            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             intermediateAutomataSizes.add("(S: " + joinedAutomaton.getStates().size() + ", T: " + joinedAutomaton.getTransitions().size() + ")");
             deque.addFirst(joinedAutomaton);
         }
@@ -82,6 +83,7 @@ public class MultiJoin {
             System.out.println("Selecting " + automatonHeuristic_1.getAutomaton().getId() + " and " + automatonHeuristic_2.getAutomaton().getId() + " for joining");
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
+            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;
@@ -133,6 +135,7 @@ public class MultiJoin {
 
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
+            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;

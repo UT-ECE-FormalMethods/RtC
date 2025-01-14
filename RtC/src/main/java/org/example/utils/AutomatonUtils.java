@@ -39,7 +39,7 @@ public class AutomatonUtils {
         return ("(" + automatonId_1 + " X " + automatonId_2 + ")");
     }
 
-    public ArrayList<String> getAutomatonAlphabetNames(List<Transition> transitions) {
+    public static ArrayList<String> getAutomatonAlphabetNames(List<Transition> transitions) {
         Set<String> uniqueLabelsSet = new HashSet<>();
         for (Transition transition : transitions) {
             if (transition.getLabel() != null) {
@@ -94,7 +94,7 @@ public class AutomatonUtils {
         newAutomaton.setId(automaton.getId());
         newAutomaton.setStates(newStates);
         newAutomaton.setTransitions(newTransitions);
-        newAutomaton.setAlphabet(automaton.getAlphabet());
+        newAutomaton.setAlphabet(AutomatonUtils.getAutomatonAlphabetNames(newTransitions));
 
         return newAutomaton;
 
