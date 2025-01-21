@@ -1,0 +1,239 @@
+{
+  "id": "CA-4",
+  "states": [
+    {
+      "id": "z1",
+      "initial": true,
+      "composition": ["z1"]
+    },
+    {
+      "id": "z2",
+      "initial": false,
+      "composition": ["z2"]
+    },
+    {
+      "id": "z3",
+      "initial": false,
+      "composition": ["z3"]
+    },
+    {
+      "id": "z4",
+      "initial": false,
+      "composition": ["z4"]
+    },
+    {
+      "id": "z5",
+      "initial": false,
+      "composition": ["z5"]
+    },
+    {
+      "id": "z6",
+      "initial": false,
+      "composition": ["z6"]
+    },
+    {
+      "id": "z7",
+      "initial": false,
+      "composition": ["z7"]
+    },
+    {
+      "id": "z8",
+      "initial": false,
+      "composition": ["z8"]
+    },
+    {
+      "id": "z9",
+      "initial": false,
+      "composition": ["z9"]
+    },
+    {
+      "id": "z10",
+      "initial": false,
+      "composition": ["z10"]
+    },
+    {
+      "id": "z11",
+      "initial": false,
+      "composition": ["z11"]
+    },
+    {
+      "id": "z12",
+      "initial": false,
+      "composition": ["z12"]
+    },
+    {
+      "id": "z13",
+      "initial": false,
+      "composition": ["z13"]
+    },
+    {
+      "id": "z14",
+      "initial": false,
+      "composition": ["z14"]
+    },
+    {
+      "id": "z15",
+      "initial": false,
+      "composition": ["z15"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "z1",
+      "target": "z2",
+      "label": ["f"],
+      "constraints": []
+    },
+    {
+      "source": "z2",
+      "target": "z3",
+      "label": ["g"],
+      "constraints": []
+    },
+    {
+      "source": "z3",
+      "target": "z4",
+      "label": ["h"],
+      "constraints": []
+    },
+    {
+      "source": "z4",
+      "target": "z5",
+      "label": ["i"],
+      "constraints": []
+    },
+    {
+      "source": "z5",
+      "target": "z6",
+      "label": ["j"],
+      "constraints": []
+    },
+    {
+      "source": "z6",
+      "target": "z7",
+      "label": ["g"],
+      "constraints": []
+    },
+    {
+      "source": "z7",
+      "target": "z8",
+      "label": ["i"],
+      "constraints": []
+    },
+    {
+      "source": "z8",
+      "target": "z9",
+      "label": ["j"],
+      "constraints": []
+    },
+    {
+      "source": "z9",
+      "target": "z10",
+      "label": ["f"],
+      "constraints": []
+    },
+    {
+      "source": "z10",
+      "target": "z11",
+      "label": ["h"],
+      "constraints": []
+    },
+    {
+      "source": "z11",
+      "target": "z12",
+      "label": ["i"],
+      "constraints": []
+    },
+    {
+      "source": "z12",
+      "target": "z13",
+      "label": ["g"],
+      "constraints": []
+    },
+    {
+      "source": "z13",
+      "target": "z14",
+      "label": ["j"],
+      "constraints": []
+    },
+    {
+      "source": "z14",
+      "target": "z15",
+      "label": ["h"],
+      "constraints": []
+    },
+    {
+      "source": "z15",
+      "target": "z1",
+      "label": ["f"],
+      "constraints": []
+    },
+    {
+      "source": "z5",
+      "target": "z10",
+      "label": ["i"],
+      "constraints": []
+    },
+    {
+      "source": "z8",
+      "target": "z3",
+      "label": ["j"],
+      "constraints": []
+    },
+    {
+      "source": "z7",
+      "target": "z2",
+      "label": ["g"],
+      "constraints": []
+    },
+    {
+      "source": "z6",
+      "target": "z11",
+      "label": ["f"],
+      "constraints": []
+    },
+    {
+      "source": "z11",
+      "target": "z9",
+      "label": ["h"],
+      "constraints": []
+    },
+    {
+      "source": "z4",
+      "target": "z12",
+      "label": ["j"],
+      "constraints": []
+    },
+    {
+      "source": "z3",
+      "target": "z8",
+      "label": ["i"],
+      "constraints": []
+    },
+    {
+      "source": "z14",
+      "target": "z1",
+      "label": ["g"],
+      "constraints": []
+    },
+    {
+      "source": "z10",
+      "target": "z7",
+      "label": ["h"],
+      "constraints": []
+    },
+    {
+      "source": "z13",
+      "target": "z5",
+      "label": ["j"],
+      "constraints": []
+    },
+    {
+      "source": "z2",
+      "target": "z9",
+      "label": ["i"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["f", "g", "h", "i", "j"]
+}

@@ -21,14 +21,24 @@ public class Main {
         HeuristicUtils heuristicUtils = new HeuristicUtils(automatonUtils);
         SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
-        String testcaseDirectoryName = "9";
+        String testcaseDirectoryName = "13";
         int heuristicType = 8;
 
         System.out.println("testcase : " + testcaseDirectoryName + ", heuristic type: " + heuristicType);
         try {
             ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/" + testcaseDirectoryName + "/");
+            for(ConstraintAutomaton ca: automatonTestCaseList) {
+                ConstraintAutomaton ca_temp = AutomatonUtils.removeUnreachableStates(ca);
+                System.out.println("original");
+                System.out.println("States: " + ca.getStates().size() + ", Transitions: " + ca.getTransitions().size());
+                System.out.println("cleaned");
+                System.out.println("States: " + ca_temp.getStates().size() + ", Transitions: " + ca_temp.getTransitions().size());
+            }
+
             ConstraintAutomaton result = multiJoin.multiJoinAutomata(automatonTestCaseList, heuristicType, true, testcaseDirectoryName, false);
-            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-h" + heuristicType + ".json", result);
+//            ConstraintAutomaton resultRemovedUnreachable = AutomatonUtils.removeUnreachableStates(result);
+            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-h-u" + heuristicType + ".json", result);
+//            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-r-u" + heuristicType + ".json", resultRemovedUnreachable);
         } catch (Exception e) {
             e.printStackTrace();
         }
