@@ -84,4 +84,4 @@ Intermediate compounds:
 (S: 12, T: 13) 
 Task executed in 383 ms
 Intermediate compounds:
-(S: 12, T: 13) 
+(S: 12, T: 13)

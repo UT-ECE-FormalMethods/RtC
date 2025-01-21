@@ -1,0 +1,30 @@
+{
+  "id": "CA-1",
+  "states": [
+    {
+      "id": "q1",
+      "initial": true,
+      "composition": ["q1"]
+    },
+    {
+      "id": "p1",
+      "initial": false,
+      "composition": ["p1"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "q1",
+      "target": "p1",
+      "label": ["a"],
+      "constraints": []
+    },
+    {
+      "source": "p1",
+      "target": "q1",
+      "label": ["c"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["a", "c"]
+}

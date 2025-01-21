@@ -23,10 +23,10 @@ public class Main {
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
         String testcaseDirectoryName = "13";
         int heuristicType = 8;
-
+        String testcaseDirectory = "src/main/resources/testcases/initial/unreachable_analysis/" + testcaseDirectoryName + "/";
         System.out.println("testcase : " + testcaseDirectoryName + ", heuristic type: " + heuristicType);
         try {
-            ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases("src/main/resources/testcases/" + testcaseDirectoryName + "/");
+            ArrayList<ConstraintAutomaton> automatonTestCaseList = fileUtils.readConstraintAutomataFromTestcases(testcaseDirectory);
             for(ConstraintAutomaton ca: automatonTestCaseList) {
                 ConstraintAutomaton ca_temp = AutomatonUtils.removeUnreachableStates(ca);
                 System.out.println("original");
@@ -35,9 +35,9 @@ public class Main {
                 System.out.println("States: " + ca_temp.getStates().size() + ", Transitions: " + ca_temp.getTransitions().size());
             }
 
-            ConstraintAutomaton result = multiJoin.multiJoinAutomata(automatonTestCaseList, heuristicType, true, testcaseDirectoryName, false);
+            ConstraintAutomaton result = multiJoin.multiJoinAutomata(automatonTestCaseList, heuristicType, true, testcaseDirectory + "iteration_results.txt", false);
 //            ConstraintAutomaton resultRemovedUnreachable = AutomatonUtils.removeUnreachableStates(result);
-            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-h-u" + heuristicType + ".json", result);
+            fileUtils.writeAutomatonToFile(testcaseDirectory + "/result-h-u" + heuristicType + ".json", result);
 //            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-r-u" + heuristicType + ".json", resultRemovedUnreachable);
         } catch (Exception e) {
             e.printStackTrace();
