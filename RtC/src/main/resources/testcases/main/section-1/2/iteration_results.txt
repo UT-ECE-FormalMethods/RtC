@@ -1,0 +1,51 @@
+Type 0: normal join with default order
+Task executed in: 17 ms, 16 ms, 15 ms, 17 ms, 18 ms, 16 ms, 17 ms, 16 ms, 17 ms, 16 ms
+Avg: 16.5 ms
+Intermediate compounds:
+(S: 12, T: 44) 
+
+Type 1: min transitions
+Task executed in: 13 ms, 15 ms, 14 ms, 13 ms, 13 ms, 12 ms, 15 ms, 13 ms, 13 ms, 14 ms
+Avg: 13.5 ms
+Intermediate compounds:
+(S: 10, T: 34)
+
+Type 2: min states
+Task executed in: 14 ms, 14 ms, 13 ms, 14 ms, 13 ms, 14 ms, 13 ms, 17 ms, 13 ms, 14 ms
+Avg: 13.9
+Intermediate compounds:
+(S: 10, T: 34) 
+
+Type 3: transition density
+Task executed in: 14 ms, 14 ms, 13 ms, 15 ms, 14 ms, 13 ms, 12 ms, 13 ms, 13 ms, 13 ms
+Avg: 13.4 ms
+Intermediate compounds:
+(S: 10, T: 34) 
+
+Type 4: transition disparity
+Task executed in: 9 ms, 9 ms, 10 ms, 10 ms, 10 ms, 10 ms, 9 ms, 10 ms, 10 ms, 11 ms
+Avg: 9.8 ms
+Intermediate compounds:
+(S: 16, T: 28)
+
+Type 5: state disparity
+Task executed in: 10 ms, 8 ms, 10 ms, 11 ms, 10 ms, 11 ms, 10 ms, 12 ms, 11 ms, 11 ms
+Avg: 10.4 ms
+Intermediate compounds:
+(S: 16, T: 28)
+
+Ignoring Type 6
+
+Type 7:
+Task executed in 13 ms, 14 ms, 16 ms, 14 ms, 13 ms, 13 ms, 13 ms, 14 ms, 13 ms, 16 ms
+Avg: 13.9 ms
+Intermediate compounds:
+(S: 10, T: 34) 
+
+Type 8:
+Task executed in 10 ms, 9 ms, 10 ms, 10 ms, 9 ms, 10 ms, 11 ms, 10 ms, 11 ms, 11 ms
+Intermediate compounds:
+Avg: 10.1
+(S: 16, T: 28)
+
+h0 | h1=h2=h3=h7 | h4=h5=h8

@@ -1,0 +1,351 @@
+{
+  "id" : "((CA-1 X CA-2) X CA-3)",
+  "states" : [ {
+    "id" : "q1_p1_r1",
+    "initial" : true,
+    "composition" : [ "q1_p1_r1" ]
+  }, {
+    "id" : "q1_p1_r5",
+    "initial" : false,
+    "composition" : [ "q1_p1_r5" ]
+  }, {
+    "id" : "q2_p1_r1",
+    "initial" : false,
+    "composition" : [ "q2_p1_r1" ]
+  }, {
+    "id" : "q2_p1_r5",
+    "initial" : false,
+    "composition" : [ "q2_p1_r5" ]
+  }, {
+    "id" : "q1_p1_r2",
+    "initial" : false,
+    "composition" : [ "q1_p1_r2" ]
+  }, {
+    "id" : "q1_p1_r3",
+    "initial" : false,
+    "composition" : [ "q1_p1_r3" ]
+  }, {
+    "id" : "q1_p1_r4",
+    "initial" : false,
+    "composition" : [ "q1_p1_r4" ]
+  }, {
+    "id" : "q2_p1_r2",
+    "initial" : false,
+    "composition" : [ "q2_p1_r2" ]
+  }, {
+    "id" : "q2_p1_r3",
+    "initial" : false,
+    "composition" : [ "q2_p1_r3" ]
+  }, {
+    "id" : "q2_p1_r4",
+    "initial" : false,
+    "composition" : [ "q2_p1_r4" ]
+  }, {
+    "id" : "q1_p2_r1",
+    "initial" : false,
+    "composition" : [ "q1_p2_r1" ]
+  }, {
+    "id" : "q1_p2_r5",
+    "initial" : false,
+    "composition" : [ "q1_p2_r5" ]
+  }, {
+    "id" : "q1_p2_r2",
+    "initial" : false,
+    "composition" : [ "q1_p2_r2" ]
+  }, {
+    "id" : "q1_p2_r3",
+    "initial" : false,
+    "composition" : [ "q1_p2_r3" ]
+  }, {
+    "id" : "q1_p2_r4",
+    "initial" : false,
+    "composition" : [ "q1_p2_r4" ]
+  }, {
+    "id" : "q2_p2_r1",
+    "initial" : false,
+    "composition" : [ "q2_p2_r1" ]
+  }, {
+    "id" : "q2_p2_r5",
+    "initial" : false,
+    "composition" : [ "q2_p2_r5" ]
+  }, {
+    "id" : "q2_p2_r2",
+    "initial" : false,
+    "composition" : [ "q2_p2_r2" ]
+  }, {
+    "id" : "q2_p2_r3",
+    "initial" : false,
+    "composition" : [ "q2_p2_r3" ]
+  }, {
+    "id" : "q2_p2_r4",
+    "initial" : false,
+    "composition" : [ "q2_p2_r4" ]
+  } ],
+  "transitions" : [ {
+    "source" : "q1_p1_r1",
+    "target" : "q1_p1_r5",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r1",
+    "target" : "q2_p1_r1",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r1",
+    "target" : "q2_p1_r5",
+    "label" : [ "a", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r2",
+    "target" : "q1_p1_r3",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r2",
+    "target" : "q1_p1_r4",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r2",
+    "target" : "q2_p1_r2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r2",
+    "target" : "q2_p1_r3",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r2",
+    "target" : "q2_p1_r4",
+    "label" : [ "a", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r3",
+    "target" : "q2_p1_r3",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r4",
+    "target" : "q1_p1_r3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r4",
+    "target" : "q1_p1_r5",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r4",
+    "target" : "q2_p1_r3",
+    "label" : [ "a", "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r4",
+    "target" : "q2_p1_r4",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r4",
+    "target" : "q2_p1_r5",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p1_r5",
+    "target" : "q2_p1_r5",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r1",
+    "target" : "q2_p1_r5",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r1",
+    "target" : "q1_p2_r1",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r1",
+    "target" : "q1_p2_r5",
+    "label" : [ "c", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r2",
+    "target" : "q2_p1_r3",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r2",
+    "target" : "q2_p1_r4",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r2",
+    "target" : "q1_p2_r2",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r2",
+    "target" : "q1_p2_r3",
+    "label" : [ "c", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r2",
+    "target" : "q1_p2_r4",
+    "label" : [ "c", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r3",
+    "target" : "q1_p2_r3",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r4",
+    "target" : "q2_p1_r3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r4",
+    "target" : "q2_p1_r5",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r4",
+    "target" : "q1_p2_r3",
+    "label" : [ "c", "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r4",
+    "target" : "q1_p2_r4",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r4",
+    "target" : "q1_p2_r5",
+    "label" : [ "c", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p1_r5",
+    "target" : "q1_p2_r5",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r1",
+    "target" : "q1_p1_r2",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r1",
+    "target" : "q2_p1_r2",
+    "label" : [ "a", "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r1",
+    "target" : "q1_p2_r5",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r1",
+    "target" : "q2_p2_r1",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r1",
+    "target" : "q2_p2_r5",
+    "label" : [ "a", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r2",
+    "target" : "q1_p2_r3",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r2",
+    "target" : "q1_p2_r4",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r2",
+    "target" : "q2_p2_r2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r2",
+    "target" : "q2_p2_r3",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r2",
+    "target" : "q2_p2_r4",
+    "label" : [ "a", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r3",
+    "target" : "q2_p2_r3",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r4",
+    "target" : "q1_p2_r3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r4",
+    "target" : "q1_p2_r5",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r4",
+    "target" : "q2_p2_r3",
+    "label" : [ "a", "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r4",
+    "target" : "q2_p2_r4",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r4",
+    "target" : "q2_p2_r5",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q1_p2_r5",
+    "target" : "q2_p2_r5",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p2_r1",
+    "target" : "q2_p1_r2",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p2_r1",
+    "target" : "q2_p2_r5",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p2_r2",
+    "target" : "q2_p2_r3",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p2_r2",
+    "target" : "q2_p2_r4",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p2_r4",
+    "target" : "q2_p2_r3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p2_r4",
+    "target" : "q2_p2_r5",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  } ],
+  "alphabet" : [ "a", "b", "c", "d", "e", "f" ]
+}

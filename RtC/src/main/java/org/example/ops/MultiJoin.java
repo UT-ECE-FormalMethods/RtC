@@ -32,24 +32,28 @@ public class MultiJoin {
             Collections.shuffle(automatonList);
 
         Deque<ConstraintAutomaton> deque = new LinkedList<>(automatonList);
-        long startTime = System.currentTimeMillis();
+        long totalJoiningTime = 0;
+
         List<String> intermediateAutomataSizes = new ArrayList<>();
 
         while (deque.size() > 1) {
             ConstraintAutomaton firstAutomaton = deque.pollFirst();
             ConstraintAutomaton secondAutomaton = deque.pollFirst();
             System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", second autom no. of states: " + secondAutomaton.getStates().size());
+            long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(firstAutomaton, secondAutomaton);
             joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+            long endTime = System.currentTimeMillis();
+            long duration = (endTime - startTime);
+            totalJoiningTime += duration;
+
             intermediateAutomataSizes.add("(S: " + joinedAutomaton.getStates().size() + ", T: " + joinedAutomaton.getTransitions().size() + ")");
             deque.addFirst(joinedAutomaton);
         }
 
-        long endTime = System.currentTimeMillis();
-        long duration = (endTime - startTime);
-        System.out.println("Execution time: " + duration + " milliseconds");
+        System.out.println("Execution time: " + totalJoiningTime + " milliseconds");
         if(logExecutionTime)
-            fileUtils.logExecutionTime(duration, resultFileLoc);
+            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc);
 
         if (!intermediateAutomataSizes.isEmpty()) // remove the final compound from the intermediates list
             intermediateAutomataSizes.remove(intermediateAutomataSizes.size() - 1);

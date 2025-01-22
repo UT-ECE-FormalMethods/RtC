@@ -1,0 +1,41 @@
+Type 0: no heuristics
+Task executed in 10 ms
+Intermediate compounds:
+(S: 4, T: 6)
+
+Type 1: min transitions
+Task executed in 7 ms
+Intermediate compounds:
+(S: 4, T: 6) 
+
+Type 2: min states
+Task executed in 7 ms
+Intermediate compounds:
+(S: 4, T: 6)
+
+Type 3: transition density
+Task executed in 8 ms
+Intermediate compounds:
+(S: 4, T: 6)
+
+Type 4: transition disparity
+Task executed in 6 ms
+Intermediate compounds:
+(S: 4, T: 6)
+
+Type 5: state disparity
+Task executed in 6 ms
+Intermediate compounds:
+
+ignoring type 6
+
+Type 7: tranState Sum
+Task executed in 6 ms
+Intermediate compounds:
+(S: 4, T: 6) 
+
+Type 8:
+Task executed in 6 ms
+Intermediate compounds:
+(S: 4, T: 6) 
+
