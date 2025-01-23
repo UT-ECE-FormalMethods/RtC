@@ -1,0 +1,82 @@
+{
+  "id" : "(CA-1 X CA-2)",
+  "states" : [ {
+    "id" : "x1_y1",
+    "initial" : true,
+    "composition" : [ "x1_y1" ]
+  }, {
+    "id" : "x1_y2",
+    "initial" : false,
+    "composition" : [ "x1_y2" ]
+  }, {
+    "id" : "x2_y1",
+    "initial" : false,
+    "composition" : [ "x2_y1" ]
+  }, {
+    "id" : "x2_y2",
+    "initial" : false,
+    "composition" : [ "x2_y2" ]
+  } ],
+  "transitions" : [ {
+    "source" : "x1_y1",
+    "target" : "x1_y2",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x1_y1",
+    "target" : "x2_y1",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x1_y1",
+    "target" : "x2_y2",
+    "label" : [ "a", "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x1_y2",
+    "target" : "x1_y1",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x1_y2",
+    "target" : "x2_y1",
+    "label" : [ "a", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x1_y2",
+    "target" : "x2_y2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x2_y1",
+    "target" : "x1_y1",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x2_y1",
+    "target" : "x1_y2",
+    "label" : [ "b", "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x2_y1",
+    "target" : "x2_y2",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x2_y2",
+    "target" : "x1_y1",
+    "label" : [ "b", "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x2_y2",
+    "target" : "x1_y2",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "x2_y2",
+    "target" : "x2_y1",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  } ],
+  "alphabet" : [ "a", "b", "c", "d" ]
+}

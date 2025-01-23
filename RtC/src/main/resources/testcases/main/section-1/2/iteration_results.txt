@@ -45,7 +45,7 @@ Intermediate compounds:
 Type 8:
 Task executed in 10 ms, 9 ms, 10 ms, 10 ms, 9 ms, 10 ms, 11 ms, 10 ms, 11 ms, 11 ms
 Intermediate compounds:
-Avg: 10.1
+Avg: 10.1 ms
 (S: 16, T: 28)
 
 h0 | h1=h2=h3=h7 | h4=h5=h8

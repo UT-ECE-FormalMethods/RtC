@@ -1,24 +1,31 @@
 Task executed in 241 ms
 Intermediate compounds:
 (S: 12, T: 44) (S: 66, T: 314) 
+
 Task executed in 112 ms
 Intermediate compounds:
 (S: 10, T: 34) (S: 33, T: 62) 
+
 Task executed in 101 ms
 Intermediate compounds:
 (S: 10, T: 34) (S: 33, T: 62) 
+
 Task executed in 106 ms
 Intermediate compounds:
 (S: 10, T: 34) (S: 33, T: 62) 
+
 Task executed in 114 ms
 Intermediate compounds:
 (S: 33, T: 62) (S: 10, T: 34) 
+
 Task executed in 99 ms
 Intermediate compounds:
 (S: 33, T: 62) (S: 10, T: 34) 
+
 Task executed in 101 ms
 Intermediate compounds:
 (S: 10, T: 34) (S: 33, T: 62) 
+
 Task executed in 15 ms
 Intermediate compounds:
 (S: 4, T: 3) (S: 24, T: 45) 
