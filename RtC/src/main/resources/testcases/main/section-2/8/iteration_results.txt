@@ -1,39 +1,39 @@
 Type 0 (no heuristic)
-Task executed in 8967 ms
+Task executed in 25956 ms
 Intermediate compounds:
-(S: 92, T: 220) (S: 265, T: 761) 
+(S: 40, T: 200) (S: 270, T: 1950) 
 
-Type 1:
-Task executed in 3605 ms
+Type 1
+Task executed in 2003 ms
 Intermediate compounds:
-(S: 28, T: 60) (S: 80, T: 141) 
+(S: 28, T: 60) (S: 54, T: 131) 
 
 Type 2:
-Task executed in 3797 ms
+Task executed in 2043 ms
 Intermediate compounds:
-(S: 28, T: 60) (S: 80, T: 141) 
+(S: 28, T: 60) (S: 54, T: 131)
 
 Type 3:
-Task executed in 2911 ms
+Task executed in 2159 ms
 Intermediate compounds:
-(S: 49, T: 94) (S: 35, T: 169) 
+(S: 28, T: 60) (S: 54, T: 131) 
 
 Type 4:
-Task executed in 3610 ms
+Task executed in 1950 ms
 Intermediate compounds:
-(S: 28, T: 60) (S: 80, T: 141) 
+(S: 28, T: 60) (S: 54, T: 131) 
 
 Type 5:
-Task executed in 694 ms
+Task executed in 1963 ms
 Intermediate compounds:
-(S: 28, T: 60) (S: 98, T: 201) 
+(S: 28, T: 60) (S: 54, T: 131) 
 
 Type 7:
-Task executed in 3713 ms
+Task executed in 2032 ms
 Intermediate compounds:
-(S: 28, T: 60) (S: 80, T: 141) 
+(S: 28, T: 60) (S: 54, T: 131) 
 
 Type 8:
-Task executed in 879 ms
+Task executed in 4642 ms
 Intermediate compounds:
-(S: 80, T: 141) (S: 146, T: 245) 
+(S: 28, T: 60) (S: 176, T: 496)
