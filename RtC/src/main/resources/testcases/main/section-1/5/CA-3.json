@@ -1,0 +1,22 @@
+{
+  "id": "CA-3",
+  "states": [
+    { "id": "r1", "initial": true, "composition": ["r1"] },
+    { "id": "r2", "initial": false, "composition": ["r2"] },
+    { "id": "r3", "initial": false, "composition": ["r3"] },
+    { "id": "r4", "initial": false, "composition": ["r4"] },
+    { "id": "r5", "initial": false, "composition": ["r5"] },
+    { "id": "r6", "initial": false, "composition": ["r6"] }
+  ],
+  "transitions": [
+    { "source": "r1", "target": "r2", "label": ["a"], "constraints": [] },
+    { "source": "r2", "target": "r3", "label": ["b"], "constraints": [] },
+    { "source": "r3", "target": "r4", "label": ["c"], "constraints": [] },
+    { "source": "r4", "target": "r5", "label": ["a"], "constraints": [] },
+    { "source": "r5", "target": "r6", "label": ["b"], "constraints": [] },
+    { "source": "r6", "target": "r1", "label": ["c"], "constraints": [] },
+    { "source": "r3", "target": "r5", "label": ["a"], "constraints": [] },
+    { "source": "r2", "target": "r4", "label": ["b"], "constraints": [] }
+  ],
+  "alphabet": ["a", "b", "c"]
+}

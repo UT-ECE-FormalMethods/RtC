@@ -1,0 +1,346 @@
+{
+  "id" : "(((CA-1 X CA-4) X CA-3) X CA-2)",
+  "states" : [ {
+    "id" : "y1_x1_p1_q1",
+    "initial" : true,
+    "composition" : [ "y1_x1_p1_q1" ]
+  }, {
+    "id" : "y1_x1_p1_q2",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q2" ]
+  }, {
+    "id" : "y1_x1_p1_q3",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q3" ]
+  }, {
+    "id" : "y1_x2_p2_q1",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q1" ]
+  }, {
+    "id" : "y1_x2_p2_q2",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q2" ]
+  }, {
+    "id" : "y1_x2_p2_q3",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q3" ]
+  }, {
+    "id" : "y1_x1_p1_q4",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q4" ]
+  }, {
+    "id" : "y1_x1_p1_q7",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q7" ]
+  }, {
+    "id" : "y1_x2_p2_q4",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q4" ]
+  }, {
+    "id" : "y1_x2_p2_q7",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q7" ]
+  }, {
+    "id" : "y1_x1_p1_q5",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q5" ]
+  }, {
+    "id" : "y1_x2_p2_q5",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q5" ]
+  }, {
+    "id" : "y1_x1_p1_q6",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q6" ]
+  }, {
+    "id" : "y1_x2_p2_q6",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q6" ]
+  }, {
+    "id" : "y1_x1_p1_q8",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q8" ]
+  }, {
+    "id" : "y1_x2_p2_q8",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q8" ]
+  }, {
+    "id" : "y1_x1_p1_q9",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q9" ]
+  }, {
+    "id" : "y1_x2_p2_q9",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q9" ]
+  }, {
+    "id" : "y1_x1_p1_q10",
+    "initial" : false,
+    "composition" : [ "y1_x1_p1_q10" ]
+  }, {
+    "id" : "y1_x2_p2_q10",
+    "initial" : false,
+    "composition" : [ "y1_x2_p2_q10" ]
+  } ],
+  "transitions" : [ {
+    "source" : "y1_x1_p1_q1",
+    "target" : "y1_x1_p1_q2",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q1",
+    "target" : "y1_x1_p1_q3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q1",
+    "target" : "y1_x2_p2_q1",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q1",
+    "target" : "y1_x2_p2_q2",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q1",
+    "target" : "y1_x2_p2_q3",
+    "label" : [ "a", "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q2",
+    "target" : "y1_x1_p1_q4",
+    "label" : [ "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q2",
+    "target" : "y1_x1_p1_q7",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q2",
+    "target" : "y1_x2_p2_q2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q2",
+    "target" : "y1_x2_p2_q4",
+    "label" : [ "a", "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q2",
+    "target" : "y1_x2_p2_q7",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q3",
+    "target" : "y1_x1_p1_q5",
+    "label" : [ "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q3",
+    "target" : "y1_x2_p2_q3",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q3",
+    "target" : "y1_x2_p2_q5",
+    "label" : [ "a", "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q4",
+    "target" : "y1_x1_p1_q6",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q4",
+    "target" : "y1_x2_p2_q4",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q4",
+    "target" : "y1_x2_p2_q6",
+    "label" : [ "a", "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q5",
+    "target" : "y1_x1_p1_q7",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q5",
+    "target" : "y1_x1_p1_q8",
+    "label" : [ "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q5",
+    "target" : "y1_x2_p2_q5",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q5",
+    "target" : "y1_x2_p2_q7",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q5",
+    "target" : "y1_x2_p2_q8",
+    "label" : [ "a", "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q6",
+    "target" : "y1_x1_p1_q1",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q6",
+    "target" : "y1_x1_p1_q8",
+    "label" : [ "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q6",
+    "target" : "y1_x2_p2_q1",
+    "label" : [ "a", "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q6",
+    "target" : "y1_x2_p2_q6",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q6",
+    "target" : "y1_x2_p2_q8",
+    "label" : [ "a", "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q7",
+    "target" : "y1_x1_p1_q9",
+    "label" : [ "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q7",
+    "target" : "y1_x2_p2_q7",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q7",
+    "target" : "y1_x2_p2_q9",
+    "label" : [ "a", "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q8",
+    "target" : "y1_x1_p1_q10",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q8",
+    "target" : "y1_x2_p2_q8",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q8",
+    "target" : "y1_x2_p2_q10",
+    "label" : [ "a", "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q9",
+    "target" : "y1_x1_p1_q3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q9",
+    "target" : "y1_x2_p2_q3",
+    "label" : [ "a", "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q9",
+    "target" : "y1_x2_p2_q9",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q10",
+    "target" : "y1_x1_p1_q4",
+    "label" : [ "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q10",
+    "target" : "y1_x2_p2_q4",
+    "label" : [ "a", "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x1_p1_q10",
+    "target" : "y1_x2_p2_q10",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q1",
+    "target" : "y1_x2_p2_q2",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q1",
+    "target" : "y1_x2_p2_q3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q2",
+    "target" : "y1_x2_p2_q4",
+    "label" : [ "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q2",
+    "target" : "y1_x2_p2_q7",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q3",
+    "target" : "y1_x2_p2_q5",
+    "label" : [ "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q4",
+    "target" : "y1_x2_p2_q6",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q5",
+    "target" : "y1_x2_p2_q7",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q5",
+    "target" : "y1_x2_p2_q8",
+    "label" : [ "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q6",
+    "target" : "y1_x2_p2_q1",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q6",
+    "target" : "y1_x2_p2_q8",
+    "label" : [ "g" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q7",
+    "target" : "y1_x2_p2_q9",
+    "label" : [ "h" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q8",
+    "target" : "y1_x2_p2_q10",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q9",
+    "target" : "y1_x2_p2_q3",
+    "label" : [ "f" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "y1_x2_p2_q10",
+    "target" : "y1_x2_p2_q4",
+    "label" : [ "g" ],
+    "constraints" : [ ]
+  } ],
+  "alphabet" : [ "a", "e", "f", "g", "h" ]
+}
