@@ -21,9 +21,9 @@ public class Main {
         HeuristicUtils heuristicUtils = new HeuristicUtils(automatonUtils);
         SingleJoin automataOps = new SingleJoin(automatonUtils);
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
-        String testcaseDirectoryName = "s3-2";
-        int testCaseSection = 3;
-        int heuristicType = 8;
+        String testcaseDirectoryName = "s1-4";
+        int testCaseSection = 1;
+        int heuristicType = 0;
         String testcaseDirectory = "src/main/resources/testcases/main/section-" + testCaseSection +"/" + testcaseDirectoryName + "/";
         System.out.println("testcase : " + testcaseDirectoryName + ", heuristic type: " + heuristicType);
         try {
@@ -37,7 +37,7 @@ public class Main {
             }
 
             ConstraintAutomaton result = multiJoin.multiJoinAutomata(automatonTestCaseList, heuristicType, true, testcaseDirectory + "iteration_results.txt", false);
-//            ConstraintAutomaton resultRemovedUnreachable = AutomatonUtils.removeUnreachableStates(result);
+            result = AutomatonUtils.removeUnreachableStates(result);
             fileUtils.writeAutomatonToFile(testcaseDirectory + "/result-h" + heuristicType + ".json", result);
 //            fileUtils.writeAutomatonToFile("src/main/resources/testcases/" + testcaseDirectoryName + "/result-r-u" + heuristicType + ".json", resultRemovedUnreachable);
         } catch (Exception e) {

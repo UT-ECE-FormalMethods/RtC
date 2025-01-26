@@ -41,8 +41,8 @@ public class MultiJoin {
             ConstraintAutomaton secondAutomaton = deque.pollFirst();
             System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", second autom no. of states: " + secondAutomaton.getStates().size());
             long startTime = System.currentTimeMillis();
-            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(firstAutomaton, secondAutomaton);
-            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+            ConstraintAutomaton joinedAutomaton = singleJoin.defaultJoin(firstAutomaton, secondAutomaton);
+//            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;
@@ -85,8 +85,8 @@ public class MultiJoin {
             AutomatonHeuristic automatonHeuristic_2 = minHeap.poll();
             System.out.println("Selecting " + automatonHeuristic_1.getAutomaton().getId() + " and " + automatonHeuristic_2.getAutomaton().getId() + " for joining");
             long startTime = System.currentTimeMillis();
-            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
-            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+            ConstraintAutomaton joinedAutomaton = singleJoin.defaultJoin(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
+//            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;
@@ -136,8 +136,8 @@ public class MultiJoin {
             System.out.println("joining " + automatonHeuristic1.getAutomaton().getId() + " with " + automatonHeuristic2.getAutomaton().getId());
 
             long startTime = System.currentTimeMillis();
-            ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
-            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+            ConstraintAutomaton joinedAutomaton = singleJoin.defaultJoin(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
+//            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;
