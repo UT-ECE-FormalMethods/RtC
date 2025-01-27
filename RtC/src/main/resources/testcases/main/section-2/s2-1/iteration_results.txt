@@ -1,39 +1,40 @@
-Type 0 (no heuristic):
-Task executed in 745 ms
+After removing unreachable states only for the final CA:
+Type 0:
+Task executed in 11300 ms
 Intermediate compounds:
-(S: 40, T: 222) (S: 60, T: 260) 
+(S: 40, T: 222) (S: 160, T: 802)
 
 Type 1:
-Task executed in 634 ms
+Task executed in 6635 ms
 Intermediate compounds:
-(S: 6, T: 6) (S: 66, T: 258) 
+(S: 16, T: 22) (S: 120, T: 498)
 
 Type 2:
-Task executed in 732 ms
+Task executed in 7078 ms
 Intermediate compounds:
-(S: 6, T: 6) (S: 60, T: 260) 
+(S: 16, T: 22) (S: 120, T: 498)
 
 Type 3:
-Task executed in 4081 ms
+Task executed in 5399 ms
 Intermediate compounds:
-(S: 44, T: 145) (S: 40, T: 222) 
+(S: 48, T: 182) (S: 40, T: 222)
 
 Type 4:
-Task executed in 334 ms
+Task executed in 12437 ms
 Intermediate compounds:
-(S: 6, T: 6) (S: 78, T: 270) 
+(S: 16, T: 22) (S: 160, T: 802)
 
 Type 5:
-Task executed in 369 ms
+Task executed in 7194 ms
 Intermediate compounds:
-(S: 6, T: 6) (S: 78, T: 270) 
+(S: 16, T: 22) (S: 120, T: 498)
 
 Type 7:
-Task executed in 680 ms
+Task executed in 6916 ms
 Intermediate compounds:
-(S: 6, T: 6) (S: 66, T: 258) 
+(S: 16, T: 22) (S: 120, T: 498)
 
 Type 8:
-Task executed in 346 ms
+Task executed in 7175 ms
 Intermediate compounds:
-(S: 78, T: 270) (S: 6, T: 6)
+(S: 120, T: 498) (S: 16, T: 22) 

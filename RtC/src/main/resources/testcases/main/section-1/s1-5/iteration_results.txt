@@ -1,47 +1,56 @@
-Type 0:
-Task executed in 29 ms, 34 ms, 33 ms, 32 ms, 30 ms, 40 ms, 33 ms, 30 ms, 31 ms, 32 ms
-Avg: 32.4
-Intermediate compounds:
-(S: 17, T: 18) (S: 17, T: 18) 
+updated results after removing unreachable states only from the final CA:
 
-Type 1:
-Task executed in 16 ms, 16 ms, 16 ms, 16 ms, 19 ms, 17 ms, 15 ms, 18 ms, 15 ms, 16 ms
-Avg: 16.4 ms
+Task executed in 1689 ms
 Intermediate compounds:
-(S: 9, T: 8) (S: 10, T: 9)
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1622 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1675 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1726 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1654 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1611 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1710 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1663 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1584 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1650 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
 
-Type 2:
-Task executed in 24 ms, 24 ms, 23 ms, 24 ms, 23 ms, 23 ms, 23 ms, 24 ms, 26 ms, 26 ms
-Avg: 24 ms
-Intermediate compounds:
-(S: 14, T: 16) (S: 10, T: 9)
 
-Type 3:
-Task executed in 17 ms, 15 ms, 14 ms, 15 ms, 16 ms, 20 ms, 15 ms, 14 ms, 15 ms, 16 ms
-Avg: 15.7 ms
-Intermediate compounds:
-(S: 10, T: 9) (S: 10, T: 9) 
 
-Type 4:
-Task executed in 31 ms, 31 ms, 28 ms, 30 ms, 30 ms, 33 ms, 30 ms, 29 ms, 30 ms, 32 ms
-Avg: 30.4 ms
+Type 1Task executed in 1149 ms
 Intermediate compounds:
-(S: 20, T: 21) (S: 9, T: 8) 
-
-Type 5:
-Task executed in 24 ms, 24 ms, 24 ms, 24 ms, 25 ms, 23 ms, 25 ms, 23 ms, 24 ms, 25 ms
-Avg: 24.1 ms
+(S: 42, T: 24) (S: 48, T: 34) 
+Task executed in 1127 ms
 Intermediate compounds:
-(S: 14, T: 16) (S: 10, T: 9)
-
-Type 7:
-Task executed in 24 ms, 24 ms, 24 ms, 24 ms, 30 ms, 25 ms, 26 ms, 25 ms, 28 ms, 24 ms
-Avg: 25.4 ms
+(S: 36, T: 27) (S: 56, T: 30) 
+Task executed in 1671 ms
 Intermediate compounds:
-(S: 14, T: 16) (S: 10, T: 9) 
-
-Type 8:
-Task executed in 41 ms, 28 ms, 27 ms, 30 ms, 29 ms, 27 ms, 27 ms, 26 ms, 28 ms, 28 ms
-Avg: 29.1 ms
+(S: 56, T: 30) (S: 336, T: 81) 
+Task executed in 1163 ms
 Intermediate compounds:
-(S: 17, T: 18) (S: 17, T: 18)
+(S: 48, T: 34) (S: 42, T: 24) 
+Task executed in 1111 ms
+Intermediate compounds:
+(S: 36, T: 27) (S: 56, T: 30) 
+Task executed in 1141 ms
+Intermediate compounds:
+(S: 36, T: 27) (S: 56, T: 30) 
+Task executed in 1701 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 

@@ -39,18 +39,21 @@ def plot_data(heuristic_avg_times, fig_id):
         plt.plot(x, y, marker='o', label=heuristic)
 
     plt.xlabel("Testcase ID", fontsize=12)
-    plt.ylabel("Average Time (ms)", fontsize=12)
-    plt.title(f"Performance of Heuristics - figure {fig_id}", fontsize=14)
+    plt.ylabel("Average Time (s)", fontsize=12)
+    plt.title(f"Performance of Heuristics - Medium input size - figure {fig_id}", fontsize=14)
     plt.legend(title="Heuristics", fontsize=10)
     plt.grid(alpha=0.4)
+
+    all_testcase_ids = sorted(set([item[0] for heuristic in heuristic_avg_times.values() for item in heuristic]))
+    plt.xticks(all_testcase_ids, [str(tc) for tc in all_testcase_ids])
 
     plt.tight_layout()
     plt.show()
 
 
-data = read_data('results.json')
+data = read_data('results-medium.json')
 heuristic_data = generate_data(data, False)
 plot_data(heuristic_data, 1)
 
-heuristic_data = generate_data(data, True)
-plot_data(heuristic_data, 2)
+# heuristic_data = generate_data(data, True)
+# plot_data(heuristic_data, 2)

@@ -38,14 +38,50 @@ Task executed in 879 ms
 Intermediate compounds:
 (S: 80, T: 141) (S: 146, T: 245) 
 
-test---------
-after removing the core for removing unreachable states
-Type 7:
-Task executed in 20418 ms
+-------------------------
+updated results after removing te unreachable states only for the final CA:
+
+Type 0:
+Task executed in 213337 ms
+Intermediate compounds:
+(S: 100, T: 248) (S: 700, T: 2596) 
+
+Type 1:
+Task executed in 21959 ms
 Intermediate compounds:
 (S: 30, T: 66) (S: 140, T: 287)
 
-Type 8:
-Task executed in 152195 ms
+Type 2:
+Task executed in 21638 ms
 Intermediate compounds:
-(S: 140, T: 287) (S: 840, T: 1754)T
+(S: 30, T: 66) (S: 140, T: 287) 
+
+Type 3
+Task executed in 30760 ms
+Intermediate compounds:
+(S: 120, T: 314) (S: 35, T: 169) 
+
+Type 4:
+Task executed in 21785 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 140, T: 287) 
+
+Type 5:
+Task executed in 138350 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 600, T: 1870) 
+
+Type 6:
+Task executed in 22454 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 140, T: 287)
+
+Type 7:
+Task executed in 22116 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 140, T: 287) 
+
+Type 8:
+Task executed in 141858 ms
+Intermediate compounds:
+(S: 140, T: 287) (S: 840, T: 1754) 

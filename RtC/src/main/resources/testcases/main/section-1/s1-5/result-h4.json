@@ -5,6 +5,14 @@
     "initial" : true,
     "composition" : [ "p1_r1_q1_s1" ]
   }, {
+    "id" : "p1_r2_q2_s8",
+    "initial" : false,
+    "composition" : [ "p1_r2_q2_s8" ]
+  }, {
+    "id" : "p1_r2_q5_s8",
+    "initial" : false,
+    "composition" : [ "p1_r2_q5_s8" ]
+  }, {
     "id" : "p2_r2_q2_s2",
     "initial" : false,
     "composition" : [ "p2_r2_q2_s2" ]
@@ -17,25 +25,17 @@
     "initial" : false,
     "composition" : [ "p3_r3_q3_s3" ]
   }, {
-    "id" : "p3_r4_q3_s3",
-    "initial" : false,
-    "composition" : [ "p3_r4_q3_s3" ]
-  }, {
     "id" : "p3_r3_q6_s3",
     "initial" : false,
     "composition" : [ "p3_r3_q6_s3" ]
   }, {
+    "id" : "p3_r4_q3_s3",
+    "initial" : false,
+    "composition" : [ "p3_r4_q3_s3" ]
+  }, {
     "id" : "p3_r4_q6_s3",
     "initial" : false,
     "composition" : [ "p3_r4_q6_s3" ]
-  }, {
-    "id" : "p4_r4_q4_s4",
-    "initial" : false,
-    "composition" : [ "p4_r4_q4_s4" ]
-  }, {
-    "id" : "p4_r4_q4_s6",
-    "initial" : false,
-    "composition" : [ "p4_r4_q4_s6" ]
   }, {
     "id" : "p4_r4_q1_s4",
     "initial" : false,
@@ -44,6 +44,14 @@
     "id" : "p4_r4_q1_s6",
     "initial" : false,
     "composition" : [ "p4_r4_q1_s6" ]
+  }, {
+    "id" : "p4_r4_q4_s4",
+    "initial" : false,
+    "composition" : [ "p4_r4_q4_s4" ]
+  }, {
+    "id" : "p4_r4_q4_s6",
+    "initial" : false,
+    "composition" : [ "p4_r4_q4_s6" ]
   }, {
     "id" : "p5_r5_q2_s5",
     "initial" : false,
@@ -61,21 +69,13 @@
     "initial" : false,
     "composition" : [ "p6_r6_q6_s6" ]
   }, {
-    "id" : "p7_r1_q4_s7",
-    "initial" : false,
-    "composition" : [ "p7_r1_q4_s7" ]
-  }, {
     "id" : "p7_r1_q1_s7",
     "initial" : false,
     "composition" : [ "p7_r1_q1_s7" ]
   }, {
-    "id" : "p1_r2_q2_s8",
+    "id" : "p7_r1_q4_s7",
     "initial" : false,
-    "composition" : [ "p1_r2_q2_s8" ]
-  }, {
-    "id" : "p1_r2_q5_s8",
-    "initial" : false,
-    "composition" : [ "p1_r2_q5_s8" ]
+    "composition" : [ "p7_r1_q4_s7" ]
   } ],
   "transitions" : [ {
     "source" : "p1_r1_q1_s1",

@@ -1,41 +1,9 @@
-Type 0 (normal join)
+updated results after removing unreachable states only from the final CA:
 
-Task executed in 100 ms
+Type 0 (no heuristic):
+Task executed in 2640 ms
 Intermediate compounds:
-(S: 30, T: 124) (S: 40, T: 169)
-
-Type 1:
-Task executed in 52 ms
+(S: 30, T: 124) (S: 180, T: 766) 
+Task executed in 2691 ms
 Intermediate compounds:
-(S: 25, T: 74) (S: 8, T: 7) 
-
-Type 2:
-Task executed in 53 ms
-Intermediate compounds:
-(S: 25, T: 96) (S: 8, T: 11) 
-
-Type 3:
-Task executed in 49 ms
-Intermediate compounds:
-(S: 25, T: 74) (S: 8, T: 7) 
-
-Type 4:
-Task executed in 75 ms
-Intermediate compounds:
-(S: 8, T: 7) (S: 40, T: 125) 
-
-Type 5:
-Task executed in 53 ms
-Intermediate compounds:
-(S: 8, T: 11) (S: 25, T: 96) 
-
-Type 7:
-Task executed in 53 ms
-Intermediate compounds:
-(S: 25, T: 74) (S: 8, T: 7) 
-
-Type 8:
-Task executed in 10 ms
-Intermediate compounds:
-(S: 8, T: 7) (S: 4, T: 3) 
-
+(S: 30, T: 124) (S: 180, T: 766) 

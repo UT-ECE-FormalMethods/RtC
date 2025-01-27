@@ -1,0 +1,22 @@
+{
+  "id": "CA-2",
+  "states": [
+    { "id": "q1", "initial": true, "composition": ["q1"] },
+    { "id": "q2", "initial": false, "composition": ["q2"] },
+    { "id": "q3", "initial": false, "composition": ["q3"] },
+    { "id": "q4", "initial": false, "composition": ["q4"] },
+    { "id": "q5", "initial": false, "composition": ["q5"] },
+    { "id": "q6", "initial": false, "composition": ["q6"] }
+  ],
+  "transitions": [
+    { "source": "q1", "target": "q2", "label": ["a"], "constraints": [] },
+    { "source": "q2", "target": "q3", "label": ["b"], "constraints": [] },
+    { "source": "q3", "target": "q4", "label": ["c"], "constraints": [] },
+    { "source": "q4", "target": "q5", "label": ["d"], "constraints": [] },
+    { "source": "q5", "target": "q6", "label": ["a"], "constraints": [] },
+    { "source": "q6", "target": "q1", "label": ["b"], "constraints": [] },
+    { "source": "q3", "target": "q5", "label": ["c"], "constraints": [] },
+    { "source": "q6", "target": "q2", "label": ["d"], "constraints": [] }
+  ],
+  "alphabet": ["a", "b", "c", "d"]
+}

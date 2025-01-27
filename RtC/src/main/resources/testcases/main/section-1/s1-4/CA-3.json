@@ -59,7 +59,7 @@
     },
     {
       "source": "q4",
-      "target": "q7",
+      "target": "q6",
       "label": ["g"],
       "constraints": []
     }

@@ -1,0 +1,38 @@
+{
+  "id": "CA-2",
+  "states": [
+    { "id": "x1", "initial": true, "composition": ["x1"] },
+    { "id": "x2", "initial": false, "composition": ["x2"] },
+    { "id": "x3", "initial": false, "composition": ["x3"] },
+    { "id": "x4", "initial": false, "composition": ["x4"] },
+    { "id": "x5", "initial": false, "composition": ["x5"] },
+    { "id": "x6", "initial": false, "composition": ["x6"] },
+    { "id": "x7", "initial": false, "composition": ["x7"] },
+    { "id": "x8", "initial": false, "composition": ["x8"] },
+    { "id": "x9", "initial": false, "composition": ["x9"] },
+    { "id": "x10", "initial": false, "composition": ["x10"] }
+  ],
+  "transitions": [
+    { "source": "x1", "target": "x2", "label": ["c"], "constraints": [] },
+    { "source": "x2", "target": "x3", "label": ["d"], "constraints": [] },
+    { "source": "x3", "target": "x4", "label": ["e"], "constraints": [] },
+    { "source": "x4", "target": "x5", "label": ["f"], "constraints": [] },
+    { "source": "x5", "target": "x6", "label": ["g"], "constraints": [] },
+    { "source": "x6", "target": "x7", "label": ["h"], "constraints": [] },
+    { "source": "x7", "target": "x8", "label": ["i"], "constraints": [] },
+    { "source": "x8", "target": "x9", "label": ["j"], "constraints": [] },
+    { "source": "x9", "target": "x10", "label": ["k"], "constraints": [] },
+    { "source": "x10", "target": "x1", "label": ["c"], "constraints": [] },
+    { "source": "x5", "target": "x8", "label": ["d"], "constraints": [] },
+    { "source": "x4", "target": "x9", "label": ["e"], "constraints": [] },
+    { "source": "x3", "target": "x7", "label": ["f"], "constraints": [] },
+    { "source": "x2", "target": "x6", "label": ["g"], "constraints": [] },
+    { "source": "x6", "target": "x10", "label": ["h"], "constraints": [] },
+    { "source": "x7", "target": "x3", "label": ["i"], "constraints": [] },
+    { "source": "x8", "target": "x2", "label": ["j"], "constraints": [] },
+    { "source": "x9", "target": "x4", "label": ["k"], "constraints": [] },
+    { "source": "x10", "target": "x5", "label": ["c"], "constraints": [] },
+    { "source": "x1", "target": "x8", "label": ["d"], "constraints": [] }
+  ],
+  "alphabet": ["c", "d", "e", "f", "g", "h", "i", "j", "k"]
+}
