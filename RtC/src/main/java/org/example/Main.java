@@ -23,7 +23,7 @@ public class Main {
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
         String testcaseDirectoryName = "test5";
         int testCaseSection = 4;
-        int heuristicType = 0;
+        int heuristicType = 8;
         String testcaseDirectory = "src/main/resources/testcases/main/section-" + testCaseSection +"/" + testcaseDirectoryName + "/";
         System.out.println("testcase : " + testcaseDirectoryName + ", heuristic type: " + heuristicType);
         try {

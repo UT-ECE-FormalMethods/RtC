@@ -1,0 +1,27 @@
+Type 0
+Task executed in 303540 ms
+Intermediate compounds:
+(S: 150, T: 284) (S: 2250, T: 2446) 
+
+Type 1:
+Task executed in 42144 ms
+Intermediate compounds:
+(S: 20, T: 26) (S: 300, T: 580) 
+Task executed in 33785 ms
+Intermediate compounds:
+(S: 20, T: 26) (S: 225, T: 449) 
+Task executed in 43936 ms
+Intermediate compounds:
+(S: 30, T: 36) (S: 300, T: 580) 
+Task executed in 28358 ms
+Intermediate compounds:
+(S: 150, T: 292) (S: 30, T: 142) 
+Task executed in 30880 ms
+Intermediate compounds:
+(S: 225, T: 449) (S: 20, T: 26) 
+Task executed in 31467 ms
+Intermediate compounds:
+(S: 20, T: 26) (S: 225, T: 449) 
+Task executed in 319240 ms
+Intermediate compounds:
+(S: 150, T: 284) (S: 2250, T: 2446) 

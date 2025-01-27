@@ -44,4 +44,4 @@ Type 8:
 Task executed in 1801 ms, 1826 ms, 1762 ms, 1837 ms, 1808 ms, 1876 ms, 1808 ms, 1751 ms, 1800 ms, 1818 ms
 Avg: 1.8 s
 Intermediate compounds:
-(S: 200, T: 323) (S: 400, T: 628) 
+(S: 200, T: 323) (S: 400, T: 628)
