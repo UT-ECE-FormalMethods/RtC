@@ -1,0 +1,49 @@
+Updated results after removing unreachable states only for the final CA
+
+Type 0:
+Task executed in 12 ms, 12 ms, 11 ms, 12 ms, 13 ms, 11 ms, 14 ms, 12 ms, 11 ms, 13 ms
+Avg: 12.1 ms
+Intermediate compounds:
+(S: 12, T: 44) 
+
+Type 1:
+Task executed in 10 ms, 9 ms, 10 ms, 9 ms, 8 ms, 8 ms, 9 ms, 9 ms, 10 ms, 10 ms
+Avg: 9.2 ms
+Intermediate compounds:
+(S: 10, T: 34) 
+
+Type 2:
+Task executed in 10 ms, 8 ms, 9 ms, 8 ms, 8 ms, 8 ms, 8 ms, 8 ms, 9 ms, 8 ms
+Avg: 8.4 ms
+Intermediate compounds:
+(S: 10, T: 34) 
+
+Type 3:
+Task executed in 9 ms, 9 ms, 9 ms, 9 ms, 8 ms, 9 ms, 10 ms, 8 ms, 8 ms, 8 ms
+Avg: 8.7 ms
+Intermediate compounds:
+(S: 10, T: 34) 
+
+Type 4:
+Task executed in 10 ms, 9 ms, 11 ms, 11 ms, 9 ms, 11 ms, 9 ms, 10 ms, 10 ms, 10 ms
+Avg: 10 ms
+Intermediate compounds:
+(S: 30, T: 50) 
+
+Type 5:
+Task executed in 11 ms, 10 ms, 9 ms, 11 ms, 10 ms, 9 ms, 10 ms, 10 ms, 10 ms, 10 ms
+Avg: 10 ms
+Intermediate compounds:
+(S: 30, T: 50) 
+
+Type 7:
+Task executed in 8 ms, 8 ms, 8 ms, 8 ms, 9 ms, 10 ms, 9 ms, 9 ms, 9 ms, 8 ms
+Avg: 8.6 ms
+Intermediate compounds:
+(S: 10, T: 34)
+
+Type 8:
+Task executed in 10 ms, 10 ms, 9 ms, 10 ms, 9 ms, 10 ms, 10 ms, 10 ms, 9 ms, 10 ms
+Avg: 9.7 ms
+Intermediate compounds:
+(S: 30, T: 50)

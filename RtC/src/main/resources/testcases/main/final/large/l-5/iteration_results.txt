@@ -1,0 +1,28 @@
+Iteration results for using heuristic type 1 (min transitions)
+Task executed in 98234 ms
+
+Iteration results for using heuristic type 2 (min states)
+Task executed in 145337 ms
+
+Iteration results for using heuristic type 3 (transition density)
+Task executed in 95191 ms
+
+Iteration results for using heuristic type 4 (transition disparity)
+Task executed in 147404 ms
+
+Iteration results for using heuristic type 5 (state disparity)
+Task executed in 153945 ms
+
+Iteration results for using heuristic type 6 (transition & state harmonic mean)
+Task executed in 214830 ms
+
+Iteration results for using heuristic type 7 (transition & state sum)
+Task executed in 204282 ms
+
+Iteration results for using heuristic type 8 (Max connectivity)
+Task executed in 2247500 ms (37 minutes!!)
+Intermediate compounds:
+(S: 200, T: 323) (S: 4200, T: 4748)
+
+Results:
+h1 = h3 | h2 | h3 | h4 | h5 | h6 = h7 | h8
