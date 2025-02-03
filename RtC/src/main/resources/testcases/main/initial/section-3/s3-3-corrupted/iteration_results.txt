@@ -1,0 +1,9 @@
+Type 0
+Task executed in 5044 ms
+Intermediate compounds:
+(S: 114, T: 254) (S: 6, T: 5) 
+
+Type 1
+Task executed in 85 ms
+Intermediate compounds:
+(S: 28, T: 32) (S: 6, T: 5) 

@@ -1,0 +1,82 @@
+{
+  "id" : "((CA-3 X CA-1) X (CA-2 X (CA-5 X CA-4)))",
+  "states" : [ {
+    "id" : "q1_p1_x1_z1_y1",
+    "initial" : true,
+    "composition" : [ "q1_p1_x1_z1_y1" ]
+  }, {
+    "id" : "q2_p2_x2_z2_y2",
+    "initial" : false,
+    "composition" : [ "q2_p2_x2_z2_y2" ]
+  }, {
+    "id" : "q3_p3_x3_z2_y3",
+    "initial" : false,
+    "composition" : [ "q3_p3_x3_z2_y3" ]
+  }, {
+    "id" : "q4_p4_x4_z1_y4",
+    "initial" : false,
+    "composition" : [ "q4_p4_x4_z1_y4" ]
+  }, {
+    "id" : "q4_p6_x4_z1_y4",
+    "initial" : false,
+    "composition" : [ "q4_p6_x4_z1_y4" ]
+  }, {
+    "id" : "q5_p5_x5_z1_y5",
+    "initial" : false,
+    "composition" : [ "q5_p5_x5_z1_y5" ]
+  }, {
+    "id" : "q5_p5_x7_z1_y5",
+    "initial" : false,
+    "composition" : [ "q5_p5_x7_z1_y5" ]
+  }, {
+    "id" : "q5_p6_x6_z1_y5",
+    "initial" : false,
+    "composition" : [ "q5_p6_x6_z1_y5" ]
+  }, {
+    "id" : "q6_p7_x7_z2_y1",
+    "initial" : false,
+    "composition" : [ "q6_p7_x7_z2_y1" ]
+  } ],
+  "transitions" : [ {
+    "source" : "q1_p1_x1_z1_y1",
+    "target" : "q2_p2_x2_z2_y2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q2_p2_x2_z2_y2",
+    "target" : "q3_p3_x3_z2_y3",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q3_p3_x3_z2_y3",
+    "target" : "q4_p4_x4_z1_y4",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q3_p3_x3_z2_y3",
+    "target" : "q4_p6_x4_z1_y4",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q4_p4_x4_z1_y4",
+    "target" : "q5_p5_x5_z1_y5",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q4_p4_x4_z1_y4",
+    "target" : "q5_p5_x7_z1_y5",
+    "label" : [ "d" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q5_p5_x5_z1_y5",
+    "target" : "q5_p6_x6_z1_y5",
+    "label" : [ "e" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "q5_p6_x6_z1_y5",
+    "target" : "q6_p7_x7_z2_y1",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  } ],
+  "alphabet" : [ "a", "b", "c", "d", "e" ]
+}

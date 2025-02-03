@@ -1,0 +1,30 @@
+{
+  "id": "CA-2",
+  "states": [
+    {
+      "id": "y1",
+      "initial": true,
+      "composition": ["y1"]
+    },
+    {
+      "id": "y2",
+      "initial": false,
+      "composition": ["y2"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "y1",
+      "target": "y2",
+      "label": ["c"],
+      "constraints": []
+    },
+    {
+      "source": "y2",
+      "target": "y1",
+      "label": ["d"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["d", "c"]
+}

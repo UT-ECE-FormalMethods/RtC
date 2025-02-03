@@ -23,7 +23,7 @@ public class MultiJoin {
         this.heuristicUtils = heuristicUtils;
     }
 
-    public ConstraintAutomaton joinWithNoHeuristic(ArrayList<ConstraintAutomaton> automatonList, boolean shuffle, boolean logExecutionTime, String testCaseDirectoryName)
+    public ConstraintAutomaton joinWithNoHeuristic(ArrayList<ConstraintAutomaton> automatonList, boolean shuffle, boolean logExecutionTime, String resultFileLoc)
             throws AutomatonListSizeLowerThanTwoException, JoinOperationFailedException, OperationLoggingException {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
@@ -32,34 +32,37 @@ public class MultiJoin {
             Collections.shuffle(automatonList);
 
         Deque<ConstraintAutomaton> deque = new LinkedList<>(automatonList);
-        long startTime = System.currentTimeMillis();
+        long totalJoiningTime = 0;
+
         List<String> intermediateAutomataSizes = new ArrayList<>();
 
         while (deque.size() > 1) {
             ConstraintAutomaton firstAutomaton = deque.pollFirst();
             ConstraintAutomaton secondAutomaton = deque.pollFirst();
             System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", second autom no. of states: " + secondAutomaton.getStates().size());
+            long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(firstAutomaton, secondAutomaton);
-            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+//            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+            long endTime = System.currentTimeMillis();
+            long duration = (endTime - startTime);
+            totalJoiningTime += duration;
+
             intermediateAutomataSizes.add("(S: " + joinedAutomaton.getStates().size() + ", T: " + joinedAutomaton.getTransitions().size() + ")");
             deque.addFirst(joinedAutomaton);
         }
 
-        long endTime = System.currentTimeMillis();
-        long duration = (endTime - startTime);
-        System.out.println("Execution time: " + duration + " milliseconds");
-        String filename = "src/main/resources/testcases/" + testCaseDirectoryName + "/iteration_results.txt";
+        System.out.println("Execution time: " + totalJoiningTime + " milliseconds");
         if(logExecutionTime)
-            fileUtils.logExecutionTime(duration, filename);
+            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc);
 
         if (!intermediateAutomataSizes.isEmpty()) // remove the final compound from the intermediates list
             intermediateAutomataSizes.remove(intermediateAutomataSizes.size() - 1);
 
-        fileUtils.logIntermediateAutomataDetails(intermediateAutomataSizes, filename);
+        fileUtils.logIntermediateAutomataDetails(intermediateAutomataSizes, resultFileLoc);
         return deque.getFirst();
     }
 
-    public ConstraintAutomaton joinWithInternalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName)
+    public ConstraintAutomaton joinWithInternalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String resultFileLoc)
             throws AutomatonListSizeLowerThanTwoException, JoinOperationFailedException, OperationLoggingException {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
@@ -83,7 +86,7 @@ public class MultiJoin {
             System.out.println("Selecting " + automatonHeuristic_1.getAutomaton().getId() + " and " + automatonHeuristic_2.getAutomaton().getId() + " for joining");
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
-            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+//            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;
@@ -93,18 +96,17 @@ public class MultiJoin {
         }
 
         System.out.println("Execution time: " + totalJoiningTime + " milliseconds");
-        String filename = "src/main/resources/testcases/" + testCaseDirectoryName + "/iteration_results.txt";
         if(logExecutionTime)
-            fileUtils.logExecutionTime(totalJoiningTime, filename);
+            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc);
 
         if (!intermediateAutomataSizes.isEmpty()) // remove the final compound from the intermediates list
             intermediateAutomataSizes.remove(intermediateAutomataSizes.size() - 1);
 
-        fileUtils.logIntermediateAutomataDetails(intermediateAutomataSizes, filename);
+        fileUtils.logIntermediateAutomataDetails(intermediateAutomataSizes, resultFileLoc);
         return minHeap.poll().getAutomaton();
     }
 
-    public ConstraintAutomaton joinWithRelationalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName)
+    public ConstraintAutomaton joinWithRelationalFieldHeuristic(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String resultFileLoc)
             throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException, OperationLoggingException {
         if(automatonList.size() < 2)
             throw new AutomatonListSizeLowerThanTwoException();
@@ -135,7 +137,7 @@ public class MultiJoin {
 
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic1.getAutomaton(), automatonHeuristic2.getAutomaton());
-            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
+//            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
             long endTime = System.currentTimeMillis();
             long duration = (endTime - startTime);
             totalJoiningTime += duration;
@@ -146,25 +148,24 @@ public class MultiJoin {
         }
 
         System.out.println("total execution time: " + totalJoiningTime + " ms");
-        String filename = "src/main/resources/testcases/" + testCaseDirectoryName + "/iteration_results.txt";
         if(logExecutionTime)
-            fileUtils.logExecutionTime(totalJoiningTime, filename);
+            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc);
 
         if (!intermediateAutomataSizes.isEmpty()) // remove the final compound from the intermediates list
             intermediateAutomataSizes.remove(intermediateAutomataSizes.size() - 1);
 
-        fileUtils.logIntermediateAutomataDetails(intermediateAutomataSizes, filename);
+        fileUtils.logIntermediateAutomataDetails(intermediateAutomataSizes, resultFileLoc);
         return automata.get(0).getAutomaton();
     }
 
-    public ConstraintAutomaton multiJoinAutomata(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String testCaseDirectoryName, boolean shuffleForNormalJoin)
+    public ConstraintAutomaton multiJoinAutomata(ArrayList<ConstraintAutomaton> automatonList, int heuristicType, boolean logExecutionTime, String resultFileLoc, boolean shuffleForNormalJoin)
             throws AutomatonListSizeLowerThanTwoException, WrongHeuristicTypeSelectionException, JoinOperationFailedException, OperationLoggingException {
         if(heuristicType == 0)
-            return joinWithNoHeuristic(automatonList, shuffleForNormalJoin, logExecutionTime, testCaseDirectoryName);
+            return joinWithNoHeuristic(automatonList, shuffleForNormalJoin, logExecutionTime, resultFileLoc);
         else if((heuristicType >= 0 && heuristicType <= 3) || (heuristicType >= 6 && heuristicType < 8))
-            return joinWithInternalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);
+            return joinWithInternalFieldHeuristic(automatonList, heuristicType, logExecutionTime, resultFileLoc);
         else if (heuristicType >= 4)
-            return joinWithRelationalFieldHeuristic(automatonList, heuristicType, logExecutionTime, testCaseDirectoryName);
+            return joinWithRelationalFieldHeuristic(automatonList, heuristicType, logExecutionTime, resultFileLoc);
         else
             throw new WrongHeuristicTypeSelectionException();
     }

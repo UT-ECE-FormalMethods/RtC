@@ -1,0 +1,6 @@
+Task executed in 78586 ms
+Intermediate compounds:
+(S: 96, T: 92) (S: 960, T: 766) 
+Task executed in 15536 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 160, T: 148) 

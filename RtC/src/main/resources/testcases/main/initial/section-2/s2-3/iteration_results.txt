@@ -1,0 +1,43 @@
+Removing unreachable states only for then final CA!
+
+Type 0:
+Task executed in 24000 ms, 24731 ms, 24977 ms, 22846 ms, 22894 ms, 25146 ms, 24925 ms, 22876 ms, 24549 ms, 24385 ms
+Avg: 241 s
+Intermediate compounds:
+(S: 40, T: 200) (S: 280, T: 2048)
+
+Type 1:
+Task executed in 2348 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 
+
+Type 2:
+Task executed in 2265 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 
+
+Type 3:
+Task executed in 2581 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 
+
+Type 4:
+Task executed in 2309 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 
+
+Type 5:
+Task executed in 2381 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 
+
+Type 7:
+Task executed in 2259 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 
+
+Type 8:
+Task executed in 6755 ms, 6829 ms, 6718 ms, 6697 ms, 6812 ms, 6742 ms, 6709 ms, 6957 ms, 6952 ms, 6780 ms
+Avg: 6795 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 210, T: 558) 

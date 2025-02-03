@@ -1,0 +1,10 @@
+{
+  "id" : "((CA-4 X CA-2) X (CA X CA-1))",
+  "states" : [ {
+    "id" : "r1_p1_s1_q1",
+    "initial" : true,
+    "composition" : [ "r1_p1_s1_q1" ]
+  } ],
+  "transitions" : [ ],
+  "alphabet" : [ ]
+}

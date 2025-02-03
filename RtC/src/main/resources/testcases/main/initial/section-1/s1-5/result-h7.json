@@ -1,0 +1,182 @@
+{
+  "id" : "((CA-3 X CA-2) X (CA-1 X CA-4))",
+  "states" : [ {
+    "id" : "r1_q1_p1_s1",
+    "initial" : true,
+    "composition" : [ "r1_q1_p1_s1" ]
+  }, {
+    "id" : "r1_q1_p7_s7",
+    "initial" : false,
+    "composition" : [ "r1_q1_p7_s7" ]
+  }, {
+    "id" : "r1_q4_p7_s7",
+    "initial" : false,
+    "composition" : [ "r1_q4_p7_s7" ]
+  }, {
+    "id" : "r2_q2_p1_s8",
+    "initial" : false,
+    "composition" : [ "r2_q2_p1_s8" ]
+  }, {
+    "id" : "r2_q2_p2_s2",
+    "initial" : false,
+    "composition" : [ "r2_q2_p2_s2" ]
+  }, {
+    "id" : "r2_q5_p1_s8",
+    "initial" : false,
+    "composition" : [ "r2_q5_p1_s8" ]
+  }, {
+    "id" : "r2_q5_p2_s2",
+    "initial" : false,
+    "composition" : [ "r2_q5_p2_s2" ]
+  }, {
+    "id" : "r3_q3_p3_s3",
+    "initial" : false,
+    "composition" : [ "r3_q3_p3_s3" ]
+  }, {
+    "id" : "r3_q6_p3_s3",
+    "initial" : false,
+    "composition" : [ "r3_q6_p3_s3" ]
+  }, {
+    "id" : "r4_q1_p4_s4",
+    "initial" : false,
+    "composition" : [ "r4_q1_p4_s4" ]
+  }, {
+    "id" : "r4_q1_p4_s6",
+    "initial" : false,
+    "composition" : [ "r4_q1_p4_s6" ]
+  }, {
+    "id" : "r4_q3_p3_s3",
+    "initial" : false,
+    "composition" : [ "r4_q3_p3_s3" ]
+  }, {
+    "id" : "r4_q4_p4_s4",
+    "initial" : false,
+    "composition" : [ "r4_q4_p4_s4" ]
+  }, {
+    "id" : "r4_q4_p4_s6",
+    "initial" : false,
+    "composition" : [ "r4_q4_p4_s6" ]
+  }, {
+    "id" : "r4_q6_p3_s3",
+    "initial" : false,
+    "composition" : [ "r4_q6_p3_s3" ]
+  }, {
+    "id" : "r5_q2_p5_s5",
+    "initial" : false,
+    "composition" : [ "r5_q2_p5_s5" ]
+  }, {
+    "id" : "r5_q5_p5_s5",
+    "initial" : false,
+    "composition" : [ "r5_q5_p5_s5" ]
+  }, {
+    "id" : "r6_q3_p6_s6",
+    "initial" : false,
+    "composition" : [ "r6_q3_p6_s6" ]
+  }, {
+    "id" : "r6_q6_p6_s6",
+    "initial" : false,
+    "composition" : [ "r6_q6_p6_s6" ]
+  } ],
+  "transitions" : [ {
+    "source" : "r1_q1_p1_s1",
+    "target" : "r2_q2_p2_s2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r1_q1_p1_s1",
+    "target" : "r2_q5_p2_s2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r1_q1_p7_s7",
+    "target" : "r2_q2_p1_s8",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r1_q1_p7_s7",
+    "target" : "r2_q5_p1_s8",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r1_q4_p7_s7",
+    "target" : "r2_q5_p1_s8",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r2_q2_p2_s2",
+    "target" : "r3_q3_p3_s3",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r2_q2_p2_s2",
+    "target" : "r4_q3_p3_s3",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r2_q5_p2_s2",
+    "target" : "r3_q6_p3_s3",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r2_q5_p2_s2",
+    "target" : "r4_q6_p3_s3",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r3_q3_p3_s3",
+    "target" : "r4_q4_p4_s4",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r3_q3_p3_s3",
+    "target" : "r4_q4_p4_s6",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r3_q6_p3_s3",
+    "target" : "r4_q1_p4_s4",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r3_q6_p3_s3",
+    "target" : "r4_q1_p4_s6",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r4_q1_p4_s4",
+    "target" : "r5_q2_p5_s5",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r4_q1_p4_s4",
+    "target" : "r5_q5_p5_s5",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r4_q4_p4_s4",
+    "target" : "r5_q5_p5_s5",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r5_q2_p5_s5",
+    "target" : "r6_q3_p6_s6",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r5_q5_p5_s5",
+    "target" : "r6_q6_p6_s6",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r6_q3_p6_s6",
+    "target" : "r1_q4_p7_s7",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "r6_q6_p6_s6",
+    "target" : "r1_q1_p7_s7",
+    "label" : [ "c" ],
+    "constraints" : [ ]
+  } ],
+  "alphabet" : [ "a", "b", "c" ]
+}

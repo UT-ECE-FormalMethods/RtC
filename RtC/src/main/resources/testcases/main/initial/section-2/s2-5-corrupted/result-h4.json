@@ -1,0 +1,19 @@
+{
+  "id" : "((CA-1 X CA-3) X (CA-2 X CA-4))",
+  "states" : [ {
+    "id" : "y1_p1_q1_x1",
+    "initial" : true,
+    "composition" : [ "y1_p1_q1_x1" ]
+  }, {
+    "id" : "y1_p2_q1_x2",
+    "initial" : false,
+    "composition" : [ "y1_p2_q1_x2" ]
+  } ],
+  "transitions" : [ {
+    "source" : "y1_p1_q1_x1",
+    "target" : "y1_p2_q1_x2",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  } ],
+  "alphabet" : [ "a" ]
+}

@@ -20,13 +20,13 @@ public class FileUtils {
         this.objectMapper = objectMapper;
     }
 
-    public ArrayList<ConstraintAutomaton> readConstraintAutomataFromTestcases(String directory) throws AutomatonFileIOException {
+    public ArrayList<ConstraintAutomaton> readConstraintAutomataFromTestcases(String directory, String automatonFileNameStart) throws AutomatonFileIOException {
         ArrayList<ConstraintAutomaton> automataList = new ArrayList<>();
 
         try {
             File dir = new File(directory);
             if (dir.exists() && dir.isDirectory()) {
-                File[] files = dir.listFiles((d, name) -> name.matches("automaton-\\d+\\.json"));
+                File[] files = dir.listFiles((d, name) -> name.matches(automatonFileNameStart + "-\\d+\\.json"));
                 if (files != null) {
                     Arrays.sort(files, (f1, f2) -> {
                         int num1 = Integer.parseInt(f1.getName().replaceAll("\\D+", ""));

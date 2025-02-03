@@ -1,0 +1,47 @@
+Type 0 (no heuristic):
+Task executed in 491 ms, 528 ms, 493 ms, 480 ms, 488 ms, 478 ms, 478 ms, 484 ms, 492 ms, 506 ms
+Avg: 498 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 80, T: 168)
+
+Type 1:
+Task executed in 361 ms, 369 ms, 362 ms, 350 ms, 373 ms, 393 ms, 364 ms, 375 ms, 366 ms, 369 ms
+Avg: 368 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77)
+
+Type 2:
+Task executed in 391 ms, 364 ms, 384 ms, 379 ms, 357 ms, 373 ms, 357 ms, 367 ms, 362 ms, 368 ms
+Avg: 370 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 
+
+Type 3:
+Task executed in 509 ms, 484 ms, 483 ms, 496 ms, 476 ms, 481 ms, 494 ms, 486 ms, 481 ms, 489 ms
+Avg: 488 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 80, T: 168) 
+
+Type 4:
+Task executed in 376 ms, 367 ms, 377 ms, 373 ms, 360 ms, 384 ms, 367 ms, 373 ms, 368 ms, 363 ms
+Avg: 370 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 
+
+Type 5:
+Task executed in 376 ms, 368 ms, 363 ms, 355 ms, 373 ms, 358 ms, 377 ms, 362 ms, 371 ms, 370 ms
+Avg: 367 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 
+
+Type 7:
+Task executed in 364 ms, 379 ms, 363 ms, 374 ms, 373 ms, 369 ms, 375 ms, 357 ms, 374 ms, 391 ms
+Avg: 371 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 
+
+Type 8:
+Task executed in 1801 ms, 1826 ms, 1762 ms, 1837 ms, 1808 ms, 1876 ms, 1808 ms, 1751 ms, 1800 ms, 1818 ms
+Avg: 1.8 s
+Intermediate compounds:
+(S: 200, T: 323) (S: 400, T: 628)

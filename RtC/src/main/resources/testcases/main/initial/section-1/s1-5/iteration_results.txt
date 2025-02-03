@@ -1,0 +1,56 @@
+updated results after removing unreachable states only from the final CA:
+
+Task executed in 1689 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1622 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1675 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1726 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1654 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1611 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1710 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1663 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1584 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+Task executed in 1650 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 
+
+
+
+Type 1Task executed in 1149 ms
+Intermediate compounds:
+(S: 42, T: 24) (S: 48, T: 34) 
+Task executed in 1127 ms
+Intermediate compounds:
+(S: 36, T: 27) (S: 56, T: 30) 
+Task executed in 1671 ms
+Intermediate compounds:
+(S: 56, T: 30) (S: 336, T: 81) 
+Task executed in 1163 ms
+Intermediate compounds:
+(S: 48, T: 34) (S: 42, T: 24) 
+Task executed in 1111 ms
+Intermediate compounds:
+(S: 36, T: 27) (S: 56, T: 30) 
+Task executed in 1141 ms
+Intermediate compounds:
+(S: 36, T: 27) (S: 56, T: 30) 
+Task executed in 1701 ms
+Intermediate compounds:
+(S: 42, T: 30) (S: 252, T: 81) 

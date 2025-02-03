@@ -1,0 +1,9 @@
+updated results after removing unreachable states only from the final CA:
+
+Type 0 (no heuristic):
+Task executed in 2640 ms
+Intermediate compounds:
+(S: 30, T: 124) (S: 180, T: 766) 
+Task executed in 2691 ms
+Intermediate compounds:
+(S: 30, T: 124) (S: 180, T: 766) 

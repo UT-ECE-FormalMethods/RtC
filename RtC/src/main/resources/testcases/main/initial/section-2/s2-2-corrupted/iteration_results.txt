@@ -1,0 +1,47 @@
+Type 0 (no heuristic):
+
+Task executed in 187 ms
+Intermediate compounds:
+(S: 30, T: 33) (S: 10, T: 9)
+
+Type 1
+Task executed in 123558 ms
+Intermediate compounds:
+(S: 30, T: 33) (S: 211, T: 903) 
+
+Type 2
+Task executed in 228 ms
+Intermediate compounds:
+(S: 63, T: 154) (S: 7, T: 6) 
+
+Type 3
+Task executed in 77 ms
+Intermediate compounds:
+(S: 7, T: 6) (S: 10, T: 9) 
+
+Type 4
+Task executed in 123014 ms
+Intermediate compounds:
+(S: 211, T: 903) (S: 30, T: 33)
+
+Type 5
+Task executed in 86 ms
+Intermediate compounds:
+(S: 7, T: 6) (S: 10, T: 9)
+
+Type 7:
+Task executed in 234 ms
+Intermediate compounds:
+(S: 63, T: 154) (S: 7, T: 6) 
+
+Type 8:
+Task executed in 79 ms
+Intermediate compounds:
+(S: 7, T: 6) (S: 10, T: 9) 
+----------------------------
+
+updated results after removing the unreachable states only for the final CA
+Type 0:
+no results after 15+ minutes!
+
+Type 1:

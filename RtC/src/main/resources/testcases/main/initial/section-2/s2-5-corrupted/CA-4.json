@@ -1,0 +1,43 @@
+{
+  "id": "CA-4",
+  "states": [
+    { "id": "x1", "initial": true, "composition": ["x1"] },
+    { "id": "x2", "initial": false, "composition": ["x2"] },
+    { "id": "x3", "initial": false, "composition": ["x3"] },
+    { "id": "x4", "initial": false, "composition": ["x4"] },
+    { "id": "x5", "initial": false, "composition": ["x5"] },
+    { "id": "x6", "initial": false, "composition": ["x6"] },
+    { "id": "x7", "initial": false, "composition": ["x7"] },
+    { "id": "x8", "initial": false, "composition": ["x8"] },
+    { "id": "x9", "initial": false, "composition": ["x9"] },
+    { "id": "x10", "initial": false, "composition": ["x10"] },
+    { "id": "x11", "initial": false, "composition": ["x11"] },
+    { "id": "x12", "initial": false, "composition": ["x12"] },
+    { "id": "x13", "initial": false, "composition": ["x13"] },
+    { "id": "x14", "initial": false, "composition": ["x14"] },
+    { "id": "x15", "initial": false, "composition": ["x15"] }
+  ],
+  "transitions": [
+    { "source": "x1", "target": "x2", "label": ["a"], "constraints": [] },
+    { "source": "x1", "target": "x3", "label": ["b"], "constraints": [] },
+    { "source": "x2", "target": "x4", "label": ["d"], "constraints": [] },
+    { "source": "x3", "target": "x5", "label": ["e"], "constraints": [] },
+    { "source": "x4", "target": "x6", "label": ["f"], "constraints": [] },
+    { "source": "x5", "target": "x7", "label": ["i"], "constraints": [] },
+    { "source": "x6", "target": "x8", "label": ["a"], "constraints": [] },
+    { "source": "x7", "target": "x9", "label": ["b"], "constraints": [] },
+    { "source": "x8", "target": "x10", "label": ["d"], "constraints": [] },
+    { "source": "x9", "target": "x11", "label": ["e"], "constraints": [] },
+    { "source": "x10", "target": "x12", "label": ["f"], "constraints": [] },
+    { "source": "x11", "target": "x13", "label": ["i"], "constraints": [] },
+    { "source": "x12", "target": "x14", "label": ["a"], "constraints": [] },
+    { "source": "x13", "target": "x15", "label": ["b"], "constraints": [] },
+    { "source": "x14", "target": "x1", "label": ["d"], "constraints": [] },
+    { "source": "x15", "target": "x2", "label": ["e"], "constraints": [] },
+    { "source": "x5", "target": "x9", "label": ["f"], "constraints": [] },
+    { "source": "x8", "target": "x12", "label": ["i"], "constraints": [] },
+    { "source": "x3", "target": "x6", "label": ["a"], "constraints": [] },
+    { "source": "x7", "target": "x11", "label": ["b"], "constraints": [] }
+  ],
+  "alphabet": ["a", "b", "d", "e", "f", "i"]
+}

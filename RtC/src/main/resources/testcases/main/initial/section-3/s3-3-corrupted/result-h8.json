@@ -1,0 +1,28 @@
+{
+  "id" : "(CA-1 X ((CA-2 X CA-3) X CA-4))",
+  "states" : [ {
+    "id" : "p1_x1_q1_y1",
+    "initial" : true,
+    "composition" : [ "p1_x1_q1_y1" ]
+  }, {
+    "id" : "p2_x1_q1_y1",
+    "initial" : false,
+    "composition" : [ "p2_x1_q1_y1" ]
+  }, {
+    "id" : "p3_x1_q1_y2",
+    "initial" : false,
+    "composition" : [ "p3_x1_q1_y2" ]
+  } ],
+  "transitions" : [ {
+    "source" : "p1_x1_q1_y1",
+    "target" : "p2_x1_q1_y1",
+    "label" : [ "a" ],
+    "constraints" : [ ]
+  }, {
+    "source" : "p1_x1_q1_y1",
+    "target" : "p3_x1_q1_y2",
+    "label" : [ "b" ],
+    "constraints" : [ ]
+  } ],
+  "alphabet" : [ "a", "b" ]
+}
