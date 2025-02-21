@@ -64,9 +64,9 @@ public class FileUtils {
         }
     }
 
-    public void logExecutionTime(long timeElapsed, String filename) throws OperationLoggingException {
+    public void logExecutionTime(long timeElapsed, String filename, int heuristicType) throws OperationLoggingException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
-            writer.write("Task executed in " + timeElapsed + " ms\n");
+            writer.write("\nHeuristic Type: "+ heuristicType +"\nTask executed in " + timeElapsed + " ms\n");
         } catch (IOException e) {
             throw new OperationLoggingException(e.getMessage());
         }

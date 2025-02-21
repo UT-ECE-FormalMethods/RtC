@@ -2,7 +2,7 @@ Removing unreachable states only for then final CA!
 
 Type 0:
 Task executed in 24000 ms, 24731 ms, 24977 ms, 22846 ms, 22894 ms, 25146 ms, 24925 ms, 22876 ms, 24549 ms, 24385 ms
-Avg: 241 s
+Avg: 24.1 s
 Intermediate compounds:
 (S: 40, T: 200) (S: 280, T: 2048)
 

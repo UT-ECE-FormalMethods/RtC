@@ -53,7 +53,7 @@ public class MultiJoin {
 
         System.out.println("Execution time: " + totalJoiningTime + " milliseconds");
         if(logExecutionTime)
-            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc);
+            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc, 0);
 
         if (!intermediateAutomataSizes.isEmpty()) // remove the final compound from the intermediates list
             intermediateAutomataSizes.remove(intermediateAutomataSizes.size() - 1);
@@ -97,7 +97,7 @@ public class MultiJoin {
 
         System.out.println("Execution time: " + totalJoiningTime + " milliseconds");
         if(logExecutionTime)
-            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc);
+            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc, heuristicType);
 
         if (!intermediateAutomataSizes.isEmpty()) // remove the final compound from the intermediates list
             intermediateAutomataSizes.remove(intermediateAutomataSizes.size() - 1);
@@ -149,7 +149,7 @@ public class MultiJoin {
 
         System.out.println("total execution time: " + totalJoiningTime + " ms");
         if(logExecutionTime)
-            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc);
+            fileUtils.logExecutionTime(totalJoiningTime, resultFileLoc, heuristicType);
 
         if (!intermediateAutomataSizes.isEmpty()) // remove the final compound from the intermediates list
             intermediateAutomataSizes.remove(intermediateAutomataSizes.size() - 1);

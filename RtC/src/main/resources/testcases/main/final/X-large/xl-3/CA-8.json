@@ -1,0 +1,30 @@
+{
+  "id": "CA-8",
+  "states": [
+    {
+      "id": "z1",
+      "initial": true,
+      "composition": ["z1"]
+    },
+    {
+      "id": "z2",
+      "initial": false,
+      "composition": ["z2"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "z1",
+      "target": "z2",
+      "label": ["a"],
+      "constraints": []
+    },
+    {
+      "source": "z2",
+      "target": "z1",
+      "label": ["c"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["a", "c"]
+}

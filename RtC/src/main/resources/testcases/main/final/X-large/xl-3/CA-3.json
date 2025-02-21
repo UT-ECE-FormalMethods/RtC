@@ -1,0 +1,53 @@
+{
+  "id": "CA-3",
+  "states": [
+    {
+      "id": "r1",
+      "initial": true,
+      "composition": ["r1"]
+    },
+    {
+      "id": "r2",
+      "initial": false,
+      "composition": ["r2"]
+    },
+    {
+      "id": "r3",
+      "initial": false,
+      "composition": ["r3"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "r1",
+      "target": "r2",
+      "label": ["a"],
+      "constraints": []
+    },
+    {
+      "source": "r2",
+      "target": "r3",
+      "label": ["b"],
+      "constraints": []
+    },
+    {
+      "source": "r3",
+      "target": "r2",
+      "label": ["c"],
+      "constraints": []
+    },
+    {
+      "source": "r2",
+      "target": "r1",
+      "label": ["d"],
+      "constraints": []
+    },
+    {
+      "source": "r1",
+      "target": "r3",
+      "label": ["e"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["a", "b", "c", "d", "e"]
+}

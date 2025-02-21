@@ -1,0 +1,314 @@
+{
+  "results": [
+    {
+      "testcase_direcory": "s1-1",
+      "testcase_id_to_show": "1",
+      "heuristics": [
+        {
+          "name": "Incremental (No Heuristic)",
+          "id_to_show": "0",
+          "avg_time": 4.6,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min Transitions",
+          "id_to_show": "1",
+          "avg_time": 2,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min States",
+          "id_to_show": "2",
+          "avg_time": 1.7,
+          "intermediate_CAs": [],
+          "order": "(CA-2 X (CA-3 X CA-1))"
+        },
+        {
+          "name": "Transition Density",
+          "id_to_show": "3",
+          "avg_time": 2,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Disparity",
+          "id_to_show": "4",
+          "avg_time": 1.9,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "State Disparity",
+          "id_to_show": "5",
+          "avg_time": 1.7,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition and State Sum",
+          "id_to_show": "7",
+          "avg_time": 1.9,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Max Connectivity",
+          "id_to_show": "8",
+          "avg_time": 1.9,
+          "intermediate_CAs": [],
+          "order": ""
+        }
+      ]
+    },
+    {
+      "testcase_direcory": "s1-2",
+      "testcase_id_to_show": "2",
+      "heuristics": [
+        {
+          "name": "Incremental (No Heuristic)",
+          "id_to_show": "0",
+          "avg_time": 12,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min Transitions",
+          "id_to_show": "1",
+          "avg_time": 9,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min States",
+          "id_to_show": "2",
+          "avg_time": 8.4,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Density",
+          "id_to_show": "3",
+          "avg_time": 8.7,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Disparity",
+          "id_to_show": "4",
+          "avg_time": 10,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "State Disparity",
+          "id_to_show": "5",
+          "avg_time": 10,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition and State Sum",
+          "id_to_show": "7",
+          "avg_time": 8.6,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Max Connectivity",
+          "id_to_show": "8",
+          "avg_time": 9.7,
+          "intermediate_CAs": [],
+          "order": ""
+        }
+      ]
+    },
+    {
+      "testcase_direcory": "test2",
+      "testcase_id_to_show": "3",
+      "heuristics": [
+        {
+          "name": "Incremental (No Heuristic)",
+          "id_to_show": "0",
+          "avg_time": 109,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min Transitions",
+          "id_to_show": "1",
+          "avg_time": 84,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min States",
+          "id_to_show": "2",
+          "avg_time": 84,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Density",
+          "id_to_show": "3",
+          "avg_time": 101,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Disparity",
+          "id_to_show": "4",
+          "avg_time": 87,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "State Disparity",
+          "id_to_show": "5",
+          "avg_time": 107,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition and State Sum",
+          "id_to_show": "7",
+          "avg_time": 84,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Max Connectivity",
+          "id_to_show": "8",
+          "avg_time": 51,
+          "intermediate_CAs": [],
+          "order": ""
+        }
+      ]
+    },
+    {
+      "testcase_direcory": "test3",
+      "testcase_id_to_show": "4",
+      "heuristics": [
+        {
+          "name": "Incremental (No Heuristic)",
+          "id_to_show": "0",
+          "avg_time": 402,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min Transitions",
+          "id_to_show": "1",
+          "avg_time": 88,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min States",
+          "id_to_show": "2",
+          "avg_time": 79,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Density",
+          "id_to_show": "3",
+          "avg_time": 84,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Disparity",
+          "id_to_show": "4",
+          "avg_time": 82,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "State Disparity",
+          "id_to_show": "5",
+          "avg_time": 133,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition and State Sum",
+          "id_to_show": "7",
+          "avg_time": 79,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Max Connectivity",
+          "id_to_show": "8",
+          "avg_time": 77,
+          "intermediate_CAs": [],
+          "order": ""
+        }
+      ]
+    },
+    {
+      "testcase_direcory": "test6",
+      "testcase_id_to_show": "5",
+      "heuristics": [
+        {
+          "name": "Incremental (No Heuristic)",
+          "id_to_show": "0",
+          "avg_time": 1284,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min Transitions",
+          "id_to_show": "1",
+          "avg_time": 290,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Min States",
+          "id_to_show": "2",
+          "avg_time": 290,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Density",
+          "id_to_show": "3",
+          "avg_time": 306,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition Disparity",
+          "id_to_show": "4",
+          "avg_time": 277,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "State Disparity",
+          "id_to_show": "5",
+          "avg_time": 409,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Transition and State Sum",
+          "id_to_show": "7",
+          "avg_time": 280,
+          "intermediate_CAs": [],
+          "order": ""
+        },
+        {
+          "name": "Max Connectivity",
+          "id_to_show": "8",
+          "avg_time": 385,
+          "intermediate_CAs": [],
+          "order": ""
+        }
+      ]
+    }
+  ]
+}

@@ -132,8 +132,8 @@
       "constraints": []
     },
     {
-      "source": "z5",
-      "target": "z6",
+      "source": "y5",
+      "target": "y6",
       "label": ["j"],
       "constraints": []
     },

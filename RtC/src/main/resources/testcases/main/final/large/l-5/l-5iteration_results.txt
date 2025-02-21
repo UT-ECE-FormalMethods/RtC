@@ -1,0 +1,42 @@
+Type 0 (no heuristic):
+Task executed in 179147 ms
+Intermediate compounds:
+(S: 40, T: 87) (S: 400, T: 628) 
+
+Type 1 (min transitions):
+Task executed in 108629 ms
+Intermediate compounds:
+(S: 42, T: 122) (S: 200, T: 323) 
+
+Type 2 (min states):
+Task executed in 173386 ms
+Intermediate compounds:
+(S: 20, T: 43) (S: 400, T: 628) 
+
+Type 3 (transition density):
+Task executed in 99184 ms
+Intermediate compounds:
+(S: 42, T: 122) (S: 200, T: 323) 
+
+Type 4 (transition disparity):
+Task executed in 151737 ms
+Intermediate compounds:
+(S: 210, T: 553) (S: 40, T: 87) 
+
+Type 5 (state disparity):
+Task executed in 155971 ms
+Intermediate compounds:
+(S: 420, T: 635) (S: 20, T: 43) 
+
+Type 7 (tran state sum):
+Task executed in 231558 ms
+Intermediate compounds:
+(S: 20, T: 43) (S: 420, T: 882) 
+
+Type 8 (Max connectivity):
+Task executed in 2347004 ms
+Intermediate compounds:
+(S: 200, T: 323) (S: 4200, T: 4768) 
+Task executed in 214482 ms
+Intermediate compounds:
+(S: 20, T: 43) (S: 420, T: 882) 

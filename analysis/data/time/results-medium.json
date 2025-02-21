@@ -5,7 +5,7 @@
       "testcase_id_to_show": "1",
       "heuristics": [
         {
-          "name": "no_heuristic",
+          "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 359,
           "intermediate_CAs": [
@@ -17,7 +17,7 @@
           "order": "((CA-1 X CA-2) X CA-3)"
         },
         {
-          "name": "min_transitions",
+          "name": "Min Transitions",
           "id_to_show": "1",
           "avg_time": 1108,
           "intermediate_CAs": [
@@ -29,7 +29,7 @@
           "order": "(CA-2 X (CA-1 X CA-3))"
         },
         {
-          "name": "min_states",
+          "name": "Min States",
           "id_to_show": "2",
           "avg_time": 1089,
           "intermediate_CAs": [
@@ -41,7 +41,7 @@
           "order": "(CA-2 X (CA-3 X CA-1))"
         },
         {
-          "name": "transition_density",
+          "name": "Transition Density",
           "id_to_show": "3",
           "avg_time": 346,
           "intermediate_CAs": [
@@ -53,7 +53,7 @@
           "order": "((CA-1 X CA-2) X CA-3)"
         },
         {
-          "name": "transition_disparity",
+          "name": "Transition Disparity",
           "id_to_show": "4",
           "avg_time": 1069,
           "intermediate_CAs": [
@@ -65,7 +65,7 @@
           "order": "((CA-1 X CA-3) X CA-2)"
         },
         {
-          "name": "state_disparity",
+          "name": "State Disparity",
           "id_to_show": "5",
           "avg_time": 337,
           "intermediate_CAs": [
@@ -77,7 +77,7 @@
           "order": "((CA-1 X CA-2) X CA-3)"
         },
         {
-          "name": "transition_and_state_sum",
+          "name": "Transition and State Sum",
           "id_to_show": "7",
           "avg_time": 1090,
           "intermediate_CAs": [
@@ -89,7 +89,7 @@
           "order": "(CA-2 X (CA-3 X CA-1))"
         },
         {
-          "name": "max_connectivity",
+          "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 322,
           "intermediate_CAs": [
@@ -108,7 +108,7 @@
       "testcase_id_to_show": "2",
       "heuristics": [
         {
-          "name": "no_heuristic",
+          "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 498,
           "intermediate_CAs": [
@@ -124,7 +124,7 @@
           "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
         },
         {
-          "name": "min_transitions",
+          "name": "Min Transitions",
           "id_to_show": "1",
           "avg_time": 368,
           "intermediate_CAs": [
@@ -140,7 +140,7 @@
           "order": "(CA-3 X ((CA-1 X CA-2) X CA-4))"
         },
         {
-          "name": "min_states",
+          "name": "Min States",
           "id_to_show": "2",
           "avg_time": 370,
           "intermediate_CAs": [
@@ -156,7 +156,7 @@
           "order": "(CA-3 X ((CA-1 X CA-2) X CA-4))"
         },
         {
-          "name": "transition_density",
+          "name": "Transition Density",
           "id_to_show": "3",
           "avg_time": 488,
           "intermediate_CAs": [
@@ -172,7 +172,7 @@
           "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
         },
         {
-          "name": "transition_disparity",
+          "name": "Transition Disparity",
           "id_to_show": "4",
           "avg_time": 370,
           "intermediate_CAs": [
@@ -188,7 +188,7 @@
           "order": "(((CA-1 X CA-2) X CA-4) X CA-3)"
         },
         {
-          "name": "state_disparity",
+          "name": "State Disparity",
           "id_to_show": "5",
           "avg_time": 367,
           "intermediate_CAs": [
@@ -204,7 +204,7 @@
           "order": "(((CA-1 X CA-2) X CA-4) X CA-3)"
         },
         {
-          "name": "transition_and_state_sum",
+          "name": "Transition and State Sum",
           "id_to_show": "7",
           "avg_time": 371,
           "intermediate_CAs": [
@@ -220,7 +220,7 @@
           "order": "(CA-3 X ((CA-1 X CA-2) X CA-4))"
         },
         {
-          "name": "max_connectivity",
+          "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 1800,
           "intermediate_CAs": [
@@ -242,7 +242,7 @@
       "testcase_id_to_show": "3",
       "heuristics": [
         {
-          "name": "no_heuristic",
+          "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 4375,
           "intermediate_CAs": [
@@ -262,7 +262,7 @@
           "order": "((((CA-1 X CA-2) X CA-3) X CA-4) X CA-5)"
         },
         {
-          "name": "min_transitions",
+          "name": "Min Transitions",
           "id_to_show": "1",
           "avg_time": 1900,
           "intermediate_CAs": [
@@ -282,7 +282,7 @@
           "order": "(((CA-5 X CA-4) X CA-3) X (CA-1 X CA-2))"
         },
         {
-          "name": "min_states",
+          "name": "Min States",
           "id_to_show": "2",
           "avg_time": 2508,
           "intermediate_CAs": [
@@ -302,7 +302,7 @@
           "order": "((CA-3 X CA-1) X (CA-2 X (CA-5 X CA-4)))"
         },
         {
-          "name": "transition_density",
+          "name": "Transition Density",
           "id_to_show": "3",
           "avg_time": 2817,
           "intermediate_CAs": [
@@ -322,7 +322,7 @@
           "order": "((((CA-4 X CA-5) X CA-2) X CA-1) X CA-3)"
         },
         {
-          "name": "transition_disparity",
+          "name": "Transition Disparity",
           "id_to_show": "4",
           "avg_time": 4059,
           "intermediate_CAs": [
@@ -342,7 +342,7 @@
           "order": "(((CA-1 X CA-2) X (CA-3 X CA-4)) X CA-5)"
         },
         {
-          "name": "state_disparity",
+          "name": "State Disparity",
           "id_to_show": "5",
           "avg_time": 4061,
           "intermediate_CAs": [
@@ -362,7 +362,7 @@
           "order": "(((CA-1 X CA-2) X (CA-3 X CA-4)) X CA-5)"
         },
         {
-          "name": "transition_and_state_sum",
+          "name": "Transition and State Sum",
           "id_to_show": "7",
           "avg_time": 2506,
           "intermediate_CAs": [
@@ -382,7 +382,7 @@
           "order": "((CA-3 X CA-1) X ((CA-5 X CA-4) X CA-2))"
         },
         {
-          "name": "max_connectivity",
+          "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 4431,
           "intermediate_CAs": [
@@ -408,7 +408,7 @@
       "testcase_id_to_show": "4",
       "heuristics": [
         {
-          "name": "no_heuristic",
+          "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 11300,
           "intermediate_CAs": [
@@ -424,7 +424,7 @@
           "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
         },
         {
-          "name": "min_transitions",
+          "name": "Min Transitions",
           "id_to_show": "1",
           "avg_time": 6635,
           "intermediate_CAs": [
@@ -440,7 +440,7 @@
           "order": "((CA-3 X CA-1) X (CA-4 X CA-2))"
         },
         {
-          "name": "min_states",
+          "name": "Min States",
           "id_to_show": "2",
           "avg_time": 7078,
           "intermediate_CAs": [
@@ -456,7 +456,7 @@
           "order": "(CA-4 X ((CA-1 X CA-2) X CA-3))"
         },
         {
-          "name": "transition_density",
+          "name": "Transition Density",
           "id_to_show": "3",
           "avg_time": 5399,
           "intermediate_CAs": [
@@ -472,7 +472,7 @@
           "order": "((CA-1 X CA-3) X (CA-4 X CA-2))"
         },
         {
-          "name": "transition_disparity",
+          "name": "Transition Disparity",
           "id_to_show": "4",
           "avg_time": 12437,
           "intermediate_CAs": [
@@ -488,7 +488,7 @@
           "order": "((CA-1 X CA-2) X (CA-3 X CA-4))"
         },
         {
-          "name": "state_disparity",
+          "name": "State Disparity",
           "id_to_show": "5",
           "avg_time": 7194,
           "intermediate_CAs": [
@@ -504,7 +504,7 @@
           "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
         },
         {
-          "name": "transition_and_state_sum",
+          "name": "Transition and State Sum",
           "id_to_show": "7",
           "avg_time": 6916,
           "intermediate_CAs": [
@@ -520,7 +520,7 @@
           "order": "(CA-4 X ((CA-1 X CA-2) X CA-3))"
         },
         {
-          "name": "max_connectivity",
+          "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 7175,
           "intermediate_CAs": [
@@ -542,56 +542,56 @@
       "testcase_id_to_show": "5",
       "heuristics": [
         {
-          "name": "no_heuristic",
+          "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 24100,
           "intermediate_CAs": [],
           "order": "((CA-1 X CA-4) X (CA-3 X CA-2))"
         },
         {
-          "name": "min_transitions",
+          "name": "Min Transitions",
           "id_to_show": "1",
           "avg_time": 2348,
           "intermediate_CAs": [],
           "order": "((CA-1 X CA-4) X (CA-3 X CA-2))"
         },
         {
-          "name": "min_states",
+          "name": "Min States",
           "id_to_show": "2",
           "avg_time": 2265,
           "intermediate_CAs": [],
           "order": "(CA-4 X (CA-2 X (CA-1 X CA-3)))"
         },
         {
-          "name": "transition_density",
+          "name": "Transition Density",
           "id_to_show": "3",
           "avg_time": 2581,
           "intermediate_CAs": [],
           "order": "((CA-2 X CA-3) X (CA-4 X CA-1))"
         },
         {
-          "name": "transition_disparity",
+          "name": "Transition Disparity",
           "id_to_show": "4",
           "avg_time": 2309,
           "intermediate_CAs": [],
           "order": "((CA-1 X CA-2) X (CA-3 X CA-4))"
         },
         {
-          "name": "state_disparity",
+          "name": "State Disparity",
           "id_to_show": "5",
           "avg_time": 2381,
           "intermediate_CAs": [],
           "order": "((CA-1 X CA-3) X (CA-2 X CA-4))"
         },
         {
-          "name": "transition_and_state_sum",
+          "name": "Transition and State Sum",
           "id_to_show": "7",
           "avg_time": 2259,
           "intermediate_CAs": [],
           "order": "(CA-2 X (CA-4 X (CA-1 X CA-3)))"
         },
         {
-          "name": "max_connectivity",
+          "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 6795,
           "intermediate_CAs": [],

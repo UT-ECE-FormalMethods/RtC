@@ -1,0 +1,56 @@
+
+Heuristic Type: 1
+Task executed in 1171138 ms
+Intermediate compounds:
+(S: 4, T: 12) (S: 9, T: 24) (S: 20, T: 100) (S: 20, T: 76) (S: 36, T: 71) (S: 720, T: 1096) 
+
+
+Heuristic Type: 0
+Task executed in 13185573 ms
+Intermediate compounds:
+(S: 20, T: 21) (S: 60, T: 45) (S: 120, T: 77) (S: 360, T: 101) (S: 1800, T: 1672) (S: 7200, T: 5190) 
+
+Heuristic Type: 1
+Task executed in 1532294 ms
+Intermediate compounds:
+(S: 4, T: 12) (S: 9, T: 24) (S: 20, T: 100) (S: 20, T: 76) (S: 36, T: 71) (S: 720, T: 1096) 
+
+Heuristic Type: 0
+Task executed in 14745487 ms
+Intermediate compounds:
+(S: 20, T: 21) (S: 60, T: 45) (S: 120, T: 77) (S: 360, T: 101) (S: 1800, T: 1672) (S: 7200, T: 5190) 
+
+Heuristic Type: 0
+Task executed in 14791410 ms
+Intermediate compounds:
+(S: 20, T: 21) (S: 60, T: 45) (S: 120, T: 77) (S: 360, T: 101) (S: 1800, T: 1672) (S: 7200, T: 5190) 
+
+Heuristic Type: 2
+Task executed in 814619 ms
+Intermediate compounds:
+(S: 4, T: 12) (S: 9, T: 24) (S: 16, T: 112) (S: 20, T: 21) (S: 45, T: 159) (S: 320, T: 736) 
+
+Heuristic Type: 3
+Task executed in 1164444 ms
+Intermediate compounds:
+(S: 4, T: 12) (S: 20, T: 100) (S: 15, T: 16) (S: 45, T: 24) (S: 180, T: 300) (S: 720, T: 1096) 
+
+Heuristic Type: 4
+Task executed in 6435424 ms
+Intermediate compounds:
+(S: 12, T: 33) (S: 4, T: 12) (S: 20, T: 66) (S: 20, T: 30) (S: 240, T: 96) (S: 4800, T: 3840) 
+
+Heuristic Type: 5
+Task executed in 589824 ms
+Intermediate compounds:
+(S: 16, T: 46) (S: 25, T: 83) (S: 9, T: 24) (S: 4, T: 12) (S: 36, T: 71) (S: 400, T: 550) 
+
+Heuristic Type: 7
+Task executed in 1738126 ms
+Intermediate compounds:
+(S: 4, T: 12) (S: 9, T: 24) (S: 16, T: 46) (S: 25, T: 83) (S: 36, T: 71) (S: 576, T: 1688) 
+
+Heuristic Type: 8
+Task executed in 9223494 ms
+Intermediate compounds:
+(S: 15, T: 18) (S: 60, T: 33) (S: 180, T: 57) (S: 360, T: 101) (S: 1800, T: 1672) (S: 7200, T: 5190) 

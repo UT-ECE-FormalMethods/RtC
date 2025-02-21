@@ -10,16 +10,6 @@
       "id": "x2",
       "initial": false,
       "composition": ["x2"]
-    },
-    {
-      "id": "x3",
-      "initial": false,
-      "composition": ["x3"]
-    },
-    {
-      "id": "x4",
-      "initial": false,
-      "composition": ["x4"]
     }
   ],
   "transitions": [
@@ -31,24 +21,6 @@
     },
     {
       "source": "x2",
-      "target": "x1",
-      "label": ["c"],
-      "constraints": []
-    },
-    {
-      "source": "x2",
-      "target": "x3",
-      "label": ["a"],
-      "constraints": []
-    },
-    {
-      "source": "x3",
-      "target": "x4",
-      "label": ["a"],
-      "constraints": []
-    },
-    {
-      "source": "x4",
       "target": "x1",
       "label": ["c"],
       "constraints": []

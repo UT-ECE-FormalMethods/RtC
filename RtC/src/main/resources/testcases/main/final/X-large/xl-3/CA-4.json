@@ -1,0 +1,30 @@
+{
+  "id": "CA-4",
+  "states": [
+    {
+      "id": "s1",
+      "initial": true,
+      "composition": ["s1"]
+    },
+    {
+      "id": "s2",
+      "initial": false,
+      "composition": ["s2"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "s1",
+      "target": "s2",
+      "label": ["e"],
+      "constraints": []
+    },
+    {
+      "source": "s2",
+      "target": "s1",
+      "label": ["f"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["e", "f"]
+}
