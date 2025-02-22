@@ -1,0 +1,64 @@
+{
+  "id": "CA-8",
+  "states": [
+    {
+      "id": "x1",
+      "initial": true,
+      "composition": ["x1"]
+    },
+    {
+      "id": "x2",
+      "initial": false,
+      "composition": ["x2"]
+    },
+    {
+      "id": "x3",
+      "initial": false,
+      "composition": ["x3"]
+    },
+    {
+      "id": "x4",
+      "initial": false,
+      "composition": ["x4"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "x1",
+      "target": "x2",
+      "label": ["j"],
+      "constraints": []
+    },
+    {
+      "source": "x2",
+      "target": "x3",
+      "label": ["k"],
+      "constraints": []
+    },
+    {
+      "source": "x3",
+      "target": "x4",
+      "label": ["l"],
+      "constraints": []
+    },
+    {
+      "source": "x4",
+      "target": "x1",
+      "label": ["m"],
+      "constraints": []
+    },
+    {
+      "source": "x4",
+      "target": "x3",
+      "label": ["k"],
+      "constraints": []
+    },
+    {
+      "source": "x4",
+      "target": "x1",
+      "label": ["j"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["j", "k", "l", "m"]
+}

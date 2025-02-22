@@ -25,8 +25,8 @@ public class Main {
         String mainTestcaseDirectory = "src/main/resources/testcases/main/final/";
         String testcaseSize = "X-large";
         String testcasePrefix = "xl";
-        String testcaseNumber = "3";
-        int heuristicType = 1;
+        String testcaseNumber = "4";
+        int heuristicType = 0;
 
         if (args.length > 0) {
             try {

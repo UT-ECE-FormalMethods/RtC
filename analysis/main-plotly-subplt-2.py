@@ -86,24 +86,27 @@ def plot_combined_data(time_data, size_data, input_size_str):
     )
     
     # For jitter in both plots
-    jitter_amount = 0
-    if input_size_str == "Large":
-      jitter_amount = 0
-    elif input_size_str == "Medium":
-        jitter_amount = 0.06
-    elif input_size_str == "Small": 
-        jitter_amount = 0
-      
+    jitter_amount = 0.75  
+    
     num_heuristics = len(custom_legend_order)
     
     for heuristic_idx, heuristic in enumerate(custom_legend_order):
         # --- Left Subplot: Time Data ---
         if heuristic in time_data:
+            
+            if input_size_str == "Large":
+              jitter_amount = 0.12
+            elif input_size_str == "Medium":
+                jitter_amount = 0.06
+            elif input_size_str == "Small": 
+                jitter_amount = 0.0035
+            
+            
             sorted_time = sorted(time_data[heuristic], key=lambda x: x[0])
             # Format x-values as: First letter of dataset + "-" + testcase_id
             x_time = [f"{input_size_str[0]}-{item[0]}" for item in sorted_time]
-            # Apply jitter to the y-values to avoid overlap
-            y_time = [item[1] + (heuristic_idx - (num_heuristics - 1) / 2) * jitter_amount for item in sorted_time]
+            # Add jitter only (always positive) to the y-values to avoid overlap
+            y_time = [item[1] + (heuristic_idx+1) * jitter_amount for item in sorted_time]
             
             fig.add_trace(go.Scatter(
                 x=x_time,
@@ -117,9 +120,17 @@ def plot_combined_data(time_data, size_data, input_size_str):
         
         # --- Right Subplot: Size Data ---
         if heuristic in size_data:
+            
+            if input_size_str == "Large":
+              jitter_amount = 7
+            elif input_size_str == "Medium":
+                jitter_amount = 0.75
+            elif input_size_str == "Small": 
+                jitter_amount = 0.75
+            
             sorted_size = sorted(size_data[heuristic], key=lambda x: x[0])
             x_size = [f"{input_size_str[0]}-{item[0]}" for item in sorted_size]
-            # Apply jitter to the y-values to avoid overlap
+            # Apply jitter (can be positive or negative) to the y-values to avoid overlap
             y_size = [item[1] + (heuristic_idx - (num_heuristics - 1) / 2) * jitter_amount for item in sorted_size]
             
             fig.add_trace(go.Scatter(

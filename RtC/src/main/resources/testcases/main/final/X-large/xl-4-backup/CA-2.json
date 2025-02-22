@@ -1,27 +1,27 @@
 {
-  "id": "CA-4",
+  "id": "CA-2",
   "states": [
     {
-      "id": "r1",
+      "id": "q1",
       "initial": true,
-      "composition": ["r1"]
+      "composition": ["q1"]
     },
     {
-      "id": "r2",
+      "id": "q2",
       "initial": false,
-      "composition": ["r2"]
+      "composition": ["q2"]
     }
   ],
   "transitions": [
     {
-      "source": "r1",
-      "target": "r2",
+      "source": "q1",
+      "target": "q2",
       "label": ["a"],
       "constraints": []
     },
     {
-      "source": "r2",
-      "target": "r1",
+      "source": "q2",
+      "target": "q1",
       "label": ["c"],
       "constraints": []
     }

@@ -1,0 +1,30 @@
+{
+  "id": "CA-7",
+  "states": [
+    {
+      "id": "v1",
+      "initial": true,
+      "composition": ["v1"]
+    },
+    {
+      "id": "v2",
+      "initial": false,
+      "composition": ["v2"]
+    }
+  ],
+  "transitions": [
+    {
+      "source": "v1",
+      "target": "v2",
+      "label": ["b"],
+      "constraints": []
+    },
+    {
+      "source": "v2",
+      "target": "v1",
+      "label": ["f"],
+      "constraints": []
+    }
+  ],
+  "alphabet": ["b", "f"]
+}
