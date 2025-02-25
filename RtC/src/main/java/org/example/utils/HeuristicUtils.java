@@ -33,7 +33,7 @@ public class HeuristicUtils {
             case 2 -> automaton.getStatesCount();
             case 3 -> automaton.getTransitionDensity();
             case 6 -> automaton.getTranStateHarmonicMean();
-            case 7 -> automaton.getTranStateSum();
+            case 7 -> automaton.getTranStateProduct();
             default -> throw new WrongHeuristicTypeSelectionException();
         };
     }

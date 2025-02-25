@@ -42,3 +42,13 @@ Type 8
 Task executed in 77 ms
 Intermediate compounds:
 (S: 42, T: 22) (S: 84, T: 36) 
+
+Heuristic Type: 7
+Task executed in 86 ms
+Intermediate compounds:
+(S: 10, T: 18) (S: 42, T: 22) 
+
+Heuristic Type: 7
+Task executed in 81 ms
+Intermediate compounds:
+(S: 10, T: 18) (S: 42, T: 22) 

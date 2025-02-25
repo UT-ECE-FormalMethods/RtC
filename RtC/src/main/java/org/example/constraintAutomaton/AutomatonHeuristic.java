@@ -8,7 +8,7 @@ public class AutomatonHeuristic {
     private double transitionDensity;
     private int statesCount;
     private double tranStateHarmonicMean;
-    private int tranStateSum;
+    private int tranStateProduct;
 
     public AutomatonHeuristic(ConstraintAutomaton automaton) {
         this.automaton = automaton;
@@ -16,7 +16,7 @@ public class AutomatonHeuristic {
         this.statesCount = automaton.getStates().size();
         this.transitionDensity = (double) this.transitionCount / this.statesCount;
         this.tranStateHarmonicMean = (double) (2 * (this.transitionCount * this.statesCount)) / (this.transitionCount + this.statesCount);
-        this.tranStateSum = automaton.getStates().size() + automaton.getTransitions().size();
+        this.tranStateProduct = automaton.getStates().size() * automaton.getTransitions().size();
     }
 
     public ConstraintAutomaton getAutomaton() {
@@ -59,12 +59,12 @@ public class AutomatonHeuristic {
         this.tranStateHarmonicMean = tranStateHarmonicMean;
     }
 
-    public int getTranStateSum() {
-        return tranStateSum;
+    public int getTranStateProduct() {
+        return tranStateProduct;
     }
 
-    public void setTranStateSum(int tranStateSum) {
-        this.tranStateSum = tranStateSum;
+    public void setTranStateProduct(int tranStateProduct) {
+        this.tranStateProduct = tranStateProduct;
     }
 
     public List<String> getAutomatonAlphabet() {

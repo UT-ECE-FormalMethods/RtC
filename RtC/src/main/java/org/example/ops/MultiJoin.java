@@ -84,6 +84,14 @@ public class MultiJoin {
             AutomatonHeuristic automatonHeuristic_1 = minHeap.poll();
             AutomatonHeuristic automatonHeuristic_2 = minHeap.poll();
             System.out.println("Selecting " + automatonHeuristic_1.getAutomaton().getId() + " and " + automatonHeuristic_2.getAutomaton().getId() + " for joining");
+            try {
+                System.out.println("heuristic values 1: " + heuristicUtils.getInternalFieldAsHeuristic(automatonHeuristic_1, heuristicType));
+                System.out.println("heuristic values 2: " + heuristicUtils.getInternalFieldAsHeuristic(automatonHeuristic_2, heuristicType));
+                System.out.println("-------------");
+            }
+            catch (Exception e) {
+                System.out.println("error");
+            }
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(automatonHeuristic_1.getAutomaton(), automatonHeuristic_2.getAutomaton());
 //            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
