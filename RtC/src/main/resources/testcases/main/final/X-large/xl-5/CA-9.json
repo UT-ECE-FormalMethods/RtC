@@ -1,0 +1,12 @@
+{
+  "id": "CA-9",
+  "states": [
+    {"id": "y1", "initial": true, "composition":  ["y1"]},
+    {"id": "y2", "initial": false, "composition": ["y2"]}
+  ],
+  "transitions": [
+    {"source": "y1", "target": "y2", "label": ["f"], "constraints": []},
+    {"source": "y2", "target": "y1", "label": ["g"], "constraints": []}
+  ],
+  "alphabet": ["f", "g"]
+}

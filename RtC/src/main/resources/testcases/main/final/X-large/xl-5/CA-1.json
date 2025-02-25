@@ -1,0 +1,15 @@
+{
+  "id": "CA-1",
+  "states": [
+    {"id": "p1", "initial": true, "composition": ["p1"]},
+    {"id": "p2", "initial": false, "composition": ["p2"]},
+    {"id": "p3", "initial": false, "composition": ["p3"]}
+  ],
+  "transitions": [
+    {"source": "p1", "target": "p2", "label": ["a"], "constraints": []},
+    {"source": "p2", "target": "p3", "label": ["b"], "constraints": []},
+    {"source": "p3", "target": "p2", "label": ["c"], "constraints": []},
+    {"source": "p2", "target": "p1", "label": ["d"], "constraints": []}
+  ],
+  "alphabet": ["a", "b", "c", "d"]
+}

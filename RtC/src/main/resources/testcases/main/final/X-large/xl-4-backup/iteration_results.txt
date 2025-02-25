@@ -1,7 +1,0 @@
-old version
-Heuristic Type: 1
-Task executed in 2894615 ms
-Intermediate compounds:
-(S: 4, T: 6) (S: 4, T: 12) (S: 9, T: 19) (S: 16, T: 74) (S: 25, T: 118) (S: 36, T: 77) (S: 576, T: 2754) 
-
-new:

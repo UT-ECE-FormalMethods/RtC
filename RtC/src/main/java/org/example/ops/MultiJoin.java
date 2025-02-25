@@ -39,7 +39,7 @@ public class MultiJoin {
         while (deque.size() > 1) {
             ConstraintAutomaton firstAutomaton = deque.pollFirst();
             ConstraintAutomaton secondAutomaton = deque.pollFirst();
-            System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", second autom no. of states: " + secondAutomaton.getStates().size());
+            System.out.println("queue size: " + deque.size() + ", first autom no. of states: " + firstAutomaton.getStates().size() + ", tran: " +  firstAutomaton.getTransitions().size()  + ", second autom no. of states: " + secondAutomaton.getStates().size() + ", tran: " + secondAutomaton.getTransitions().size());
             long startTime = System.currentTimeMillis();
             ConstraintAutomaton joinedAutomaton = singleJoin.joinAutomata(firstAutomaton, secondAutomaton);
 //            joinedAutomaton = AutomatonUtils.removeUnreachableStates(joinedAutomaton);
@@ -123,6 +123,12 @@ public class MultiJoin {
             for (int i = 0; i < automata.size(); i++) {
                 for (int j = i + 1; j < automata.size(); j++) {
                     double disparity = Math.abs(heuristicUtils.getRelationalHeuristicValue(automata.get(i), automata.get(j), heuristicType));
+                    //combining Max Connectivity with Min Transitions or Min States
+                    if(heuristicType == 9)
+                        disparity *= (automata.get(i).getTransitionCount() * automata.get(j).getTransitionCount()) ;
+                    if(heuristicType == 10)
+                        disparity *= (automata.get(i).getStatesCount() * automata.get(j).getStatesCount());
+
                     if (disparity < minDisparity) {
                         minDisparity = disparity;
                         index1 = i;

@@ -27,7 +27,7 @@
     {
       "source": "t2",
       "target": "t3",
-      "label": ["f"],
+      "label": ["e"],
       "constraints": []
     },
     {
