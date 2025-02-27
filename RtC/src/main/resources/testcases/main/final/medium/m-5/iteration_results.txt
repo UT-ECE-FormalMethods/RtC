@@ -46,3 +46,13 @@ Heuristic Type: 7
 Task executed in 2474 ms
 Intermediate compounds:
 (S: 30, T: 66) (S: 56, T: 138) 
+
+Heuristic Type: 9
+Task executed in 2298 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 
+
+Heuristic Type: 10
+Task executed in 2319 ms
+Intermediate compounds:
+(S: 30, T: 66) (S: 56, T: 138) 

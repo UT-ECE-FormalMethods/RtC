@@ -54,3 +54,10 @@ Heuristic Type: 8
 Task executed in 9223494 ms
 Intermediate compounds:
 (S: 15, T: 18) (S: 60, T: 33) (S: 180, T: 57) (S: 360, T: 101) (S: 1800, T: 1672) (S: 7200, T: 5190) 
+
+------
+Adding tranStateProduct
+Heuristic Type: 7
+Task executed in 1127088 ms
+Intermediate compounds:
+(S: 4, T: 12) (S: 9, T: 24) (S: 16, T: 46) (S: 20, T: 108) (S: 45, T: 24) (S: 720, T: 1068) 

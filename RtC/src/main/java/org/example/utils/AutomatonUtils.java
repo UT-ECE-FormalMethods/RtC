@@ -94,7 +94,7 @@ public class AutomatonUtils {
         newAutomaton.setId(automaton.getId());
         newAutomaton.setStates(newStates);
         newAutomaton.setTransitions(newTransitions);
-        newAutomaton.setAlphabet(AutomatonUtils.getAutomatonAlphabetNames(newTransitions));
+        newAutomaton.setAlphabet(AutomatonUtils.getAutomatonAlphabetNames(newTransitions));// minor issue, should be commented, but doesn't have an effect on the MultiJoin process or the final result
 
         return newAutomaton;
 

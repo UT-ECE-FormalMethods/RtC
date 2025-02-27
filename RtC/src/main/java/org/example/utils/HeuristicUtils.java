@@ -43,7 +43,7 @@ public class HeuristicUtils {
         return switch (heuristicType) {
             case 4 -> (automaton_1.getTransitionCount() - automaton_2.getTransitionCount());
             case 5 -> (automaton_1.getStatesCount() - automaton_2.getStatesCount());
-            case 8 -> (double) 1 / ((automatonUtils.getTransitionLabelsIntersection(automaton_1.getAutomatonAlphabet(), automaton_2.getAutomatonAlphabet()).size()) + 1);
+            case 8, 9, 10 -> (double) 1 / ((automatonUtils.getTransitionLabelsIntersection(automaton_1.getAutomatonAlphabet(), automaton_2.getAutomatonAlphabet()).size()) + 1);
             default -> throw new WrongHeuristicTypeSelectionException();
         };
     }

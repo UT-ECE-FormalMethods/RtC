@@ -37,3 +37,47 @@ Type 8:
 Task executed in 160633 ms
 Intermediate compounds:
 (S: 200, T: 323) (S: 1200, T: 1400) 
+
+
+update results after fixing an issue in the testcase:
+
+Heuristic Type: 0
+Task executed in 166613 ms
+Intermediate compounds:
+(S: 200, T: 323) (S: 1200, T: 1400) 
+
+Heuristic Type: 1
+Task executed in 36104 ms
+Intermediate compounds:
+(S: 24, T: 104) (S: 200, T: 323) 
+
+
+Heuristic Type: 2
+Task executed in 35861 ms
+Intermediate compounds:
+(S: 24, T: 104) (S: 200, T: 323) 
+
+Heuristic Type: 3
+Task executed in 33458 ms
+Intermediate compounds:
+(S: 24, T: 104) (S: 200, T: 323) 
+
+Heuristic Type: 4
+Task executed in 34823 ms
+Intermediate compounds:
+(S: 24, T: 104) (S: 200, T: 323) 
+
+Heuristic Type: 5
+Task executed in 57769 ms
+Intermediate compounds:
+(S: 24, T: 104) (S: 480, T: 706) 
+
+Heuristic Type: 7
+Task executed in 32609 ms
+Intermediate compounds:
+(S: 24, T: 104) (S: 200, T: 323) 
+
+Heuristic Type: 8
+Task executed in 147251 ms
+Intermediate compounds:
+(S: 200, T: 323) (S: 1200, T: 1400) 

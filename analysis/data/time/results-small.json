@@ -1,7 +1,7 @@
 {
   "results": [
     {
-      "testcase_direcory": "s1-1",
+      "testcase_direcory": "s-1",
       "testcase_id_to_show": "1",
       "heuristics": [
         {
@@ -47,7 +47,7 @@
           "order": ""
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
           "avg_time": 1.9,
           "intermediate_CAs": [],
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "testcase_direcory": "s1-2",
+      "testcase_direcory": "s-2",
       "testcase_id_to_show": "2",
       "heuristics": [
         {
@@ -109,7 +109,7 @@
           "order": ""
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
           "avg_time": 8.6,
           "intermediate_CAs": [],
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "testcase_direcory": "test2",
+      "testcase_direcory": "s-3",
       "testcase_id_to_show": "3",
       "heuristics": [
         {
@@ -171,7 +171,7 @@
           "order": ""
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
           "avg_time": 84,
           "intermediate_CAs": [],
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "testcase_direcory": "test3",
+      "testcase_direcory": "s-4",
       "testcase_id_to_show": "4",
       "heuristics": [
         {
@@ -233,7 +233,7 @@
           "order": ""
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
           "avg_time": 79,
           "intermediate_CAs": [],
@@ -249,7 +249,7 @@
       ]
     },
     {
-      "testcase_direcory": "test6",
+      "testcase_direcory": "s-5",
       "testcase_id_to_show": "5",
       "heuristics": [
         {
@@ -295,7 +295,7 @@
           "order": ""
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
           "avg_time": 280,
           "intermediate_CAs": [],

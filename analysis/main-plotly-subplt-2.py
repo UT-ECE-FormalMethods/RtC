@@ -10,7 +10,7 @@ heuristic_colors = {
     "Transition Density": "green",
     "Transition Disparity": "purple",
     "State Disparity": "orange",
-    "Transition and State Sum": "brown",
+    "Transition and State Product": "brown",
     "Max Connectivity": "gray"
 }
 
@@ -22,7 +22,7 @@ custom_legend_order = [
     "Transition Density",
     "Transition Disparity",
     "State Disparity", 
-    "Transition and State Sum", 
+    "Transition and State Product", 
     "Max Connectivity"
 ]
 

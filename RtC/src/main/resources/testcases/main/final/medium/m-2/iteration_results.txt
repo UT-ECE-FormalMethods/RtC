@@ -45,3 +45,13 @@ Task executed in 1801 ms, 1826 ms, 1762 ms, 1837 ms, 1808 ms, 1876 ms, 1808 ms, 
 Avg: 1.8 s
 Intermediate compounds:
 (S: 200, T: 323) (S: 400, T: 628) 
+
+Heuristic Type: 9
+Task executed in 372 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 
+
+Heuristic Type: 10
+Task executed in 364 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 40, T: 77) 

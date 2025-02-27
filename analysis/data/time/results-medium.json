@@ -1,601 +1,233 @@
 {
   "results": [
     {
-      "testcase_direcory": "init-17",
+      "testcase_direcory": "m-1",
       "testcase_id_to_show": "1",
       "heuristics": [
         {
           "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
-          "avg_time": 359,
-          "intermediate_CAs": [
-            {
-              "states_num": 100,
-              "transitions_num": 111
-            }
-          ],
-          "order": "((CA-1 X CA-2) X CA-3)"
+          "avg_time": 359
         },
         {
           "name": "Min Transitions",
           "id_to_show": "1",
-          "avg_time": 1108,
-          "intermediate_CAs": [
-            {
-              "states_num": 70,
-              "transitions_num": 480
-            }
-          ],
-          "order": "(CA-2 X (CA-1 X CA-3))"
+          "avg_time": 1108
         },
         {
           "name": "Min States",
           "id_to_show": "2",
-          "avg_time": 1089,
-          "intermediate_CAs": [
-            {
-              "states_num": 70,
-              "transitions_num": 480
-            }
-          ],
-          "order": "(CA-2 X (CA-3 X CA-1))"
+          "avg_time": 1089
         },
         {
           "name": "Transition Density",
           "id_to_show": "3",
-          "avg_time": 346,
-          "intermediate_CAs": [
-            {
-              "states_num": 100,
-              "transitions_num": 111
-            }
-          ],
-          "order": "((CA-1 X CA-2) X CA-3)"
+          "avg_time": 346
         },
         {
           "name": "Transition Disparity",
           "id_to_show": "4",
-          "avg_time": 1069,
-          "intermediate_CAs": [
-            {
-              "states_num": 70,
-              "transitions_num": 480
-            }
-          ],
-          "order": "((CA-1 X CA-3) X CA-2)"
+          "avg_time": 1069
         },
         {
           "name": "State Disparity",
           "id_to_show": "5",
-          "avg_time": 337,
-          "intermediate_CAs": [
-            {
-              "states_num": 100,
-              "transitions_num": 111
-            }
-          ],
-          "order": "((CA-1 X CA-2) X CA-3)"
+          "avg_time": 337
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
-          "avg_time": 1090,
-          "intermediate_CAs": [
-            {
-              "states_num": 70,
-              "transitions_num": 480
-            }
-          ],
-          "order": "(CA-2 X (CA-3 X CA-1))"
+          "avg_time": 1090
         },
         {
           "name": "Max Connectivity",
           "id_to_show": "8",
-          "avg_time": 322,
-          "intermediate_CAs": [
-            {
-              "states_num": 100,
-              "transitions_num": 111
-            }
-          ],
-          "order": "((CA-1 X CA-2) X CA-3)"
+          "avg_time": 322
         }
       ],
       "worst_time": 1108
     },
     {
-      "testcase_direcory": "init-7",
+      "testcase_direcory": "m-2",
       "testcase_id_to_show": "2",
       "heuristics": [
         {
           "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
-          "avg_time": 498,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 80,
-              "transitions_num": 168
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
+          "avg_time": 498
         },
         {
           "name": "Min Transitions",
           "id_to_show": "1",
-          "avg_time": 368,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 40,
-              "transitions_num": 77
-            }
-          ],
-          "order": "(CA-3 X ((CA-1 X CA-2) X CA-4))"
+          "avg_time": 368
         },
         {
           "name": "Min States",
           "id_to_show": "2",
-          "avg_time": 370,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 40,
-              "transitions_num": 77
-            }
-          ],
-          "order": "(CA-3 X ((CA-1 X CA-2) X CA-4))"
+          "avg_time": 370
         },
         {
           "name": "Transition Density",
           "id_to_show": "3",
-          "avg_time": 488,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 80,
-              "transitions_num": 168
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
+          "avg_time": 488
         },
         {
           "name": "Transition Disparity",
           "id_to_show": "4",
-          "avg_time": 370,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 40,
-              "transitions_num": 77
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X CA-4) X CA-3)"
+          "avg_time": 370
         },
         {
           "name": "State Disparity",
           "id_to_show": "5",
-          "avg_time": 367,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 40,
-              "transitions_num": 77
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X CA-4) X CA-3)"
+          "avg_time": 367
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
-          "avg_time": 371,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 40,
-              "transitions_num": 77
-            }
-          ],
-          "order": "(CA-3 X ((CA-1 X CA-2) X CA-4))"
+          "avg_time": 371
         },
         {
           "name": "Max Connectivity",
           "id_to_show": "8",
-          "avg_time": 1800,
-          "intermediate_CAs": [
-            {
-              "states_num": 200,
-              "transitions_num": 323
-            },
-            {
-              "states_num": 400,
-              "transitions_num": 628
-            }
-          ],
-          "order": "((CA-1 X (CA-3 X CA-4)) X CA-2)"
+          "avg_time": 1800
         }
       ]
     },
     {
-      "testcase_direcory": "test4",
+      "testcase_direcory": "m-3",
       "testcase_id_to_show": "3",
       "heuristics": [
         {
           "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
-          "avg_time": 4375,
-          "intermediate_CAs": [
-            {
-              "states_num": 56,
-              "transitions_num": 17
-            },
-            {
-              "states_num": 336,
-              "transitions_num": 38
-            },
-            {
-              "states_num": 1680,
-              "transitions_num": 70
-            }
-          ],
-          "order": "((((CA-1 X CA-2) X CA-3) X CA-4) X CA-5)"
+          "avg_time": 4375
         },
         {
           "name": "Min Transitions",
           "id_to_show": "1",
-          "avg_time": 1900,
-          "intermediate_CAs": [
-            {
-              "states_num": 10,
-              "transitions_num": 7
-            },
-            {
-              "states_num": 60,
-              "transitions_num": 14
-            },
-            {
-              "states_num": 56,
-              "transitions_num": 17
-            }
-          ],
-          "order": "(((CA-5 X CA-4) X CA-3) X (CA-1 X CA-2))"
+          "avg_time": 1900
         },
         {
           "name": "Min States",
           "id_to_show": "2",
-          "avg_time": 2508,
-          "intermediate_CAs": [
-            {
-              "states_num": 10,
-              "transitions_num": 7
-            },
-            {
-              "states_num": 42,
-              "transitions_num": 22
-            },
-            {
-              "states_num": 80,
-              "transitions_num": 24
-            }
-          ],
-          "order": "((CA-3 X CA-1) X (CA-2 X (CA-5 X CA-4)))"
+          "avg_time": 2508
         },
         {
           "name": "Transition Density",
           "id_to_show": "3",
-          "avg_time": 2817,
-          "intermediate_CAs": [
-            {
-              "states_num": 10,
-              "transitions_num": 7
-            },
-            {
-              "states_num": 80,
-              "transitions_num": 24
-            },
-            {
-              "states_num": 560,
-              "transitions_num": 38
-            }
-          ],
-          "order": "((((CA-4 X CA-5) X CA-2) X CA-1) X CA-3)"
+          "avg_time": 2817
         },
         {
           "name": "Transition Disparity",
           "id_to_show": "4",
-          "avg_time": 4059,
-          "intermediate_CAs": [
-            {
-              "states_num": 56,
-              "transitions_num": 17
-            },
-            {
-              "states_num": 30,
-              "transitions_num": 10
-            },
-            {
-              "states_num": 1680,
-              "transitions_num": 70
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X (CA-3 X CA-4)) X CA-5)"
+          "avg_time": 4059
         },
         {
           "name": "State Disparity",
           "id_to_show": "5",
-          "avg_time": 4061,
-          "intermediate_CAs": [
-            {
-              "states_num": 56,
-              "transitions_num": 17
-            },
-            {
-              "states_num": 30,
-              "transitions_num": 10
-            },
-            {
-              "states_num": 1680,
-              "transitions_num": 70
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X (CA-3 X CA-4)) X CA-5)"
+          "avg_time": 4061
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
-          "avg_time": 2506,
-          "intermediate_CAs": [
-            {
-              "states_num": 10,
-              "transitions_num": 7
-            },
-            {
-              "states_num": 42,
-              "transitions_num": 22
-            },
-            {
-              "states_num": 80,
-              "transitions_num": 24
-            }
-          ],
-          "order": "((CA-3 X CA-1) X ((CA-5 X CA-4) X CA-2))"
+          "avg_time": 2506
         },
         {
           "name": "Max Connectivity",
           "id_to_show": "8",
-          "avg_time": 4431,
-          "intermediate_CAs": [
-            {
-              "states_num": 56,
-              "transitions_num": 17
-            },
-            {
-              "states_num": 336,
-              "transitions_num": 38
-            },
-            {
-              "states_num": 1680,
-              "transitions_num": 70
-            }
-          ],
-          "order": "((((CA-1 X CA-2) X CA-3) X CA-4) X CA-5)"
+          "avg_time": 4431
         }
       ]
     },
     {
-      "testcase_direcory": "s2-1",
+      "testcase_direcory": "m-4",
       "testcase_id_to_show": "4",
       "heuristics": [
         {
           "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
-          "avg_time": 11300,
-          "intermediate_CAs": [
-            {
-              "states_num": 40,
-              "transitions_num": 222
-            },
-            {
-              "states_num": 160,
-              "transitions_num": 802
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
+          "avg_time": 9886
         },
         {
           "name": "Min Transitions",
           "id_to_show": "1",
-          "avg_time": 6635,
-          "intermediate_CAs": [
-            {
-              "states_num": 16,
-              "transitions_num": 22
-            },
-            {
-              "states_num": 120,
-              "transitions_num": 498
-            }
-          ],
-          "order": "((CA-3 X CA-1) X (CA-4 X CA-2))"
+          "avg_time": 5065
         },
         {
           "name": "Min States",
           "id_to_show": "2",
-          "avg_time": 7078,
-          "intermediate_CAs": [
-            {
-              "states_num": 16,
-              "transitions_num": 22
-            },
-            {
-              "states_num": 120,
-              "transitions_num": 498
-            }
-          ],
-          "order": "(CA-4 X ((CA-1 X CA-2) X CA-3))"
+          "avg_time": 5042
         },
         {
           "name": "Transition Density",
           "id_to_show": "3",
-          "avg_time": 5399,
-          "intermediate_CAs": [
-            {
-              "states_num": 40,
-              "transitions_num": 112
-            },
-            {
-              "states_num": 20,
-              "transitions_num": 43
-            }
-          ],
-          "order": "((CA-1 X CA-3) X (CA-4 X CA-2))"
+          "avg_time": 4449
         },
         {
           "name": "Transition Disparity",
           "id_to_show": "4",
-          "avg_time": 12437,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 200,
-              "transitions_num": 494
-            }
-          ],
-          "order": "((CA-1 X CA-2) X (CA-3 X CA-4))"
+          "avg_time": 10088
         },
         {
           "name": "State Disparity",
           "id_to_show": "5",
-          "avg_time": 7194,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 40,
-              "transitions_num": 77
-            }
-          ],
-          "order": "(((CA-1 X CA-2) X CA-3) X CA-4)"
+          "avg_time": 4966
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
-          "avg_time": 6916,
-          "intermediate_CAs": [
-            {
-              "states_num": 4,
-              "transitions_num": 6
-            },
-            {
-              "states_num": 40,
-              "transitions_num": 77
-            }
-          ],
-          "order": "(CA-4 X ((CA-1 X CA-2) X CA-3))"
+          "avg_time": 5147
         },
         {
           "name": "Max Connectivity",
           "id_to_show": "8",
-          "avg_time": 7175,
-          "intermediate_CAs": [
-            {
-              "states_num": 200,
-              "transitions_num": 494
-            },
-            {
-              "states_num": 400,
-              "transitions_num": 785
-            }
-          ],
-          "order": "((CA-1 X ((CA-3 X CA-4) X CA-5)) X CA-2)"
+          "avg_time": 5160
         }
       ]
     },
     {
-      "testcase_direcory": "s2-3",
+      "testcase_direcory": "m-5",
       "testcase_id_to_show": "5",
       "heuristics": [
         {
           "name": "Incremental (No Heuristic)",
           "id_to_show": "0",
-          "avg_time": 24100,
-          "intermediate_CAs": [],
-          "order": "((CA-1 X CA-4) X (CA-3 X CA-2))"
+          "avg_time": 24100
         },
         {
           "name": "Min Transitions",
           "id_to_show": "1",
-          "avg_time": 2348,
-          "intermediate_CAs": [],
-          "order": "((CA-1 X CA-4) X (CA-3 X CA-2))"
+          "avg_time": 2348
         },
         {
           "name": "Min States",
           "id_to_show": "2",
-          "avg_time": 2265,
-          "intermediate_CAs": [],
-          "order": "(CA-4 X (CA-2 X (CA-1 X CA-3)))"
+          "avg_time": 2265
         },
         {
           "name": "Transition Density",
           "id_to_show": "3",
-          "avg_time": 2581,
-          "intermediate_CAs": [],
-          "order": "((CA-2 X CA-3) X (CA-4 X CA-1))"
+          "avg_time": 2581
         },
         {
           "name": "Transition Disparity",
           "id_to_show": "4",
-          "avg_time": 2309,
-          "intermediate_CAs": [],
-          "order": "((CA-1 X CA-2) X (CA-3 X CA-4))"
+          "avg_time": 2309
         },
         {
           "name": "State Disparity",
           "id_to_show": "5",
-          "avg_time": 2381,
-          "intermediate_CAs": [],
-          "order": "((CA-1 X CA-3) X (CA-2 X CA-4))"
+          "avg_time": 2381
         },
         {
-          "name": "Transition and State Sum",
+          "name": "Transition and State Product",
           "id_to_show": "7",
-          "avg_time": 2259,
-          "intermediate_CAs": [],
-          "order": "(CA-2 X (CA-4 X (CA-1 X CA-3)))"
+          "avg_time": 2259
         },
         {
           "name": "Max Connectivity",
           "id_to_show": "8",
-          "avg_time": 6795,
-          "intermediate_CAs": [],
-          "order": "(CA-1 X ((CA-2 X CA-3) X CA-4))"
+          "avg_time": 6795
         }
       ]
     }

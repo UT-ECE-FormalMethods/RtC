@@ -1,50 +1,3 @@
-After removing unreachable states only for the final CA:
-Type 0:
-Task executed in 11300 ms
-Intermediate compounds:
-(S: 40, T: 222) (S: 160, T: 802)
-
-Type 1:
-Task executed in 6635 ms
-Intermediate compounds:
-(S: 16, T: 22) (S: 120, T: 498)
-
-Type 2:
-Task executed in 7078 ms
-Intermediate compounds:
-(S: 16, T: 22) (S: 120, T: 498)
-
-Type 3:
-Task executed in 5399 ms
-Intermediate compounds:
-(S: 48, T: 182) (S: 40, T: 222)
-
-Type 4:
-Task executed in 12437 ms
-Intermediate compounds:
-(S: 16, T: 22) (S: 160, T: 802)
-
-Type 5:
-Task executed in 7194 ms
-Intermediate compounds:
-(S: 16, T: 22) (S: 120, T: 498)
-
-Type 7:
-Task executed in 6916 ms
-Intermediate compounds:
-(S: 16, T: 22) (S: 120, T: 498)
-
-Type 8:
-Task executed in 7175 ms
-Intermediate compounds:
-(S: 120, T: 498) (S: 16, T: 22) 
-
-Heuristic Type: 7
-Task executed in 6810 ms
-Intermediate compounds:
-(S: 16, T: 22) (S: 120, T: 498) 
-
---------------------------------
 updated results after fixing an issue in the CAs:
 
 Heuristic Type: 0
@@ -94,3 +47,13 @@ Task executed in 5342 ms, 4979 ms
 Avg: 5160 ms
 Intermediate compounds:
 (S: 110, T: 408) (S: 16, T: 22) 
+
+Heuristic Type: 9
+Task executed in 5143 ms
+Intermediate compounds:
+(S: 16, T: 22) (S: 110, T: 408) 
+
+Heuristic Type: 10
+Task executed in 5094 ms
+Intermediate compounds:
+(S: 16, T: 22) (S: 110, T: 408) 

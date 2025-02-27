@@ -20,21 +20,6 @@
             "avg_intermediate_CA_transitions": 480
           },
           {
-            "name": "Transition Density",
-            "id_to_show": "3",
-            "avg_intermediate_CA_transitions": 111
-          },
-          {
-            "name": "Transition Disparity",
-            "id_to_show": "4",
-            "avg_intermediate_CA_transitions": 480
-          },
-          {
-            "name": "State Disparity",
-            "id_to_show": "5",
-            "avg_intermediate_CA_transitions": 111
-          },
-          {
             "name": "Transition and State Product",
             "id_to_show": "7",
             "avg_intermediate_CA_transitions": 480
@@ -43,6 +28,16 @@
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 111
+          },
+          {
+            "name": "Transition and Connectivity Product",
+            "id_to_show": "9",
+            "avg_time": 111
+          },
+          {
+            "name": "State and Connectivity Product",
+            "id_to_show": "10",
+            "avg_time": 111
           }
         ]
       },
@@ -66,21 +61,6 @@
             "avg_intermediate_CA_transitions": 42
           },
           {
-            "name": "Transition Density",
-            "id_to_show": "3",
-            "avg_intermediate_CA_transitions": 87
-          },
-          {
-            "name": "Transition Disparity",
-            "id_to_show": "4",
-            "avg_intermediate_CA_transitions": 42
-          },
-          {
-            "name": "State Disparity",
-            "id_to_show": "5",
-            "avg_intermediate_CA_transitions": 42
-          },
-          {
             "name": "Transition and State Product",
             "id_to_show": "7",
             "avg_intermediate_CA_transitions": 42
@@ -89,6 +69,16 @@
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 476
+          },
+          {
+            "name": "Transition and Connectivity Product",
+            "id_to_show": "9",
+            "avg_time": 42
+          },
+          {
+            "name": "State and Connectivity Product",
+            "id_to_show": "10",
+            "avg_time": 42
           }
         ]
       },
@@ -112,21 +102,6 @@
             "avg_intermediate_CA_transitions": 18
           },
           {
-            "name": "Transition Density",
-            "id_to_show": "3",
-            "avg_intermediate_CA_transitions": 23
-          },
-          {
-            "name": "Transition Disparity",
-            "id_to_show": "4",
-            "avg_intermediate_CA_transitions": 32
-          },
-          {
-            "name": "State Disparity",
-            "id_to_show": "5",
-            "avg_intermediate_CA_transitions": 32
-          },
-          {
             "name": "Transition and State Product",
             "id_to_show": "7",
             "avg_intermediate_CA_transitions": 18
@@ -135,6 +110,16 @@
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 42
+          },
+          {
+            "name": "Transition and Connectivity Product",
+            "id_to_show": "9",
+            "avg_time": 13
+          },
+          {
+            "name": "State and Connectivity Product",
+            "id_to_show": "10",
+            "avg_time": 18
           }
         ]
       },
@@ -158,21 +143,6 @@
             "avg_intermediate_CA_transitions": 215
           },
           {
-            "name": "Transition Density",
-            "id_to_show": "3",
-            "avg_intermediate_CA_transitions": 183
-          },
-          {
-            "name": "Transition Disparity",
-            "id_to_show": "4",
-            "avg_intermediate_CA_transitions": 412
-          },
-          {
-            "name": "State Disparity",
-            "id_to_show": "5",
-            "avg_intermediate_CA_transitions": 215
-          },
-          {
             "name": "Transition and State Product",
             "id_to_show": "7",
             "avg_intermediate_CA_transitions": 215
@@ -181,6 +151,16 @@
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 215
+          },
+          {
+            "name": "Transition and Connectivity Product",
+            "id_to_show": "9",
+            "avg_time": 215
+          },
+          {
+            "name": "State and Connectivity Product",
+            "id_to_show": "10",
+            "avg_time": 215
           }
         ]
       },
@@ -204,21 +184,6 @@
             "avg_intermediate_CA_transitions": 102
           },
           {
-            "name": "Transition Density",
-            "id_to_show": "3",
-            "avg_intermediate_CA_transitions": 102
-          },
-          {
-            "name": "Transition Disparity",
-            "id_to_show": "4",
-            "avg_intermediate_CA_transitions": 102
-          },
-          {
-            "name": "State Disparity",
-            "id_to_show": "5",
-            "avg_intermediate_CA_transitions": 102
-          },
-          {
             "name": "Transition and State Product",
             "id_to_show": "7",
             "avg_intermediate_CA_transitions": 102
@@ -227,6 +192,16 @@
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 312
+          },
+          {
+            "name": "Transition and Connectivity Product",
+            "id_to_show": "9",
+            "avg_time": 102
+          },
+          {
+            "name": "State and Connectivity Product",
+            "id_to_show": "10",
+            "avg_time": 102
           }
         ]
       }

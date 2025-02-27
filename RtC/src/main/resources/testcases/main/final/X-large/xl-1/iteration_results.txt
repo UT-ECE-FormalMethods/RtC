@@ -1,88 +1,3 @@
-Heuristic Type: 0
-Task executed in 3992578, 3475704, 3661811 ms
-Intermediate compounds:
-(S: 100, T: 111) (S: 700, T: 3942) (S: 1400, T: 6828) (S: 4200, T: 6696) 
-
-Heuristic Type: 1
-Task executed in 137650, 140350 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 12, T: 12) (S: 120, T: 36) (S: 70, T: 524) 
-
-Heuristic Type: 2
-Task executed in 143969, 142384 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 12, T: 12) (S: 70, T: 524) (S: 120, T: 36) 
-
-Heuristic Type: 3
-Task executed in 1421298, 1427330 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 30, T: 12) (S: 300, T: 60) (S: 2100, T: 3660) 
-
-Heuristic Type: 4
-Task executed in 130675, 135320 ms
-Intermediate compounds:
-(S: 70, T: 480) (S: 4, T: 12) (S: 40, T: 89) (S: 120, T: 54) 
-
-Heuristic Type: 5
-Task executed in 103466, 104157 ms
-Intermediate compounds:
-(S: 100, T: 111) (S: 4, T: 12) (S: 12, T: 12) (S: 84, T: 300) 
-
-Heuristic Type: 7
-Task executed in 108610, 109691 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 12, T: 12) (S: 84, T: 300) (S: 100, T: 111) 
-
-Heuristic Type: 8
-Task executed in 3786539, 3875126 ms
-Intermediate compounds:
-(S: 30, T: 12) (S: 300, T: 60) (S: 2100, T: 3660) (S: 4200, T: 6696) 
-
-
-
-------------------------------------------
-Heuristic Type: 0
-Task executed in 3661811 ms
-Intermediate compounds:
-(S: 100, T: 111) (S: 700, T: 3942) (S: 1400, T: 6828) (S: 4200, T: 6696) 
-
-Heuristic Type: 1
-Task executed in 140350 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 12, T: 12) (S: 120, T: 36) (S: 70, T: 524) 
-
-Heuristic Type: 2
-Task executed in 142384 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 12, T: 12) (S: 70, T: 524) (S: 120, T: 36) 
-
-Heuristic Type: 3
-Task executed in 1427330 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 30, T: 12) (S: 300, T: 60) (S: 2100, T: 3660) 
-
-Heuristic Type: 4
-Task executed in 135320 ms
-Intermediate compounds:
-(S: 70, T: 480) (S: 4, T: 12) (S: 40, T: 89) (S: 120, T: 54) 
-
-Heuristic Type: 5
-Task executed in 104157 ms
-Intermediate compounds:
-(S: 100, T: 111) (S: 4, T: 12) (S: 12, T: 12) (S: 84, T: 300) 
-
-Heuristic Type: 7
-Task executed in 109691 ms
-Intermediate compounds:
-(S: 4, T: 12) (S: 12, T: 12) (S: 84, T: 300) (S: 100, T: 111) 
-
-Heuristic Type: 8
-Task executed in 3875126 ms
-Intermediate compounds:
-(S: 30, T: 12) (S: 300, T: 60) (S: 2100, T: 3660) (S: 4200, T: 6696) 
-
-
--------------------------
 New results after fixing CA5 names:
 
 Heuristic Type: 1
@@ -129,3 +44,13 @@ Heuristic Type: 8
 Task executed in 144723 ms
 Intermediate compounds:
 (S: 100, T: 111) (S: 300, T: 195) (S: 600, T: 342) (S: 1200, T: 423) 
+
+
+---
+changing tranStateSum to tranStateProduct:
+
+Heuristic Type: 7
+Task executed in 154390 ms
+Intermediate compounds:
+(S: 4, T: 12) (S: 12, T: 36) (S: 70, T: 480) (S: 120, T: 103) 
+same order as the tranStateSum10

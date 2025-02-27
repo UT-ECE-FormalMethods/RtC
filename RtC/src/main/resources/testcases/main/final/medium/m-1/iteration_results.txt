@@ -43,7 +43,12 @@ Task executed in 322 ms
 Intermediate compounds:
 (S: 100, T: 111) 
 
-Heuristic Type: 7
-Task executed in 1090 ms
+Heuristic Type: 9 (min tran * connectivity)
+Task executed in 338 ms
 Intermediate compounds:
-(S: 70, T: 480) 
+(S: 100, T: 111) 
+
+Heuristic Type: 10 (min state * connectivity)
+Task executed in 330 ms
+Intermediate compounds:
+(S: 100, T: 111) 
