@@ -52,11 +52,6 @@
       "composition": ["s10"]
     },
     {
-      "id": "s10",
-      "initial": false,
-      "composition": ["s10"]
-    },
-    {
       "id": "s11",
       "initial": false,
       "composition": ["s11"]

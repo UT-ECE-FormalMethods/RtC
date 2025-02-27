@@ -19,7 +19,7 @@
     {
       "id": "q4",
       "initial": false,
-      "composition": ["q3"]
+      "composition": ["q4"]
     }
   ],
   "transitions": [

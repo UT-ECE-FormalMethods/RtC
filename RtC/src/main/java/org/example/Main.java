@@ -23,10 +23,10 @@ public class Main {
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
 
         String mainTestcaseDirectory = "src/main/resources/testcases/main/final/";
-        String testcaseSize = "small";
-        String testcasePrefix = "s";
-        String testcaseNumber = "5";
-        int heuristicType = 7;
+        String testcaseSize = "medium";
+        String testcasePrefix = "m";
+        String testcaseNumber = "4";
+        int heuristicType = 8;
 
         if (args.length > 0) {
             try {
