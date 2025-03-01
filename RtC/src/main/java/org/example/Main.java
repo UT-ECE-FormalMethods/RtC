@@ -23,9 +23,9 @@ public class Main {
         MultiJoin multiJoin = new MultiJoin(automataOps, fileUtils, heuristicUtils);
 
         String mainTestcaseDirectory = "src/main/resources/testcases/main/final/";
-        String testcaseSize = "medium";
-        String testcasePrefix = "m";
-        String testcaseNumber = "5";
+        String testcaseSize = "X-Large";
+        String testcasePrefix = "xl";
+        String testcaseNumber = "1";
         int heuristicType = 10;
 
         if (args.length > 0) {

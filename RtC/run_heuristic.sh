@@ -10,7 +10,7 @@ CLASSPATH="E:\university\Research\Formal-Methods-Lab\RtC-git\RtC\RtC\target\clas
 MAIN_CLASS="org.example.Main"
 
 # executing the program for heuristicType values from 1 to 7
-for i in {0..8}
+for i in {0..10}
 do
     "$JAVA_EXEC" -classpath "$CLASSPATH" "$MAIN_CLASS" "$i"
     echo "Execution with heuristicType=$i completed."

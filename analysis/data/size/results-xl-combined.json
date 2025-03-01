@@ -1,207 +1,207 @@
 {
     "results": [
       {
-        "testcase_direcory": "m-1",
+        "testcase_direcory": "xl-1",
         "testcase_id_to_show": "1",
         "heuristics": [
           {
             "name": "Default (No Heuristic)",
             "id_to_show": "0",
-            "avg_intermediate_CA_transitions": 111
+            "avg_intermediate_CA_transitions": 6851
           },
           {
             "name": "Min Transitions",
             "id_to_show": "1",
-            "avg_intermediate_CA_transitions": 480
+            "avg_intermediate_CA_transitions": 158
           },
           {
             "name": "Min States",
             "id_to_show": "2",
-            "avg_intermediate_CA_transitions": 480
+            "avg_intermediate_CA_transitions": 176
           },
           {
             "name": "Transition and State Product",
             "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 480
+            "avg_intermediate_CA_transitions": 158
           },
           {
             "name": "Max Connectivity",
             "id_to_show": "8",
-            "avg_intermediate_CA_transitions": 111
+            "avg_intermediate_CA_transitions": 268
           },
           {
             "name": "Transition and Connectivity Product",
             "id_to_show": "9",
-            "avg_intermediate_CA_transitions": 111
+            "avg_intermediate_CA_transitions": 123
           },
           {
             "name": "State and Connectivity Product",
             "id_to_show": "10",
-            "avg_intermediate_CA_transitions": 111
+            "avg_intermediate_CA_transitions": 241
           }
         ]
       },
       {
-        "testcase_direcory": "m-2",
+        "testcase_direcory": "xl-2",
         "testcase_id_to_show": "2",
         "heuristics": [
           {
             "name": "Default (No Heuristic)",
             "id_to_show": "0",
-            "avg_intermediate_CA_transitions": 87
+            "avg_intermediate_CA_transitions": 2599
           },
           {
             "name": "Min Transitions",
             "id_to_show": "1",
-            "avg_intermediate_CA_transitions": 42
+            "avg_intermediate_CA_transitions": 81
           },
           {
             "name": "Min States",
             "id_to_show": "2",
-            "avg_intermediate_CA_transitions": 42
+            "avg_intermediate_CA_transitions": 95
           },
           {
             "name": "Transition and State Product",
             "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 42
+            "avg_intermediate_CA_transitions": 156
           },
           {
             "name": "Max Connectivity",
             "id_to_show": "8",
-            "avg_intermediate_CA_transitions": 476
+            "avg_intermediate_CA_transitions": 2860
           },
           {
             "name": "Transition and Connectivity Product",
             "id_to_show": "9",
-            "avg_intermediate_CA_transitions": 42
+            "avg_intermediate_CA_transitions": 82
           },
           {
             "name": "State and Connectivity Product",
             "id_to_show": "10",
-            "avg_intermediate_CA_transitions": 42
+            "avg_intermediate_CA_transitions": 89
           }
         ]
       },
       {
-        "testcase_direcory": "m-3",
+        "testcase_direcory": "xl-3",
         "testcase_id_to_show": "3",
         "heuristics": [
           {
             "name": "Default (No Heuristic)",
             "id_to_show": "0",
-            "avg_intermediate_CA_transitions": 42
+            "avg_intermediate_CA_transitions": 1184
           },
           {
             "name": "Min Transitions",
             "id_to_show": "1",
-            "avg_intermediate_CA_transitions": 13
+            "avg_intermediate_CA_transitions": 230
           },
           {
             "name": "Min States",
             "id_to_show": "2",
-            "avg_intermediate_CA_transitions": 18
+            "avg_intermediate_CA_transitions": 177
           },
           {
             "name": "Transition and State Product",
             "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 18
+            "avg_intermediate_CA_transitions": 214
           },
           {
             "name": "Max Connectivity",
             "id_to_show": "8",
-            "avg_intermediate_CA_transitions": 42
+            "avg_intermediate_CA_transitions": 1178
           },
           {
             "name": "Transition and Connectivity Product",
             "id_to_show": "9",
-            "avg_intermediate_CA_transitions": 13
+            "avg_intermediate_CA_transitions": 51
           },
           {
             "name": "State and Connectivity Product",
             "id_to_show": "10",
-            "avg_intermediate_CA_transitions": 18
+            "avg_intermediate_CA_transitions": 120
           }
         ]
       },
       {
-        "testcase_direcory": "m-4",
+        "testcase_direcory": "xl-4",
         "testcase_id_to_show": "4",
         "heuristics": [
           {
             "name": "Default (No Heuristic)",
             "id_to_show": "0",
-            "avg_intermediate_CA_transitions": 512
+            "avg_intermediate_CA_transitions": 1441
           },
           {
             "name": "Min Transitions",
             "id_to_show": "1",
-            "avg_intermediate_CA_transitions": 215
+            "avg_intermediate_CA_transitions": 263
           },
           {
             "name": "Min States",
             "id_to_show": "2",
-            "avg_intermediate_CA_transitions": 215
+            "avg_intermediate_CA_transitions": 485
           },
           {
             "name": "Transition and State Product",
             "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 215
+            "avg_intermediate_CA_transitions": 263
           },
           {
             "name": "Max Connectivity",
             "id_to_show": "8",
-            "avg_intermediate_CA_transitions": 215
+            "avg_intermediate_CA_transitions": 2948
           },
           {
             "name": "Transition and Connectivity Product",
             "id_to_show": "9",
-            "avg_intermediate_CA_transitions": 215
+            "avg_intermediate_CA_transitions": 163
           },
           {
             "name": "State and Connectivity Product",
             "id_to_show": "10",
-            "avg_intermediate_CA_transitions": 215
+            "avg_intermediate_CA_transitions": 184
           }
         ]
       },
       {
-        "testcase_direcory": "m-5",
+        "testcase_direcory": "xl-5",
         "testcase_id_to_show": "5",
         "heuristics": [
           {
             "name": "Default (No Heuristic)",
             "id_to_show": "0",
-            "avg_intermediate_CA_transitions": 1124
+            "avg_intermediate_CA_transitions": 1810
           },
           {
             "name": "Min Transitions",
             "id_to_show": "1",
-            "avg_intermediate_CA_transitions": 102
+            "avg_intermediate_CA_transitions": 148
           },
           {
             "name": "Min States",
             "id_to_show": "2",
-            "avg_intermediate_CA_transitions": 102
+            "avg_intermediate_CA_transitions": 147
           },
           {
             "name": "Transition and State Product",
             "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 102
+            "avg_intermediate_CA_transitions": 148
           },
           {
             "name": "Max Connectivity",
             "id_to_show": "8",
-            "avg_intermediate_CA_transitions": 312
+            "avg_intermediate_CA_transitions": 1066
           },
           {
             "name": "Transition and Connectivity Product",
             "id_to_show": "9",
-            "avg_intermediate_CA_transitions": 102
+            "avg_intermediate_CA_transitions": 69
           },
           {
             "name": "State and Connectivity Product",
             "id_to_show": "10",
-            "avg_intermediate_CA_transitions": 102
+            "avg_intermediate_CA_transitions": 44
           }
         ]
       }

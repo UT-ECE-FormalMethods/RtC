@@ -5,7 +5,7 @@
       "testcase_id_to_show": "1",
       "heuristics": [
         {
-          "name": "Incremental (No Heuristic)",
+          "name": "Default (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 359
         },
@@ -35,11 +35,6 @@
           "avg_time": 337
         },
         {
-          "name": "Transition and State Product",
-          "id_to_show": "7",
-          "avg_time": 1090
-        },
-        {
           "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 322
@@ -52,7 +47,7 @@
       "testcase_id_to_show": "2",
       "heuristics": [
         {
-          "name": "Incremental (No Heuristic)",
+          "name": "Default (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 498
         },
@@ -82,11 +77,6 @@
           "avg_time": 367
         },
         {
-          "name": "Transition and State Product",
-          "id_to_show": "7",
-          "avg_time": 371
-        },
-        {
           "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 1800
@@ -98,7 +88,7 @@
       "testcase_id_to_show": "3",
       "heuristics": [
         {
-          "name": "Incremental (No Heuristic)",
+          "name": "Default (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 4375
         },
@@ -128,11 +118,6 @@
           "avg_time": 4061
         },
         {
-          "name": "Transition and State Product",
-          "id_to_show": "7",
-          "avg_time": 2506
-        },
-        {
           "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 4431
@@ -144,7 +129,7 @@
       "testcase_id_to_show": "4",
       "heuristics": [
         {
-          "name": "Incremental (No Heuristic)",
+          "name": "Default (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 9886
         },
@@ -174,11 +159,6 @@
           "avg_time": 4966
         },
         {
-          "name": "Transition and State Product",
-          "id_to_show": "7",
-          "avg_time": 5147
-        },
-        {
           "name": "Max Connectivity",
           "id_to_show": "8",
           "avg_time": 5160
@@ -190,7 +170,7 @@
       "testcase_id_to_show": "5",
       "heuristics": [
         {
-          "name": "Incremental (No Heuristic)",
+          "name": "Default (No Heuristic)",
           "id_to_show": "0",
           "avg_time": 24100
         },
@@ -218,11 +198,6 @@
           "name": "State Disparity",
           "id_to_show": "5",
           "avg_time": 2381
-        },
-        {
-          "name": "Transition and State Product",
-          "id_to_show": "7",
-          "avg_time": 2259
         },
         {
           "name": "Max Connectivity",

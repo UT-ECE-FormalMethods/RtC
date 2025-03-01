@@ -5,7 +5,7 @@
         "testcase_id_to_show": "1",
         "heuristics": [
           {
-            "name": "Incremental (No Heuristic)",
+            "name": "Default (No Heuristic)",
             "id_to_show": "0",
             "avg_intermediate_CA_transitions": 215
           },
@@ -35,11 +35,6 @@
             "avg_intermediate_CA_transitions": 109
           },
           {
-            "name": "Transition and State Product",
-            "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 109
-          },
-          {
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 1057
@@ -51,7 +46,7 @@
         "testcase_id_to_show": "2",
         "heuristics": [
           {
-            "name": "Incremental (No Heuristic)",
+            "name": "Default (No Heuristic)",
             "id_to_show": "0",
             "avg_intermediate_CA_transitions": 862
           },
@@ -81,11 +76,6 @@
             "avg_intermediate_CA_transitions": 405
           },
           {
-            "name": "Transition and State Product",
-            "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 214
-          },
-          {
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 862
@@ -97,7 +87,7 @@
         "testcase_id_to_show": "3",
         "heuristics": [
           {
-            "name": "Incremental (No Heuristic)",
+            "name": "Default (No Heuristic)",
             "id_to_show": "0",
             "avg_intermediate_CA_transitions": 1422
           },
@@ -127,11 +117,6 @@
             "avg_intermediate_CA_transitions": 968
           },
           {
-            "name": "Transition and State Product",
-            "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 177
-          },
-          {
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 1021
@@ -143,7 +128,7 @@
         "testcase_id_to_show": "4",
         "heuristics": [
           {
-            "name": "Incremental (No Heuristic)",
+            "name": "Default (No Heuristic)",
             "id_to_show": "0",
             "avg_intermediate_CA_transitions": 1365
           },
@@ -173,11 +158,6 @@
             "avg_intermediate_CA_transitions": 238
           },
           {
-            "name": "Transition and State Product",
-            "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 238
-          },
-          {
             "name": "Max Connectivity",
             "id_to_show": "8",
             "avg_intermediate_CA_transitions": 1365
@@ -189,7 +169,7 @@
         "testcase_id_to_show": "5",
         "heuristics": [
           {
-            "name": "Incremental (No Heuristic)",
+            "name": "Default (No Heuristic)",
             "id_to_show": "0",
             "avg_intermediate_CA_transitions": 358
           },
@@ -217,11 +197,6 @@
             "name": "State Disparity",
             "id_to_show": "5",
             "avg_intermediate_CA_transitions": 339
-          },
-          {
-            "name": "Transition and State Product",
-            "id_to_show": "7",
-            "avg_intermediate_CA_transitions": 463
           },
           {
             "name": "Max Connectivity",

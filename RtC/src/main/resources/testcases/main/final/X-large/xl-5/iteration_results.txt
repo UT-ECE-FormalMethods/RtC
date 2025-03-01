@@ -52,3 +52,13 @@ Heuristic Type: 7 (tranStateProduct same joining sequence as the transStateSum)
 Task executed in 261150 ms
 Intermediate compounds:
 (S: 4, T: 6) (S: 4, T: 12) (S: 6, T: 22) (S: 9, T: 63) (S: 9, T: 27) (S: 16, T: 50) (S: 54, T: 96) (S: 144, T: 907) 
+
+Heuristic Type: 9
+Task executed in 111261 ms
+Intermediate compounds:
+(S: 4, T: 6) (S: 4, T: 6) (S: 6, T: 13) (S: 9, T: 16) (S: 12, T: 10) (S: 12, T: 43) (S: 108, T: 86) (S: 72, T: 371) 
+
+Heuristic Type: 10
+Task executed in 53350 ms
+Intermediate compounds:
+(S: 9, T: 6) (S: 6, T: 8) (S: 6, T: 8) (S: 4, T: 6) (S: 6, T: 17) (S: 36, T: 66) (S: 24, T: 129) (S: 324, T: 110) 
