@@ -18,7 +18,7 @@ def generate_data(data, ignore_max_connectivity):
             heuristic_avg_intermediate_CA_transitions[name].append((testcase_id, avg_intermediate_CA_transitions))
     return heuristic_avg_intermediate_CA_transitions
 
-# Define colors for each heuristic
+
 heuristic_colors = {
     "Incremental (No Heuristic)": "blue",
     "Min Transitions": "red",
@@ -30,7 +30,7 @@ heuristic_colors = {
     "Max Connectivity": "gray"
 }
 
-# Define custom legend order
+
 custom_legend_order = [
     "Incremental (No Heuristic)",
     "Min Transitions",
@@ -45,23 +45,19 @@ custom_legend_order = [
 def plot_data_plotly(avg_intermediate_CA_transitions, input_size_str):
     fig = go.Figure()
     
-    # Jitter amount to avoid overlap
     jitter_amount = 0.75  
     num_heuristics = len(custom_legend_order)
 
-    # Extract all unique testcase IDs
     testcase_ids = sorted({item[0] for data in avg_intermediate_CA_transitions.values() for item in data})
 
     for heuristic_idx, heuristic in enumerate(custom_legend_order):
-        if heuristic in avg_intermediate_CA_transitions:  # Only add if data exists
+        if heuristic in avg_intermediate_CA_transitions:  
             data = avg_intermediate_CA_transitions[heuristic]
             data.sort(key=lambda x: x[0])
 
-            # Apply jitter to y-values based on heuristic index
             x_values = [item[0] for item in data]
             y_values = [item[1] + (heuristic_idx - (num_heuristics - 1)/2) * jitter_amount for item in data]
 
-            # Add trace with jittered y-values
             fig.add_trace(go.Scatter(
                 x=[f"{input_size_str[0]}-{tid}" for tid in x_values],
                 y=y_values,
@@ -77,21 +73,19 @@ def plot_data_plotly(avg_intermediate_CA_transitions, input_size_str):
         title_text=f"Heuristic Performance - Intermediate CAs Size - {input_size_str}",
         height=800,
         width=1000,
-        legend=dict(traceorder="normal")  # Ensures legends appear in the custom order
+        legend=dict(traceorder="normal")  
     )
     fig.show()    
 
-# Load Data
+
 data_small = read_data('data/size/results-small.json')
 data_medium = read_data('data/size/results-medium.json')
 data_large = read_data('data/size/results-large.json')
 
-# Generate Data
 heuristic_data_small = generate_data(data_small, False)
 heuristic_data_medium = generate_data(data_medium, False)
 heuristic_data_large = generate_data(data_large, False)
 
-# Generate separate plots
 plot_data_plotly(heuristic_data_small, "Small")
 plot_data_plotly(heuristic_data_medium, "Medium")
 plot_data_plotly(heuristic_data_large, "Large")

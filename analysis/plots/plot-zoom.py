@@ -12,7 +12,7 @@ def generate_data(data, ignore_max_connectivity, convert_to_minutes):
         testcase_id = int(testcase["testcase_id_to_show"])
         for heuristic in testcase["heuristics"]:
             name = heuristic["name"]
-            avg_time = heuristic["avg_time"] / 1000  # convert to seconds
+            avg_time = heuristic["avg_time"] / 1000  
             if convert_to_minutes:
                 avg_time /= 60
             if name == "max_connectivity" and ignore_max_connectivity:
@@ -23,7 +23,6 @@ def generate_data(data, ignore_max_connectivity, convert_to_minutes):
             heuristic_avg_times[name].append((testcase_id, avg_time))
     return heuristic_avg_times
 
-# Define colors for each heuristic
 heuristic_colors = {
     "Incremental (No Heuristic)": "blue",
     "Min Transitions": "red",
@@ -54,17 +53,14 @@ def plot_data_plotly(heuristic_avg_times, input_size_str, zoom_in=False):
     fig.update_layout(title_text=f"Heuristic Performance - {input_size_str}", height=800, width=1000)
     
     if zoom_in:
-        # Create an inset figure
         inset_fig = go.Figure()
         
-        # Define the zoom region
         zoom_region = {'x': ['L-2', 'L-4'], 'y': [0, 5]}
         
         for heuristic in heuristic_avg_times:
             x = [input_size_str[0] + "-" + str(item[0]) for item in heuristic_avg_times[heuristic]]
             y = [item[1] for item in heuristic_avg_times[heuristic]]
             
-            # Filter data within the zoom region
             filtered_x = [xi for xi, yi in zip(x, y) if zoom_region['x'][0] <= xi <= zoom_region['x'][1]]
             filtered_y = [yi for xi, yi in zip(x, y) if zoom_region['x'][0] <= xi <= zoom_region['x'][1]]
             
@@ -79,7 +75,6 @@ def plot_data_plotly(heuristic_avg_times, input_size_str, zoom_in=False):
         inset_fig.update_yaxes(range=[zoom_region['y'][0], zoom_region['y'][1]], title_text="")
         inset_fig.update_layout(height=300, width=400, margin=dict(l=0, r=0, t=0, b=0))
         
-        # Add the inset figure as an annotation
         fig.add_trace(inset_fig.data[0])
         fig.add_annotation(
             xref="paper", yref="paper",
@@ -101,17 +96,14 @@ def plot_data_plotly(heuristic_avg_times, input_size_str, zoom_in=False):
     
     fig.show()
 
-# Load Data
 data_small  = read_data('data/time/results-small.json')
 data_medium = read_data('data/time/results-medium.json')
 data_large  = read_data('data/time/results-large.json')
 
-# Generate Data
 heuristic_data_small  = generate_data(data_small, False, False)
 heuristic_data_medium = generate_data(data_medium, False, False)
 heuristic_data_large  = generate_data(data_large, False, True)
 
-# Generate separate plots
 plot_data_plotly(heuristic_data_small, "Small", zoom_in=True)
 plot_data_plotly(heuristic_data_medium, "Medium", zoom_in=True)
 plot_data_plotly(heuristic_data_large, "Large", zoom_in=True)
